@@ -85,7 +85,7 @@ async function scrapeJobsIfNeeded(baseUrl: string) {
 // ──────────────────────────────────────────────────────────────────
 
 async function runDigestIfNeeded(
-  prisma: import("@prisma/client").PrismaClient,
+  prisma: import("@/generated/prisma/client").PrismaClient,
   baseUrl: string
 ) {
   try {
@@ -153,7 +153,7 @@ function shuffle<T>(arr: T[]): T[] {
 }
 
 async function runDailyQuizIfNeeded(
-  prisma: import("@prisma/client").PrismaClient
+  prisma: import("@/generated/prisma/client").PrismaClient
 ) {
   try {
     const today = new Date();
