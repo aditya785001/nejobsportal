@@ -1,0 +1,678 @@
+"use client";
+
+import { useState } from "react";
+import { useRouter } from "next/navigation";
+
+const STATES = [
+  { value: "Assam", label: "Assam" },
+  { value: "ArunachalPradesh", label: "Arunachal Pradesh" },
+  { value: "Manipur", label: "Manipur" },
+  { value: "Meghalaya", label: "Meghalaya" },
+  { value: "Mizoram", label: "Mizoram" },
+  { value: "Nagaland", label: "Nagaland" },
+  { value: "Sikkim", label: "Sikkim" },
+  { value: "Tripura", label: "Tripura" },
+  { value: "AllIndia", label: "All India" },
+];
+
+const CATEGORIES = [
+  { value: "StateGovt", label: "State Govt" },
+  { value: "CentralGovt", label: "Central Govt" },
+  { value: "PublicSector", label: "Public Sector" },
+  { value: "Defense", label: "Defense" },
+  { value: "Banking", label: "Banking" },
+  { value: "Teaching", label: "Teaching" },
+  { value: "Research", label: "Research" },
+];
+
+const JOB_TYPES = [
+  { value: "FullTime", label: "Full Time" },
+  { value: "PartTime", label: "Part Time" },
+  { value: "Contract", label: "Contract" },
+  { value: "WalkIn", label: "Walk-In" },
+  { value: "Internship", label: "Internship" },
+  { value: "Remote", label: "Remote" },
+];
+
+const SELECTION_TYPES = [
+  { value: "WrittenExam", label: "Written Exam" },
+  { value: "Interview", label: "Interview" },
+  { value: "Merit", label: "Merit Based" },
+  { value: "WalkInInterview", label: "Walk-In Interview" },
+  { value: "PhysicalTest", label: "Physical Test" },
+  { value: "TradeTest", label: "Trade Test" },
+  { value: "SkillTest", label: "Skill Test" },
+  { value: "DocumentVerification", label: "Document Verification" },
+  { value: "Combined", label: "Combined Process" },
+];
+
+const FEE_CATEGORIES = [
+  { key: "general", label: "General" },
+  { key: "obc", label: "OBC" },
+  { key: "sc", label: "SC" },
+  { key: "st", label: "ST" },
+  { key: "pwd", label: "PwD" },
+  { key: "female", label: "Female" },
+];
+
+interface FormData {
+  titleEn: string;
+  titleAs: string;
+  department: string;
+  state: string;
+  category: string;
+  jobType: string;
+  selectionType: string;
+  totalVacancies: string;
+  payScale: string;
+  qualification: string;
+  ageLimit: string;
+  lastDate: string;
+  applicationUrl: string;
+  fee: Record<string, string>;
+  howToApplyEn: string;
+  howToApplyAs: string;
+  importantDates: { label: string; date: string }[];
+  disclaimer: string;
+  notificationPdfUrl: string;
+  notificationDate: string;
+  summaryEn: string;
+  summaryAs: string;
+  pwdFriendly: boolean;
+  pwdDetails: string;
+  hashtags: string;
+}
+
+const emptyForm: FormData = {
+  titleEn: "",
+  titleAs: "",
+  department: "",
+  state: "Assam",
+  category: "StateGovt",
+  jobType: "FullTime",
+  selectionType: "WrittenExam",
+  totalVacancies: "",
+  payScale: "",
+  qualification: "",
+  ageLimit: "",
+  lastDate: "",
+  applicationUrl: "",
+  fee: Object.fromEntries(FEE_CATEGORIES.map((c) => [c.key, ""])),
+  howToApplyEn: "",
+  howToApplyAs: "",
+  importantDates: [{ label: "", date: "" }],
+  disclaimer: "All details are sourced from the official notification. Candidates must verify all details on the official department website before applying.",
+  notificationPdfUrl: "",
+  notificationDate: "",
+  summaryEn: "",
+  summaryAs: "",
+  pwdFriendly: false,
+  pwdDetails: "",
+  hashtags: "",
+};
+
+export default function NewPostPage() {
+  const router = useRouter();
+  const [form, setForm] = useState<FormData>(emptyForm);
+  const [submitting, setSubmitting] = useState(false);
+  const [error, setError] = useState("");
+
+  const updateField = (field: keyof FormData, value: any) => {
+    setForm((prev) => ({ ...prev, [field]: value }));
+  };
+
+  const updateFee = (key: string, value: string) => {
+    setForm((prev) => ({ ...prev, fee: { ...prev.fee, [key]: value } }));
+  };
+
+  const addDateRow = () => {
+    setForm((prev) => ({
+      ...prev,
+      importantDates: [...prev.importantDates, { label: "", date: "" }],
+    }));
+  };
+
+  const updateDateRow = (index: number, field: "label" | "date", value: string) => {
+    setForm((prev) => {
+      const dates = [...prev.importantDates];
+      dates[index] = { ...dates[index], [field]: value };
+      return { ...prev, importantDates: dates };
+    });
+  };
+
+  const removeDateRow = (index: number) => {
+    setForm((prev) => ({
+      ...prev,
+      importantDates: prev.importantDates.filter((_, i) => i !== index),
+    }));
+  };
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setSubmitting(true);
+    setError("");
+
+    // Build fee object (filter out empty values)
+    const fee: Record<string, number> = {};
+    for (const [key, val] of Object.entries(form.fee)) {
+      const num = parseFloat(val);
+      if (!isNaN(num)) fee[key] = num;
+    }
+
+    // Build important dates (filter empty rows)
+    const importantDates = form.importantDates.filter((d) => d.label && d.date);
+
+    // Parse hashtags
+    const hashtags = form.hashtags
+      .split(",")
+      .map((t) => t.trim())
+      .filter(Boolean);
+
+    try {
+      const payload = {
+        titleEn: form.titleEn,
+        titleAs: form.titleAs,
+        department: form.department,
+        state: form.state,
+        category: form.category,
+        jobType: form.jobType,
+        selectionType: form.selectionType,
+        totalVacancies: form.totalVacancies ? parseInt(form.totalVacancies) : null,
+        payScale: form.payScale || null,
+        qualification: form.qualification,
+        ageLimit: form.ageLimit || null,
+        lastDate: new Date(form.lastDate).toISOString(),
+        applicationUrl: form.applicationUrl,
+        fee,
+        howToApplyEn: form.howToApplyEn,
+        howToApplyAs: form.howToApplyAs,
+        importantDates,
+        disclaimer: form.disclaimer,
+        notificationPdfUrl: form.notificationPdfUrl || null,
+        notificationDate: form.notificationDate ? new Date(form.notificationDate).toISOString() : null,
+        summaryEn: form.summaryEn,
+        summaryAs: form.summaryAs,
+        pwdFriendly: form.pwdFriendly,
+        pwdDetails: form.pwdDetails || null,
+        hashtags,
+      };
+
+      const res = await fetch("/api/jobs", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(payload),
+      });
+
+      if (res.ok) {
+        const data = await res.json();
+        router.push(`/jobs/${data.slug}`);
+      } else {
+        const err = await res.json();
+        setError(err.error || err.details?.[0]?.message || "Failed to create post");
+      }
+    } catch (err) {
+      setError("An unexpected error occurred. Please try again.");
+    } finally {
+      setSubmitting(false);
+    }
+  };
+
+  return (
+    <div className="p-6 max-w-5xl">
+      {/* Header */}
+      <div className="flex items-center justify-between mb-6">
+        <div>
+          <h1 className="text-2xl font-bold text-gray-900">Post a New Job</h1>
+          <p className="text-sm text-gray-500 mt-1">
+            Fill in the details below. Fields marked * are required.
+          </p>
+        </div>
+      </div>
+
+      {error && (
+        <div className="mb-6 px-4 py-3 bg-red-50 border border-red-200 text-red-700 rounded-lg text-sm">
+          {error}
+        </div>
+      )}
+
+      <form onSubmit={handleSubmit} className="space-y-8">
+        {/* ── Section 1: Basic Info ── */}
+        <div className="bg-white rounded-xl border border-gray-200 p-6">
+          <h2 className="text-lg font-bold text-gray-900 mb-4 flex items-center gap-2">
+            <span className="w-8 h-8 rounded-full bg-[#1a6b3c] text-white flex items-center justify-center text-sm">1</span>
+            Basic Information
+          </h2>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div>
+              <label className="block text-sm font-medium text-gray-700 mb-1">
+                Title (English) <span className="text-red-500">*</span>
+              </label>
+              <input
+                value={form.titleEn}
+                onChange={(e) => updateField("titleEn", e.target.value)}
+                required
+                placeholder="e.g. Assam Police Constable Recruitment 2026"
+                className="w-full px-3 py-2 border border-gray-300 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-[#1a6b3c] focus:border-transparent"
+              />
+            </div>
+            <div>
+              <label className="block text-sm font-medium text-gray-700 mb-1">
+                Title (Assamese) <span className="text-red-500">*</span>
+              </label>
+              <input
+                value={form.titleAs}
+                onChange={(e) => updateField("titleAs", e.target.value)}
+                required
+                placeholder="যেনে: অসম আৰক্ষী কনষ্টেবল নিযুক্তি ২০২৬"
+                className="w-full px-3 py-2 border border-gray-300 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-[#1a6b3c] focus:border-transparent"
+              />
+            </div>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-4">
+            <div>
+              <label className="block text-sm font-medium text-gray-700 mb-1">
+                Department / Board <span className="text-red-500">*</span>
+              </label>
+              <input
+                value={form.department}
+                onChange={(e) => updateField("department", e.target.value)}
+                required
+                placeholder="e.g. Assam Public Service Commission"
+                className="w-full px-3 py-2 border border-gray-300 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-[#1a6b3c] focus:border-transparent"
+              />
+            </div>
+            <div>
+              <label className="block text-sm font-medium text-gray-700 mb-1">
+                State <span className="text-red-500">*</span>
+              </label>
+              <select
+                value={form.state}
+                onChange={(e) => updateField("state", e.target.value)}
+                className="w-full px-3 py-2 border border-gray-300 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-[#1a6b3c]"
+              >
+                {STATES.map((s) => (
+                  <option key={s.value} value={s.value}>{s.label}</option>
+                ))}
+              </select>
+            </div>
+            <div>
+              <label className="block text-sm font-medium text-gray-700 mb-1">
+                Category <span className="text-red-500">*</span>
+              </label>
+              <select
+                value={form.category}
+                onChange={(e) => updateField("category", e.target.value)}
+                className="w-full px-3 py-2 border border-gray-300 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-[#1a6b3c]"
+              >
+                {CATEGORIES.map((c) => (
+                  <option key={c.value} value={c.value}>{c.label}</option>
+                ))}
+              </select>
+            </div>
+          </div>
+        </div>
+
+        {/* ── Section 2: Job Details ── */}
+        <div className="bg-white rounded-xl border border-gray-200 p-6">
+          <h2 className="text-lg font-bold text-gray-900 mb-4 flex items-center gap-2">
+            <span className="w-8 h-8 rounded-full bg-[#1a6b3c] text-white flex items-center justify-center text-sm">2</span>
+            Job Details
+          </h2>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+            <div>
+              <label className="block text-sm font-medium text-gray-700 mb-1">Job Type</label>
+              <select
+                value={form.jobType}
+                onChange={(e) => updateField("jobType", e.target.value)}
+                className="w-full px-3 py-2 border border-gray-300 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-[#1a6b3c]"
+              >
+                {JOB_TYPES.map((t) => (
+                  <option key={t.value} value={t.value}>{t.label}</option>
+                ))}
+              </select>
+            </div>
+            <div>
+              <label className="block text-sm font-medium text-gray-700 mb-1">Selection Type</label>
+              <select
+                value={form.selectionType}
+                onChange={(e) => updateField("selectionType", e.target.value)}
+                className="w-full px-3 py-2 border border-gray-300 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-[#1a6b3c]"
+              >
+                {SELECTION_TYPES.map((t) => (
+                  <option key={t.value} value={t.value}>{t.label}</option>
+                ))}
+              </select>
+            </div>
+            <div>
+              <label className="block text-sm font-medium text-gray-700 mb-1">Total Vacancies</label>
+              <input
+                value={form.totalVacancies}
+                onChange={(e) => updateField("totalVacancies", e.target.value)}
+                type="number"
+                min="1"
+                placeholder="e.g. 500"
+                className="w-full px-3 py-2 border border-gray-300 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-[#1a6b3c]"
+              />
+            </div>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
+            <div>
+              <label className="block text-sm font-medium text-gray-700 mb-1">Pay Scale / Salary</label>
+              <input
+                value={form.payScale}
+                onChange={(e) => updateField("payScale", e.target.value)}
+                placeholder="e.g. ₹30,000 - ₹1,20,000 per month"
+                className="w-full px-3 py-2 border border-gray-300 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-[#1a6b3c]"
+              />
+            </div>
+            <div>
+              <label className="block text-sm font-medium text-gray-700 mb-1">Age Limit</label>
+              <input
+                value={form.ageLimit}
+                onChange={(e) => updateField("ageLimit", e.target.value)}
+                placeholder="e.g. 18-38 years"
+                className="w-full px-3 py-2 border border-gray-300 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-[#1a6b3c]"
+              />
+            </div>
+          </div>
+
+          <div className="mt-4">
+            <label className="block text-sm font-medium text-gray-700 mb-1">
+              Qualification <span className="text-red-500">*</span>
+            </label>
+            <textarea
+              value={form.qualification}
+              onChange={(e) => updateField("qualification", e.target.value)}
+              required
+              rows={2}
+              placeholder="e.g. Graduate in any discipline from a recognized university"
+              className="w-full px-3 py-2 border border-gray-300 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-[#1a6b3c]"
+            />
+          </div>
+        </div>
+
+        {/* ── Section 3: Dates & Apply ── */}
+        <div className="bg-white rounded-xl border border-gray-200 p-6">
+          <h2 className="text-lg font-bold text-gray-900 mb-4 flex items-center gap-2">
+            <span className="w-8 h-8 rounded-full bg-[#1a6b3c] text-white flex items-center justify-center text-sm">3</span>
+            Dates & Application
+          </h2>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div>
+              <label className="block text-sm font-medium text-gray-700 mb-1">
+                Last Date to Apply <span className="text-red-500">*</span>
+              </label>
+              <input
+                value={form.lastDate}
+                onChange={(e) => updateField("lastDate", e.target.value)}
+                type="date"
+                required
+                className="w-full px-3 py-2 border border-gray-300 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-[#1a6b3c]"
+              />
+            </div>
+            <div>
+              <label className="block text-sm font-medium text-gray-700 mb-1">Notification Date</label>
+              <input
+                value={form.notificationDate}
+                onChange={(e) => updateField("notificationDate", e.target.value)}
+                type="date"
+                className="w-full px-3 py-2 border border-gray-300 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-[#1a6b3c]"
+              />
+            </div>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
+            <div>
+              <label className="block text-sm font-medium text-gray-700 mb-1">
+                Application URL <span className="text-red-500">*</span>
+              </label>
+              <input
+                value={form.applicationUrl}
+                onChange={(e) => updateField("applicationUrl", e.target.value)}
+                type="url"
+                required
+                placeholder="https://official-department-website.gov.in"
+                className="w-full px-3 py-2 border border-gray-300 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-[#1a6b3c]"
+              />
+              <p className="text-xs text-gray-400 mt-1">Link to the official department application portal</p>
+            </div>
+            <div>
+              <label className="block text-sm font-medium text-gray-700 mb-1">Notification PDF URL</label>
+              <input
+                value={form.notificationPdfUrl}
+                onChange={(e) => updateField("notificationPdfUrl", e.target.value)}
+                type="url"
+                placeholder="https://example.com/notification.pdf"
+                className="w-full px-3 py-2 border border-gray-300 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-[#1a6b3c]"
+              />
+              <p className="text-xs text-gray-400 mt-1">Link to the official PDF notification</p>
+            </div>
+          </div>
+
+          {/* Application Fee */}
+          <div className="mt-4">
+            <label className="block text-sm font-medium text-gray-700 mb-2">Application Fee (₹)</label>
+            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-3">
+              {FEE_CATEGORIES.map((cat) => (
+                <div key={cat.key}>
+                  <label className="block text-xs text-gray-500 mb-1 capitalize">{cat.label}</label>
+                  <input
+                    value={form.fee[cat.key]}
+                    onChange={(e) => updateFee(cat.key, e.target.value)}
+                    type="number"
+                    min="0"
+                    placeholder="0"
+                    className="w-full px-3 py-2 border border-gray-300 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-[#1a6b3c]"
+                  />
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+
+        {/* ── Section 4: Important Dates ── */}
+        <div className="bg-white rounded-xl border border-gray-200 p-6">
+          <div className="flex items-center justify-between mb-4">
+            <h2 className="text-lg font-bold text-gray-900 flex items-center gap-2">
+              <span className="w-8 h-8 rounded-full bg-[#1a6b3c] text-white flex items-center justify-center text-sm">4</span>
+              Important Dates (Optional)
+            </h2>
+            <button
+              type="button"
+              onClick={addDateRow}
+              className="px-3 py-1.5 text-sm bg-gray-100 text-gray-700 rounded-lg hover:bg-gray-200 transition-colors"
+            >
+              + Add Date
+            </button>
+          </div>
+
+          <div className="space-y-3">
+            {form.importantDates.map((item, index) => (
+              <div key={index} className="flex items-center gap-3">
+                <input
+                  value={item.label}
+                  onChange={(e) => updateDateRow(index, "label", e.target.value)}
+                  placeholder="e.g. Admit Card Release"
+                  className="flex-1 px-3 py-2 border border-gray-300 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-[#1a6b3c]"
+                />
+                <input
+                  value={item.date}
+                  onChange={(e) => updateDateRow(index, "date", e.target.value)}
+                  type="date"
+                  className="w-44 px-3 py-2 border border-gray-300 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-[#1a6b3c]"
+                />
+                {form.importantDates.length > 1 && (
+                  <button
+                    type="button"
+                    onClick={() => removeDateRow(index)}
+                    className="p-2 text-red-500 hover:bg-red-50 rounded-lg transition-colors"
+                    title="Remove"
+                  >
+                    <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" />
+                    </svg>
+                  </button>
+                )}
+              </div>
+            ))}
+          </div>
+        </div>
+
+        {/* ── Section 5: How to Apply (Bilingual) ── */}
+        <div className="bg-white rounded-xl border border-gray-200 p-6">
+          <h2 className="text-lg font-bold text-gray-900 mb-4 flex items-center gap-2">
+            <span className="w-8 h-8 rounded-full bg-[#1a6b3c] text-white flex items-center justify-center text-sm">5</span>
+            How to Apply
+          </h2>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div>
+              <label className="block text-sm font-medium text-gray-700 mb-1">
+                How to Apply (English) <span className="text-red-500">*</span>
+              </label>
+              <textarea
+                value={form.howToApplyEn}
+                onChange={(e) => updateField("howToApplyEn", e.target.value)}
+                required
+                rows={5}
+                placeholder="1. Visit the official website&#10;2. Click on 'Apply Online'&#10;3. Fill in the application form&#10;4. Upload required documents&#10;5. Pay the application fee&#10;6. Submit the form"
+                className="w-full px-3 py-2 border border-gray-300 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-[#1a6b3c] font-mono"
+              />
+            </div>
+            <div>
+              <label className="block text-sm font-medium text-gray-700 mb-1">
+                How to Apply (Assamese) <span className="text-red-500">*</span>
+              </label>
+              <textarea
+                value={form.howToApplyAs}
+                onChange={(e) => updateField("howToApplyAs", e.target.value)}
+                required
+                rows={5}
+                placeholder="আবেদন পদ্ধতি ইংৰাজীত লিখাৰ দৰে অসমীয়াত লিখক"
+                className="w-full px-3 py-2 border border-gray-300 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-[#1a6b3c] font-mono"
+              />
+            </div>
+          </div>
+        </div>
+
+        {/* ── Section 6: Summary & Tags ── */}
+        <div className="bg-white rounded-xl border border-gray-200 p-6">
+          <h2 className="text-lg font-bold text-gray-900 mb-4 flex items-center gap-2">
+            <span className="w-8 h-8 rounded-full bg-[#1a6b3c] text-white flex items-center justify-center text-sm">6</span>
+            Summary & Tags
+          </h2>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div>
+              <label className="block text-sm font-medium text-gray-700 mb-1">Summary (English)</label>
+              <textarea
+                value={form.summaryEn}
+                onChange={(e) => updateField("summaryEn", e.target.value)}
+                rows={3}
+                placeholder="Brief description of the job opportunity (2-3 lines)"
+                className="w-full px-3 py-2 border border-gray-300 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-[#1a6b3c]"
+              />
+            </div>
+            <div>
+              <label className="block text-sm font-medium text-gray-700 mb-1">Summary (Assamese)</label>
+              <textarea
+                value={form.summaryAs}
+                onChange={(e) => updateField("summaryAs", e.target.value)}
+                rows={3}
+                placeholder="চাকৰিৰ বিষয়ে চমু বিৱৰণ (২-৩ শাৰী)"
+                className="w-full px-3 py-2 border border-gray-300 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-[#1a6b3c]"
+              />
+            </div>
+          </div>
+
+          <div className="mt-4">
+            <label className="block text-sm font-medium text-gray-700 mb-1">Hashtags / Tags</label>
+            <input
+              value={form.hashtags}
+              onChange={(e) => updateField("hashtags", e.target.value)}
+              placeholder="e.g. AssamPolice, GovtJobs, APSC (comma-separated)"
+              className="w-full px-3 py-2 border border-gray-300 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-[#1a6b3c]"
+            />
+            <p className="text-xs text-gray-400 mt-1">Separate tags with commas. They will be auto-created.</p>
+          </div>
+        </div>
+
+        {/* ── Section 7: Disclaimer & PWD ── */}
+        <div className="bg-white rounded-xl border border-gray-200 p-6">
+          <h2 className="text-lg font-bold text-gray-900 mb-4 flex items-center gap-2">
+            <span className="w-8 h-8 rounded-full bg-[#1a6b3c] text-white flex items-center justify-center text-sm">7</span>
+            Additional Settings
+          </h2>
+
+          <div>
+            <label className="block text-sm font-medium text-gray-700 mb-1">Disclaimer</label>
+            <textarea
+              value={form.disclaimer}
+              onChange={(e) => updateField("disclaimer", e.target.value)}
+              rows={2}
+              className="w-full px-3 py-2 border border-gray-300 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-[#1a6b3c]"
+            />
+            <p className="text-xs text-gray-400 mt-1">
+              This disclaimer is shown prominently on every job page. Always remind users to verify on official sites.
+            </p>
+          </div>
+
+          <div className="mt-4 flex items-start gap-4">
+            <label className="flex items-center gap-2 cursor-pointer">
+              <input
+                type="checkbox"
+                checked={form.pwdFriendly}
+                onChange={(e) => updateField("pwdFriendly", e.target.checked)}
+                className="w-4 h-4 text-[#1a6b3c] rounded focus:ring-[#1a6b3c]"
+              />
+              <span className="text-sm font-medium text-gray-700">PWD Friendly ♿</span>
+            </label>
+            {form.pwdFriendly && (
+              <div className="flex-1">
+                <input
+                  value={form.pwdDetails}
+                  onChange={(e) => updateField("pwdDetails", e.target.value)}
+                  placeholder="PWD details / accommodations available"
+                  className="w-full px-3 py-2 border border-gray-300 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-[#1a6b3c]"
+                />
+              </div>
+            )}
+          </div>
+        </div>
+
+        {/* ── Submit ── */}
+        <div className="flex items-center gap-4 bg-white rounded-xl border border-gray-200 p-6">
+          <button
+            type="submit"
+            disabled={submitting}
+            className="px-8 py-3 bg-[#1a6b3c] text-white font-semibold rounded-lg hover:bg-[#145230] disabled:opacity-50 disabled:cursor-not-allowed transition-colors text-sm"
+          >
+            {submitting ? (
+              <span className="flex items-center gap-2">
+                <svg className="animate-spin h-4 w-4" viewBox="0 0 24 24">
+                  <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4" fill="none" />
+                  <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4z" />
+                </svg>
+                Publishing...
+              </span>
+            ) : (
+              "Publish Job Posting"
+            )}
+          </button>
+          <button
+            type="button"
+            onClick={() => router.push("/admin/posts")}
+            className="px-6 py-3 border border-gray-300 text-gray-700 rounded-lg hover:bg-gray-50 transition-colors text-sm"
+          >
+            Cancel
+          </button>
+        </div>
+      </form>
+    </div>
+  );
+}

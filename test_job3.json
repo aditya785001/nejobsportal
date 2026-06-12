@@ -1,0 +1,22 @@
+﻿{
+  "titleEn": "Assam University Test Job",
+  "department": "Assam University",
+  "state": "Assam",
+  "category": "Teaching",
+  "jobType": "FullTime",
+  "selectionType": "Interview",
+  "totalVacancies": 124,
+  "payScale": "Professor: Rs. 1,44,200 - 2,18,200",
+  "qualification": "Ph.D. degree with minimum 10 years experience.",
+  "ageLimit": "As per UGC norms",
+  "lastDate": "2026-07-10",
+  "applicationUrl": "https://www.aus.ac.in",
+  "fee": {"general": 1000, "obc": 1000, "sc": 500, "st": 500, "pwd": 500, "female": 500},
+  "howToApplyEn": "Interested candidates may apply online at Assam University Recruitment Portal.",
+  "summaryEn": "Assam University has released notification for 124 Faculty vacancies.",
+  "contentEn": "Test content.",
+  "notificationPdfUrl": "https://www.aus.ac.in",
+  "notificationDate": "2026-06-06",
+  "importantDates": [],
+  "hashtags": []
+}

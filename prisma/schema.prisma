@@ -1,0 +1,988 @@
+// ─────────────────────────────────────────────────────────────
+// NEJobsPortal.in — Complete Database Schema (Prisma 7)
+// 30+ models covering all 6 content pillars + community + tools
+// ─────────────────────────────────────────────────────────────
+
+generator client {
+  provider = "prisma-client"
+  output   = "../src/generated/prisma"
+}
+
+datasource db {
+  provider = "postgresql"
+}
+
+// ═════════════════════════════════════════════════════════════
+// ENUMS
+// ═════════════════════════════════════════════════════════════
+
+enum UserRole {
+  USER
+  CONTRIBUTOR
+  EDITOR
+  ADMIN
+}
+
+enum PostStatus {
+  DRAFT
+  PENDING_REVIEW
+  ACTIVE
+  CLOSED
+  CANCELLED
+  FLAGGED
+}
+
+enum JobCategory {
+  StateGovt
+  CentralGovt
+  Private
+  NGO
+  PublicSector
+  Defense
+  Banking
+  Teaching
+  Research
+}
+
+enum JobType {
+  FullTime
+  PartTime
+  Contract
+  WalkIn
+  Internship
+  Remote
+}
+
+enum SelectionType {
+  WrittenExam
+  Interview
+  Merit
+  WalkInInterview
+  PhysicalTest
+  TradeTest
+  SkillTest
+  DocumentVerification
+  Combined
+}
+
+enum State {
+  Assam
+  ArunachalPradesh
+  Manipur
+  Meghalaya
+  Mizoram
+  Nagaland
+  Sikkim
+  Tripura
+  AllIndia
+}
+
+enum PillarType {
+  JOB
+  RESULT
+  ADMISSION
+  SCHOLARSHIP
+  STUDY_MATERIAL
+  EXAM_PREP
+}
+
+enum ResultType {
+  EXAM
+  RECRUITMENT
+  ADMIT_CARD
+  ANSWER_KEY
+  CUTOFF
+  MERIT_LIST
+}
+
+enum ResourceType {
+  QUESTION_PAPER
+  SYLLABUS
+  NOTES
+  MOCK_TEST
+  BOOK
+  VIDEO
+  OTHER
+}
+
+enum CollegeType {
+  Government
+  GovernmentAided
+  Private
+  CentralUniversity
+  StateUniversity
+  Institute
+  Polytechnic
+  ITI
+}
+
+enum NotificationChannel {
+  EMAIL
+  PUSH
+  TELEGRAM
+  SMS
+  WHATSAPP
+}
+
+enum NotificationFrequency {
+  IMMEDIATE
+  DAILY_DIGEST
+  WEEKLY_DIGEST
+  NONE
+}
+
+enum DocumentType {
+  PHOTO
+  SIGNATURE
+  CERTIFICATE
+  ID_PROOF
+  CASTE_CERTIFICATE
+  INCOME_CERTIFICATE
+  OTHER
+}
+
+enum BadgeType {
+  STREAK_7
+  STREAK_30
+  FIRST_SAVE
+  FIRST_SHARE
+  FIRST_COMMENT
+  QUIZ_MASTER
+  TOP_CONTRIBUTOR
+  EARLY_ADOPTER
+  APPLICATION_TRACKER_10
+  COLLEGE_REVIEWER
+  INTERVIEW_SHARER
+}
+
+// ═════════════════════════════════════════════════════════════
+// AUTH & USER
+// ═════════════════════════════════════════════════════════════
+
+model Account {
+  id                String  @id @default(cuid())
+  userId            String
+  type              String
+  provider          String
+  providerAccountId String
+  refresh_token     String? @db.Text
+  access_token      String? @db.Text
+  expires_at        Int?
+  token_type        String?
+  scope             String?
+  id_token          String? @db.Text
+  session_state     String?
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@unique([provider, providerAccountId])
+  @@index([userId])
+}
+
+model Session {
+  id           String   @id @default(cuid())
+  sessionToken String   @unique
+  userId       String
+  expires      DateTime
+  user         User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([userId])
+}
+
+model VerificationToken {
+  identifier String
+  token      String   @unique
+  expires    DateTime
+
+  @@unique([identifier, token])
+}
+
+model User {
+  id                String   @id @default(cuid())
+  name              String?
+  email             String?  @unique
+  emailVerified     DateTime?
+  image             String?
+  role              UserRole @default(USER)
+  preferredLanguage String   @default("en")
+  phone             String?
+  targetExam        String?
+  onboardingDone    Boolean  @default(false)
+  preferences       Json?    // { states: [...], categories: [...], followedHashtags: [...] }
+  createdAt         DateTime @default(now())
+  updatedAt         DateTime @updatedAt
+
+  accounts            Account[]
+  sessions            Session[]
+  savedItems          SavedItem[]
+  applicationTrackers ApplicationTracker[]
+  comments            Comment[]
+  interviewExperiences InterviewExperience[]
+  successStories      SuccessStory[]
+  collegeReviews      CollegeReview[]
+  quizAttempts        QuizAttempt[]
+  resume              Resume[]
+  documents           DocumentLocker[]
+  userBadges          UserBadge[]
+  notificationPrefs   NotificationPreference?
+  notificationLogs    NotificationLog[]
+  flaggedContent      FlaggedContent[]
+  followedHashtags    UserFollowedHashtag[]
+  shareEvents         ShareEvent[]
+}
+
+// ═════════════════════════════════════════════════════════════
+// CONTENT PILLARS
+// ═════════════════════════════════════════════════════════════
+
+model JobPost {
+  id               String        @id @default(cuid())
+  titleEn          String
+  titleAs          String
+  slug             String        @unique
+  department       String
+  state            State
+  category         JobCategory
+  jobType          JobType       @default(FullTime)
+  selectionType    SelectionType
+  totalVacancies   Int?
+  payScale         String?
+  qualification    String
+  ageLimit         String?
+  lastDate         DateTime
+  applicationUrl   String
+  fee              Json          // {"general": 0, "obc": 0, "sc": 0, "st": 0, "pwd": 0, "female": 0}
+  howToApplyEn     String        @db.Text
+  howToApplyAs     String        @db.Text
+  importantDates   Json?         // [{"label": "Admit Card", "date": "..."}]
+  disclaimer       String        @default("All details are sourced from official notifications. Verify on the official portal before applying.")
+  resources        Json?         // [{"label": "Syllabus", "url": "..."}]
+  notificationPdfUrl String?
+  notificationDate DateTime?
+  summaryEn        String        @db.Text
+  summaryAs        String        @db.Text
+  contentEn        String?       @db.Text
+  contentAs        String?       @db.Text
+  aiConfidence     Float         @default(1.0)
+  status           PostStatus    @default(PENDING_REVIEW)
+  viewCount        Int           @default(0)
+  pwdFriendly      Boolean       @default(false)
+  pwdDetails       String?
+  expiresAt        DateTime?
+  publishedAt      DateTime?
+  createdAt        DateTime      @default(now())
+  updatedAt        DateTime      @updatedAt
+  scrapeSource     String?       // Where this was scraped from (e.g. "JobAssam.in")
+  scrapeTimestamp  DateTime?     // When it was scraped
+
+  hashtags             JobPostHashtag[]
+  applicationTrackers  ApplicationTracker[]
+  notificationLogs     NotificationLog[]
+
+  @@index([status, state, category])
+  @@index([slug])
+  @@index([lastDate])
+  @@index([publishedAt])
+}
+
+model ResultPost {
+  id              String     @id @default(cuid())
+  titleEn         String
+  titleAs         String
+  slug            String     @unique
+  examName        String
+  resultType      ResultType
+  declaringBody   String
+  state           State
+  declarationDate DateTime
+  pdfUrl          String?
+  cutOffMarks     Json?      // [{"category": "General", "marks": 85}]
+  recheckInfo     String?    @db.Text
+  whatsNext       String?    @db.Text
+  summaryEn       String?    @db.Text
+  summaryAs       String?    @db.Text
+  contentEn       String?    @db.Text
+  contentAs       String?    @db.Text
+  status          PostStatus @default(PENDING_REVIEW)
+  viewCount       Int        @default(0)
+  aiConfidence    Float      @default(1.0)
+  publishedAt     DateTime?
+  createdAt       DateTime   @default(now())
+  updatedAt       DateTime   @updatedAt
+
+  hashtags       ResultPostHashtag[]
+
+  @@index([status, state, resultType])
+  @@index([slug])
+}
+
+model AdmissionPost {
+  id              String     @id @default(cuid())
+  titleEn         String
+  titleAs         String
+  slug            String     @unique
+  institution     String
+  course          String
+  duration        String?
+  seats           Int?
+  feeStructure    Json?      // {"tuition": 0, "total": 0}
+  eligibility     String     @db.Text
+  process         String?    @db.Text
+  contentEn       String?    @db.Text
+  contentAs       String?    @db.Text
+  importantDates  Json?      // [{"label": "Application Start", "date": "..."}]
+  portalUrl       String?
+  state           State
+  status          PostStatus @default(PENDING_REVIEW)
+  viewCount       Int        @default(0)
+  aiConfidence    Float      @default(1.0)
+  publishedAt     DateTime?
+  createdAt       DateTime   @default(now())
+  updatedAt       DateTime   @updatedAt
+
+  hashtags       AdmissionPostHashtag[]
+
+  @@index([status, state])
+  @@index([slug])
+}
+
+model ScholarshipPost {
+  id                String     @id @default(cuid())
+  titleEn           String
+  titleAs           String
+  slug              String     @unique
+  schemeName        String
+  provider          String
+  amount            String
+  duration          String?
+  eligibility       String     @db.Text
+  incomeLimit       String?
+  category          String?
+  applicationProcess String?   @db.Text
+  contentEn         String?    @db.Text
+  contentAs         String?    @db.Text
+  importantDates    Json?
+  portalUrl         String?
+  state             State
+  status            PostStatus @default(PENDING_REVIEW)
+  viewCount         Int        @default(0)
+  aiConfidence      Float      @default(1.0)
+  publishedAt       DateTime?
+  createdAt         DateTime   @default(now())
+  updatedAt         DateTime   @updatedAt
+
+  hashtags       ScholarshipPostHashtag[]
+
+  @@index([status, state])
+  @@index([slug])
+}
+
+model StudyMaterial {
+  id           String       @id @default(cuid())
+  titleEn      String
+  titleAs      String
+  slug         String       @unique
+  examTag      String?      // APSC, ADRE, UPSC, etc.
+  subject      String?
+  year         Int?
+  resourceType ResourceType
+  fileUrl      String
+  fileSize     Int?         // in KB
+  downloadCount Int         @default(0)
+  description  String?      @db.Text
+  source       String?
+  status       PostStatus   @default(PENDING_REVIEW)
+  publishedAt  DateTime?
+  createdAt    DateTime     @default(now())
+  updatedAt    DateTime     @updatedAt
+
+  hashtags     StudyMaterialHashtag[]
+
+  @@index([status, examTag, resourceType])
+  @@index([slug])
+}
+
+model ExamPrepArticle {
+  id        String   @id @default(cuid())
+  titleEn   String
+  titleAs   String
+  slug      String   @unique
+  exam      String   // APSC, ADRE, UPSC, SSC, etc.
+  category  String?  // Strategy, Syllabus, Tips, Books, etc.
+  contentEn String   @db.Text
+  contentAs String   @db.Text
+  excerptEn String?  @db.Text
+  excerptAs String?  @db.Text
+  author    String?  @default("NEJobsPortal Team")
+  status    PostStatus @default(PENDING_REVIEW)
+  viewCount Int      @default(0)
+  publishedAt DateTime?
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  hashtags     ExamPrepHashtag[]
+
+  @@index([status, exam])
+  @@index([slug])
+}
+
+model DailyQuiz {
+  id          String   @id @default(cuid())
+  date        DateTime @unique
+  questions   Json     // [{ "question": "...", "options": [...], "correctIndex": 0, "explanation": "..." }]
+  pillar      String?  // GK, AssamGK, CurrentAffairs
+  createdBy   String?  // "AI" or "ADMIN"
+  publishedAt DateTime?
+  createdAt   DateTime @default(now())
+
+  attempts QuizAttempt[]
+
+  @@index([date])
+}
+
+// ═════════════════════════════════════════════════════════════
+// GK / CURRENT AFFAIRS (RSS-fed daily content)
+// ═════════════════════════════════════════════════════════════
+
+model CurrentAffair {
+  id           String   @id @default(cuid())
+  title        String   @db.VarChar(500)
+  excerpt      String?  @db.Text
+  content      String?  @db.Text
+  summary      String?  @db.Text   // ~100-word auto-generated brief for curated articles
+  category     String?  // History | Polity | Science | Geography | Economy | Environment | Sports | Awards | Schemes | International | Miscellaneous
+  source       String?  // RSS source name: The Assam Tribune, The Hindu, Indian Express, etc.
+  sourceUrl    String?  // Original article URL — used as "study further" link
+  imageUrl     String?
+  tags         String[] // Flexible array of tags
+  publishedAt  DateTime? // Original publication date
+  digestDate   DateTime? // Non-null = article was curated in a daily digest (date = the digest date)
+  displayOrder Int?      // Position 1-25 within its daily digest
+  isFeatured   Boolean   @default(false) // Top story of the day
+  createdAt    DateTime  @default(now())
+
+  @@index([category])
+  @@index([publishedAt])
+  @@index([digestDate, displayOrder])
+  @@index([createdAt])
+}
+
+model QuizQuestion {
+  id           String   @id @default(cuid())
+  question     String   @db.Text
+  options      String[] // 4 options stored as string array
+  correctIndex Int      // 0-3
+  explanation  String?  @db.Text
+  pillar       String   @default("GK") // GK | AssamGK | CurrentAffairs | Science | History | Polity | Mixed
+  difficulty   String   @default("Medium") // Easy | Medium | Hard
+  section      String   @default("DAILY_QUIZ") // DAILY_QUIZ | MOCK_TEST | PRACTICE | TOPIC_WISE
+  status       String   @default("ACTIVE") // ACTIVE | INACTIVE
+  timesUsed    Int      @default(0)
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
+
+  @@index([pillar, status])
+  @@index([difficulty])
+  @@index([section, status])
+}
+
+// ═════════════════════════════════════════════════════════════
+// HASHTAG SYSTEM
+// ═════════════════════════════════════════════════════════════
+
+model Hashtag {
+  id        String @id @default(cuid())
+  name      String @unique
+  slug      String @unique
+  postCount Int    @default(0)
+  createdAt DateTime @default(now())
+
+  jobs            JobPostHashtag[]
+  results         ResultPostHashtag[]
+  admissions      AdmissionPostHashtag[]
+  scholarships    ScholarshipPostHashtag[]
+  studyMaterials  StudyMaterialHashtag[]
+  examArticles    ExamPrepHashtag[]
+  followedBy      UserFollowedHashtag[]
+
+  @@index([slug])
+  @@index([postCount])
+}
+
+// Junction tables for polymorphic many-to-many hashtag relationships
+model JobPostHashtag {
+  jobPostId  String
+  hashtagId  String
+  jobPost    JobPost  @relation(fields: [jobPostId], references: [id], onDelete: Cascade)
+  hashtag    Hashtag  @relation(fields: [hashtagId], references: [id], onDelete: Cascade)
+
+  @@id([jobPostId, hashtagId])
+  @@index([hashtagId])
+}
+
+model ResultPostHashtag {
+  resultPostId String
+  hashtagId    String
+  resultPost   ResultPost @relation(fields: [resultPostId], references: [id], onDelete: Cascade)
+  hashtag      Hashtag    @relation(fields: [hashtagId], references: [id], onDelete: Cascade)
+
+  @@id([resultPostId, hashtagId])
+  @@index([hashtagId])
+}
+
+model AdmissionPostHashtag {
+  admissionPostId String
+  hashtagId       String
+  admissionPost   AdmissionPost @relation(fields: [admissionPostId], references: [id], onDelete: Cascade)
+  hashtag         Hashtag       @relation(fields: [hashtagId], references: [id], onDelete: Cascade)
+
+  @@id([admissionPostId, hashtagId])
+  @@index([hashtagId])
+}
+
+model ScholarshipPostHashtag {
+  scholarshipPostId String
+  hashtagId         String
+  scholarshipPost   ScholarshipPost @relation(fields: [scholarshipPostId], references: [id], onDelete: Cascade)
+  hashtag           Hashtag         @relation(fields: [hashtagId], references: [id], onDelete: Cascade)
+
+  @@id([scholarshipPostId, hashtagId])
+  @@index([hashtagId])
+}
+
+model StudyMaterialHashtag {
+  studyMaterialId String
+  hashtagId       String
+  studyMaterial   StudyMaterial @relation(fields: [studyMaterialId], references: [id], onDelete: Cascade)
+  hashtag         Hashtag       @relation(fields: [hashtagId], references: [id], onDelete: Cascade)
+
+  @@id([studyMaterialId, hashtagId])
+  @@index([hashtagId])
+}
+
+model ExamPrepHashtag {
+  examPrepArticleId String
+  hashtagId         String
+  examPrepArticle   ExamPrepArticle @relation(fields: [examPrepArticleId], references: [id], onDelete: Cascade)
+  hashtag           Hashtag         @relation(fields: [hashtagId], references: [id], onDelete: Cascade)
+
+  @@id([examPrepArticleId, hashtagId])
+  @@index([hashtagId])
+}
+
+model UserFollowedHashtag {
+  userId    String
+  hashtagId String
+  user      User    @relation(fields: [userId], references: [id], onDelete: Cascade)
+  hashtag   Hashtag @relation(fields: [hashtagId], references: [id], onDelete: Cascade)
+  createdAt DateTime @default(now())
+
+  @@id([userId, hashtagId])
+  @@index([hashtagId])
+}
+
+// ═════════════════════════════════════════════════════════════
+// USER COMMUNITY
+// ═════════════════════════════════════════════════════════════
+
+model SavedItem {
+  id       String     @id @default(cuid())
+  userId   String
+  itemType PillarType
+  itemId   String     // The ID of the saved post (polymorphic)
+  savedAt  DateTime   @default(now())
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@unique([userId, itemType, itemId])
+  @@index([userId])
+  @@index([itemType, itemId])
+}
+
+model ApplicationTracker {
+  id        String   @id @default(cuid())
+  userId    String
+  jobPostId String
+  status    String   @default("SAVED") // SAVED, APPLIED, INTERVIEW, RESULT, OFFER, REJECTED
+  deadline  DateTime?
+  notes     String?  @db.Text
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  user    User    @relation(fields: [userId], references: [id], onDelete: Cascade)
+  jobPost JobPost @relation(fields: [jobPostId], references: [id], onDelete: Cascade)
+
+  @@unique([userId, jobPostId])
+  @@index([userId, status])
+}
+
+model Comment {
+  id        String     @id @default(cuid())
+  userId    String
+  parentId  String?    // For threaded replies
+  content   String     @db.Text
+  upvotes   Int        @default(0)
+  downvotes Int        @default(0)
+  postType  PillarType
+  postId    String     // Polymorphic: ID of the post this comment belongs to
+  status    PostStatus @default(ACTIVE)
+  createdAt DateTime   @default(now())
+  updatedAt DateTime   @updatedAt
+
+  user   User      @relation(fields: [userId], references: [id], onDelete: Cascade)
+  parent Comment?  @relation("CommentReplies", fields: [parentId], references: [id], onDelete: SetNull)
+  replies Comment[] @relation("CommentReplies")
+
+  @@index([postType, postId, status])
+  @@index([userId])
+}
+
+model InterviewExperience {
+  id         String   @id @default(cuid())
+  userId     String
+  examName   String
+  post       String?
+  year       Int
+  questions  Json?    // [{ "question": "...", "answer": "..." }]
+  difficulty String?  // Easy, Medium, Hard
+  tips       String?  @db.Text
+  cleared    Boolean?
+  isAnonymous Boolean @default(false)
+  isVerified Boolean  @default(false)
+  status     PostStatus @default(PENDING_REVIEW)
+  createdAt  DateTime @default(now())
+  updatedAt  DateTime @updatedAt
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([examName, status])
+  @@index([userId])
+}
+
+model SuccessStory {
+  id         String     @id @default(cuid())
+  userId     String
+  exam       String
+  year       Int
+  background String?    @db.Text
+  strategy   String?    @db.Text
+  challenges String?    @db.Text
+  message    String?    @db.Text
+  photoUrl   String?
+  isFeatured Boolean    @default(false)
+  status     PostStatus @default(PENDING_REVIEW)
+  createdAt  DateTime   @default(now())
+  updatedAt  DateTime   @updatedAt
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([isFeatured, status])
+  @@index([exam])
+}
+
+// ═════════════════════════════════════════════════════════════
+// COLLEGE EXPLORER
+// ═════════════════════════════════════════════════════════════
+
+model College {
+  id                   String      @id @default(cuid())
+  name                 String
+  location             String
+  state                State
+  type                 CollegeType
+  accreditation        String?     // NBA, NAAC, etc.
+  naacGrade            String?     // A++, A+, A, etc.
+  courses              Json?       // [{ "name": "B.Sc.", "duration": 3, "seats": 60 }]
+  feeRange             String?
+  placementAvg         String?
+  placementTopRecruiters Json?     // ["TCS", "Wipro", ...]
+  website              String?
+  mapUrl               String?
+  imageUrls            String[]    // Array of image URLs
+  contact              String?     // Phone or email
+  establishedYear      Int?
+  createdAt            DateTime    @default(now())
+  updatedAt            DateTime    @updatedAt
+
+  reviews   CollegeReview[]
+  images    CollegeImage[]
+
+  @@index([state, type])
+  @@index([name])
+}
+
+model CollegeImage {
+  id        String   @id @default(cuid())
+  collegeId String
+  url       String
+  caption   String?
+  sortOrder Int      @default(0)
+
+  college College @relation(fields: [collegeId], references: [id], onDelete: Cascade)
+
+  @@index([collegeId])
+}
+
+model CollegeReview {
+  id                    String   @id @default(cuid())
+  userId                String
+  collegeId             String
+  overallRating         Int      // 1-5
+  facultyRating         Int?     // 1-5
+  infrastructureRating  Int?     // 1-5
+  placementRating       Int?     // 1-5
+  campusLifeRating      Int?     // 1-5
+  review                String?  @db.Text
+  status                PostStatus @default(PENDING_REVIEW)
+  createdAt             DateTime @default(now())
+
+  user    User    @relation(fields: [userId], references: [id], onDelete: Cascade)
+  college College @relation(fields: [collegeId], references: [id], onDelete: Cascade)
+
+  @@unique([userId, collegeId])
+  @@index([collegeId])
+}
+
+// ═════════════════════════════════════════════════════════════
+// GAMIFICATION
+// ═════════════════════════════════════════════════════════════
+
+model Badge {
+  id          String    @id @default(cuid())
+  name        String
+  slug        String    @unique
+  icon        String    // Emoji or SVG path
+  description String
+  criteria    String    // Description of how to earn it
+  badgeType   BadgeType @unique
+  createdAt   DateTime  @default(now())
+
+  awards UserBadge[]
+}
+
+model UserBadge {
+  userId   String
+  badgeId  String
+  earnedAt DateTime @default(now())
+
+  user  User  @relation(fields: [userId], references: [id], onDelete: Cascade)
+  badge Badge @relation(fields: [badgeId], references: [id], onDelete: Cascade)
+
+  @@id([userId, badgeId])
+  @@index([badgeId])
+}
+
+model QuizAttempt {
+  id            String   @id @default(cuid())
+  userId        String
+  quizId        String
+  score         Int
+  totalQuestions Int
+  answers       Json?    // [{ "questionIndex": 0, "selectedOption": 2, "correct": true }]
+  timeSpent     Int?     // seconds
+  completedAt   DateTime @default(now())
+
+  user User      @relation(fields: [userId], references: [id], onDelete: Cascade)
+  quiz DailyQuiz @relation(fields: [quizId], references: [id], onDelete: Cascade)
+
+  @@unique([userId, quizId])
+  @@index([userId])
+  @@index([quizId])
+}
+
+// ═════════════════════════════════════════════════════════════
+// USER TOOLS
+// ═════════════════════════════════════════════════════════════
+
+model Resume {
+  id        String   @id @default(cuid())
+  userId    String
+  name      String   // User-given name for this resume
+  template  String   @default("modern") // template identifier
+  data      Json     // Full resume data structure
+  pdfUrl    String?
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([userId])
+}
+
+model DocumentLocker {
+  id         String       @id @default(cuid())
+  userId     String
+  docType    DocumentType
+  originalName String
+  fileUrl    String
+  resizedUrl String?
+  fileSize   Int?
+  uploadedAt DateTime     @default(now())
+  expiresAt  DateTime?
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([userId, docType])
+}
+
+// ═════════════════════════════════════════════════════════════
+// NOTIFICATIONS
+// ═════════════════════════════════════════════════════════════
+
+model NotificationPreference {
+  id              String                @id @default(cuid())
+  userId          String                @unique
+  channels        NotificationChannel[] // which channels enabled
+  states          State[]              // filter by state
+  pillars         PillarType[]         // filter by pillar
+  categories      JobCategory[]        // filter by job category
+  exams           String[]             // filter by exam names
+  hashtags        String[]             // filter by hashtag names
+  frequency       NotificationFrequency @default(IMMEDIATE)
+  deadlineAlerts  Boolean               @default(true)
+  quizReminders   Boolean               @default(true)
+  digestTime      String?               // "08:00" for daily digest
+  createdAt       DateTime              @default(now())
+  updatedAt       DateTime              @updatedAt
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+}
+
+model NotificationLog {
+  id        String             @id @default(cuid())
+  userId    String
+  type      PillarType?
+  channel   NotificationChannel
+  title     String
+  message   String             @db.Text
+  metadata  Json?              // { postId, postType, url }
+  sentAt    DateTime           @default(now())
+  openedAt  DateTime?
+
+  user    User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  jobPost JobPost? @relation(fields: [jobPostId], references: [id])
+  jobPostId String?
+
+  @@index([userId, sentAt])
+  @@index([sentAt])
+}
+
+// ═════════════════════════════════════════════════════════════
+// ANALYTICS & MONITORING
+// ═════════════════════════════════════════════════════════════
+
+model ShareEvent {
+  id        String   @id @default(cuid())
+  userId    String?
+  postType  PillarType
+  postId    String
+  platform  String   // WHATSAPP, TELEGRAM, FACEBOOK, TWITTER, EMAIL, COPY_LINK
+  sharedAt  DateTime @default(now())
+
+  user    User?    @relation(fields: [userId], references: [id], onDelete: SetNull)
+
+  @@index([postType, postId])
+  @@index([platform])
+  @@index([sharedAt])
+}
+
+model AILog {
+  id          String   @id @default(cuid())
+  model       String   // gemini, groq
+  promptType  String   // extract, translate, tag, quiz, chatbot
+  tokensUsed  Int?
+  confidence  Float?
+  duration    Int?     // milliseconds
+  successful  Boolean  @default(true)
+  errorMessage String?
+  createdAt   DateTime @default(now())
+
+  @@index([createdAt])
+  @@index([promptType])
+}
+
+model FlaggedContent {
+  id        String     @id @default(cuid())
+  userId    String
+  postType  PillarType
+  postId    String
+  reason    String     // INCORRECT_INFO, SPAM, DUPLICATE, OFFENSIVE, OTHER
+  comment   String?    @db.Text
+  status    PostStatus @default(PENDING_REVIEW)
+  resolvedBy String?
+  resolvedAt DateTime?
+  createdAt DateTime   @default(now())
+
+  user    User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([postType, postId])
+  @@index([status])
+}
+
+// ═════════════════════════════════════════════════════════════
+// SALARY DATABASE
+// ═════════════════════════════════════════════════════════════
+
+model SalaryEntry {
+  id          String   @id @default(cuid())
+  position    String   // Job title/position name
+  department  String?  // Govt department
+  state       State
+  payLevel    String?  // Pay Level (e.g., Level 10)
+  payBand     String?  // Pay Band (e.g., PB-3)
+  basicPay    String?
+  grossSalary String?
+  inHandSalary String?
+  allowances  Json?    // { "da": "...", "hra": "...", "ta": "..." }
+  source      String?  // Official source URL
+  isVerified  Boolean  @default(false)
+  updatedAt   DateTime @updatedAt
+
+  @@index([state, position])
+}
+
+// ═════════════════════════════════════════════════════════════
+// SCHEME FINDER DATABASE
+// ═════════════════════════════════════════════════════════════
+
+model GovernmentScheme {
+  id            String   @id @default(cuid())
+  name          String
+  description   String   @db.Text
+  category      String   // Education, Employment, Housing, Health, Agriculture, Social, etc.
+  eligibility   String   @db.Text
+  benefits      String   @db.Text
+  documents     String[] // Required documents
+  applicationProcess String? @db.Text
+  portalUrl     String?
+  state         State
+  ministry      String?
+  budget        String?
+  isActive      Boolean  @default(true)
+  updatedAt     DateTime @updatedAt
+
+  @@index([state, category])
+  @@index([category])
+}
+
+// ═════════════════════════════════════════════════════════════
+// EXAM CALENDAR
+// ═════════════════════════════════════════════════════════════
+
+model ExamEvent {
+  id          String   @id @default(cuid())
+  examName    String
+  conductingBody String?
+  state       State
+  examType    String   // Combined, Preliminary, Mains, Interview, AdmitCard, Result
+  eventDate   DateTime
+  description String?  @db.Text
+  officialUrl String?
+  isTentative Boolean  @default(true)
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  @@index([eventDate])
+  @@index([state, examType])
+  @@index([examName])
+}

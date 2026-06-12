@@ -1,0 +1,17 @@
+﻿{
+  "titleEn": "Test Job Post",
+  "department": "Test Dept",
+  "state": "Assam",
+  "category": "Private",
+  "jobType": "FullTime",
+  "selectionType": "Interview",
+  "qualification": "Graduate",
+  "lastDate": "2026-07-10",
+  "applicationUrl": "https://example.com",
+  "howToApplyEn": "Apply online at the portal.",
+  "summaryEn": "Test summary for the job post.",
+  "fee": {},
+  "importantDates": [],
+  "resources": [],
+  "hashtags": []
+}
