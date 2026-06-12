@@ -1,0 +1,17 @@
+[
+  {
+    "id": "cmq4t4j1w001l3klq07rzfi9d",
+    "name": "Dev Admin",
+    "email": "admin@nejobsportal.dev",
+    "emailVerified": "2026-06-08T06:05:35.730Z",
+    "image": null,
+    "role": "ADMIN",
+    "preferredLanguage": "en",
+    "phone": null,
+    "targetExam": null,
+    "onboardingDone": false,
+    "preferences": null,
+    "createdAt": "2026-06-08T06:05:35.732Z",
+    "updatedAt": "2026-06-08T06:05:35.732Z"
+  }
+]

@@ -1,0 +1,380 @@
+[
+  {
+    "id": "cmq6ckexk000lpklqu1l8iqz4",
+    "name": "UPSC",
+    "slug": "upsc",
+    "postCount": 7,
+    "createdAt": "2026-06-09T07:57:35.769Z"
+  },
+  {
+    "id": "cmq6ckonx0015pklq794hcoa5",
+    "name": "Clerk",
+    "slug": "clerk",
+    "postCount": 1,
+    "createdAt": "2026-06-09T07:57:48.381Z"
+  },
+  {
+    "id": "cmq6eao93002zpklqgfvj1rsn",
+    "name": "UPSCPreparation",
+    "slug": "upscpreparation",
+    "postCount": 2,
+    "createdAt": "2026-06-09T08:46:00.519Z"
+  },
+  {
+    "id": "cmq6ckexl000opklqtlnh52m4",
+    "name": "CivilServices",
+    "slug": "civilservices",
+    "postCount": 3,
+    "createdAt": "2026-06-09T07:57:35.769Z"
+  },
+  {
+    "id": "cmq5kai1m0002q0lqoo8m7y03",
+    "name": "Teaching",
+    "slug": "teaching",
+    "postCount": 2,
+    "createdAt": "2026-06-08T18:46:03.996Z"
+  },
+  {
+    "id": "cmq6cksgj001bpklq2tmnkaqt",
+    "name": "Education",
+    "slug": "education",
+    "postCount": 1,
+    "createdAt": "2026-06-09T07:57:53.299Z"
+  },
+  {
+    "id": "cmq6dphof001xpklqcq0mtlxp",
+    "name": "IndianPolity",
+    "slug": "indianpolity",
+    "postCount": 3,
+    "createdAt": "2026-06-09T08:29:32.223Z"
+  },
+  {
+    "id": "cmq6ckvzz001jpklqvi1h5d0i",
+    "name": "Other",
+    "slug": "other",
+    "postCount": 1,
+    "createdAt": "2026-06-09T07:57:57.887Z"
+  },
+  {
+    "id": "cmq6ckexk000npklq5wpjy8y0",
+    "name": "CSE",
+    "slug": "cse",
+    "postCount": 3,
+    "createdAt": "2026-06-09T07:57:35.769Z"
+  },
+  {
+    "id": "cmq6ckbol000bpklqf9oz4wjf",
+    "name": "Syllabus",
+    "slug": "syllabus",
+    "postCount": 9,
+    "createdAt": "2026-06-09T07:57:31.558Z"
+  },
+  {
+    "id": "cmq6ckvzz001lpklq6lh4i1nz",
+    "name": "Northeast",
+    "slug": "northeast",
+    "postCount": 1,
+    "createdAt": "2026-06-09T07:57:57.887Z"
+  },
+  {
+    "id": "cmq6ckvzz001mpklq1d0y4jaz",
+    "name": "StateGovt",
+    "slug": "stategovt",
+    "postCount": 1,
+    "createdAt": "2026-06-09T07:57:57.887Z"
+  },
+  {
+    "id": "cmq6ckvzz001npklqa9kwawmb",
+    "name": "Competitive",
+    "slug": "competitive",
+    "postCount": 1,
+    "createdAt": "2026-06-09T07:57:57.887Z"
+  },
+  {
+    "id": "cmq6ckbol000apklqp91luw9z",
+    "name": "APSC",
+    "slug": "apsc",
+    "postCount": 2,
+    "createdAt": "2026-06-09T07:57:31.557Z"
+  },
+  {
+    "id": "cmq6ckonx0011pklqg93mu2e8",
+    "name": "IBPS",
+    "slug": "ibps",
+    "postCount": 3,
+    "createdAt": "2026-06-09T07:57:48.381Z"
+  },
+  {
+    "id": "cmq6ckonx0013pklqw9gc91ux",
+    "name": "Banking",
+    "slug": "banking",
+    "postCount": 3,
+    "createdAt": "2026-06-09T07:57:48.381Z"
+  },
+  {
+    "id": "cmq6edmls003gpklq8j356dtv",
+    "name": "BankClerk",
+    "slug": "bankclerk",
+    "postCount": 2,
+    "createdAt": "2026-06-09T08:48:18.352Z"
+  },
+  {
+    "id": "cmq6edmls003fpklqfq0n2wct",
+    "name": "BankPO",
+    "slug": "bankpo",
+    "postCount": 2,
+    "createdAt": "2026-06-09T08:48:18.352Z"
+  },
+  {
+    "id": "cmq6ckn18000xpklq07x6d51p",
+    "name": "RRB",
+    "slug": "rrb",
+    "postCount": 5,
+    "createdAt": "2026-06-09T07:57:46.268Z"
+  },
+  {
+    "id": "cmq6cku4p001dpklq0kyxbv59",
+    "name": "Police",
+    "slug": "police",
+    "postCount": 2,
+    "createdAt": "2026-06-09T07:57:55.466Z"
+  },
+  {
+    "id": "cmq6ckbol000dpklqwuewqtgk",
+    "name": "Assam",
+    "slug": "assam",
+    "postCount": 5,
+    "createdAt": "2026-06-09T07:57:31.558Z"
+  },
+  {
+    "id": "cmq5k3k2d00412slqidj22k89",
+    "name": "Admission",
+    "slug": "admission",
+    "postCount": 0,
+    "createdAt": "2026-06-08T18:40:40.021Z"
+  },
+  {
+    "id": "cmq5k3k2d00422slq6jq67ols",
+    "name": "Admit Card",
+    "slug": "admit-card",
+    "postCount": 0,
+    "createdAt": "2026-06-08T18:40:40.021Z"
+  },
+  {
+    "id": "cmq5k3k2d00432slq9ct45s8f",
+    "name": "Private Job",
+    "slug": "private-job",
+    "postCount": 0,
+    "createdAt": "2026-06-08T18:40:40.021Z"
+  },
+  {
+    "id": "cmq5k3k2d00442slqr8zkr9wy",
+    "name": "Result",
+    "slug": "result",
+    "postCount": 0,
+    "createdAt": "2026-06-08T18:40:40.021Z"
+  },
+  {
+    "id": "cmq5k3k2d00452slq086zjxxr",
+    "name": "Scholarship",
+    "slug": "scholarship",
+    "postCount": 0,
+    "createdAt": "2026-06-08T18:40:40.021Z"
+  },
+  {
+    "id": "cmq5kai1m0000q0lqp6p3gbhu",
+    "name": "Assam University",
+    "slug": "assam-university",
+    "postCount": 0,
+    "createdAt": "2026-06-08T18:46:03.995Z"
+  },
+  {
+    "id": "cmq5kai1m0001q0lqci71z84q",
+    "name": "Faculty",
+    "slug": "faculty",
+    "postCount": 0,
+    "createdAt": "2026-06-08T18:46:03.996Z"
+  },
+  {
+    "id": "cmq6cku4q001gpklqkrucoyow",
+    "name": "Constable",
+    "slug": "constable",
+    "postCount": 2,
+    "createdAt": "2026-06-09T07:57:55.467Z"
+  },
+  {
+    "id": "cmq6cku4q001hpklqq5ea2tal",
+    "name": "SI",
+    "slug": "si",
+    "postCount": 2,
+    "createdAt": "2026-06-09T07:57:55.467Z"
+  },
+  {
+    "id": "cmq6eff51003xpklqtdg3glfh",
+    "name": "PoliceJobs",
+    "slug": "policejobs",
+    "postCount": 1,
+    "createdAt": "2026-06-09T08:49:41.989Z"
+  },
+  {
+    "id": "cmq67tfs0000jwglqaq1q91en",
+    "name": "CTET",
+    "slug": "ctet",
+    "postCount": 1,
+    "createdAt": "2026-06-09T05:44:38.689Z"
+  },
+  {
+    "id": "cmq67tfs0000kwglqv0452ps0",
+    "name": "CBSE",
+    "slug": "cbse",
+    "postCount": 1,
+    "createdAt": "2026-06-09T05:44:38.689Z"
+  },
+  {
+    "id": "cmq67tfs1000mwglqpzitlnat",
+    "name": "Teacher Eligibility Test",
+    "slug": "teacher-eligibility-test",
+    "postCount": 1,
+    "createdAt": "2026-06-09T05:44:38.689Z"
+  },
+  {
+    "id": "cmq67tfs1000nwglqobc42i1a",
+    "name": "Central Government",
+    "slug": "central-government",
+    "postCount": 1,
+    "createdAt": "2026-06-09T05:44:38.689Z"
+  },
+  {
+    "id": "cmq6ckbol000cpklqsws8vkxg",
+    "name": "CCE",
+    "slug": "cce",
+    "postCount": 1,
+    "createdAt": "2026-06-09T07:57:31.558Z"
+  },
+  {
+    "id": "cmq6cksgj0017pklqvcxvx3by",
+    "name": "TET",
+    "slug": "tet",
+    "postCount": 3,
+    "createdAt": "2026-06-09T07:57:53.299Z"
+  },
+  {
+    "id": "cmq6dphoe001rpklqbvyplrdq",
+    "name": "BookRecommendation",
+    "slug": "bookrecommendation",
+    "postCount": 14,
+    "createdAt": "2026-06-09T08:29:32.223Z"
+  },
+  {
+    "id": "cmq6dphoe001spklq1t2erb9l",
+    "name": "AssamBooks",
+    "slug": "assambooks",
+    "postCount": 4,
+    "createdAt": "2026-06-09T08:29:32.223Z"
+  },
+  {
+    "id": "cmq6dphoe001upklqydv8xbmi",
+    "name": "CompetitiveExams",
+    "slug": "competitiveexams",
+    "postCount": 9,
+    "createdAt": "2026-06-09T08:29:32.223Z"
+  },
+  {
+    "id": "cmq6dphof001wpklq5hhb9xg4",
+    "name": "AssamGK",
+    "slug": "assamgk",
+    "postCount": 4,
+    "createdAt": "2026-06-09T08:29:32.223Z"
+  },
+  {
+    "id": "cmq6dphoe001vpklq5wgowdrc",
+    "name": "APSCPreparation",
+    "slug": "apscpreparation",
+    "postCount": 1,
+    "createdAt": "2026-06-09T08:29:32.223Z"
+  },
+  {
+    "id": "cmq6ckn18000vpklqtbxdz52t",
+    "name": "Railway",
+    "slug": "railway",
+    "postCount": 2,
+    "createdAt": "2026-06-09T07:57:46.268Z"
+  },
+  {
+    "id": "cmq6ckn18000zpklq0gz85wm3",
+    "name": "GroupD",
+    "slug": "groupd",
+    "postCount": 2,
+    "createdAt": "2026-06-09T07:57:46.268Z"
+  },
+  {
+    "id": "cmq6e4dv20025pklqvz1647es",
+    "name": "RailwayJobs",
+    "slug": "railwayjobs",
+    "postCount": 1,
+    "createdAt": "2026-06-09T08:41:07.118Z"
+  },
+  {
+    "id": "cmq6ckn18000ypklqai6brgae",
+    "name": "NTPC",
+    "slug": "ntpc",
+    "postCount": 2,
+    "createdAt": "2026-06-09T07:57:46.268Z"
+  },
+  {
+    "id": "cmq6ckd81000fpklqjn2nrcup",
+    "name": "ADRE",
+    "slug": "adre",
+    "postCount": 2,
+    "createdAt": "2026-06-09T07:57:33.553Z"
+  },
+  {
+    "id": "cmq6ckd81000ipklqkymzfwk1",
+    "name": "Grade3",
+    "slug": "grade3",
+    "postCount": 2,
+    "createdAt": "2026-06-09T07:57:33.553Z"
+  },
+  {
+    "id": "cmq6ckd81000jpklqsd1jo99k",
+    "name": "Grade4",
+    "slug": "grade4",
+    "postCount": 2,
+    "createdAt": "2026-06-09T07:57:33.553Z"
+  },
+  {
+    "id": "cmq6cklb8000qpklqg5iq8nf5",
+    "name": "SSC",
+    "slug": "ssc",
+    "postCount": 2,
+    "createdAt": "2026-06-09T07:57:44.037Z"
+  },
+  {
+    "id": "cmq6cklb8000spklqwo2q2v84",
+    "name": "CGL",
+    "slug": "cgl",
+    "postCount": 2,
+    "createdAt": "2026-06-09T07:57:44.037Z"
+  },
+  {
+    "id": "cmq6e5ogj002jpklq7b0x0nbn",
+    "name": "SSCPreparation",
+    "slug": "sscpreparation",
+    "postCount": 1,
+    "createdAt": "2026-06-09T08:42:07.508Z"
+  },
+  {
+    "id": "cmq6cklb8000tpklqpvswpguj",
+    "name": "CentralGovt",
+    "slug": "centralgovt",
+    "postCount": 2,
+    "createdAt": "2026-06-09T07:57:44.037Z"
+  },
+  {
+    "id": "cmq6e9hte002ppklq6c6dn2vp",
+    "name": "Test",
+    "slug": "test",
+    "postCount": 1,
+    "createdAt": "2026-06-09T08:45:05.522Z"
+  }
+]

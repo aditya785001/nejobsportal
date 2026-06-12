@@ -1,0 +1,962 @@
+[
+  {
+    "id": "cmq6zsukk0000uclqbef6qq7p",
+    "date": "2026-06-09T18:30:00.000Z",
+    "questions": [
+      {
+        "options": [
+          "Carbon Dioxide",
+          "Oxygen",
+          "Nitrogen",
+          "Hydrogen"
+        ],
+        "question": "Which gas is required for photosynthesis?",
+        "explanation": "Plants use CO₂ and sunlight to produce glucose during photosynthesis.",
+        "correctIndex": 0
+      },
+      {
+        "options": [
+          "Rajanikanta Bordoloi",
+          "Birendra Kumar Bhattacharya",
+          "Padmanath Gohain Baruah",
+          "Lakshminath Bezbaroa"
+        ],
+        "question": "Which Assamese literary figure wrote 'Miri Jiyori'?",
+        "explanation": "Rajanikanta Bordoloi wrote the famous Assamese novel 'Miri Jiyori'.",
+        "correctIndex": 0
+      },
+      {
+        "options": [
+          "30 lakh",
+          "10 lakh",
+          "50 lakh",
+          "15 lakh"
+        ],
+        "question": "The 2025 Assam flood affected approximately how many people?",
+        "explanation": "Assam floods in 2025 affected about 30 lakh people.",
+        "correctIndex": 0
+      },
+      {
+        "options": [
+          "18 years",
+          "21 years",
+          "16 years",
+          "25 years"
+        ],
+        "question": "What is the voting age in India?",
+        "explanation": "The 61st Amendment Act, 1988 reduced the voting age from 21 to 18.",
+        "correctIndex": 0
+      },
+      {
+        "options": [
+          "73rd Amendment",
+          "74th Amendment",
+          "72nd Amendment",
+          "44th Amendment"
+        ],
+        "question": "The Panchayati Raj system was constitutionalised by which amendment?",
+        "explanation": "The 73rd Amendment (1992) gave constitutional status to Panchayati Raj.",
+        "correctIndex": 0
+      },
+      {
+        "options": [
+          "1757",
+          "1764",
+          "1746",
+          "1772"
+        ],
+        "question": "The Battle of Plassey was fought in which year?",
+        "explanation": "The Battle of Plassey (1757) marked the beginning of British rule in India.",
+        "correctIndex": 0
+      },
+      {
+        "options": [
+          "UPSC",
+          "SSC",
+          "RRB",
+          "IBPS"
+        ],
+        "question": "Which organization conducts the Union Public Service Commission exams?",
+        "explanation": "UPSC conducts civil services examinations for the central government.",
+        "correctIndex": 0
+      },
+      {
+        "options": [
+          "12",
+          "8",
+          "10",
+          "14"
+        ],
+        "question": "How many schedules are there in the Indian Constitution?",
+        "explanation": "The Indian Constitution originally had 8 schedules, now has 12.",
+        "correctIndex": 0
+      },
+      {
+        "options": [
+          "Dispur",
+          "Guwahati",
+          "Jorhat",
+          "Silchar"
+        ],
+        "question": "What is the capital of Assam?",
+        "explanation": "Dispur, within the Guwahati metropolitan area, is the capital of Assam.",
+        "correctIndex": 0
+      },
+      {
+        "options": [
+          "Droupadi Murmu",
+          "Ram Nath Kovind",
+          "Pratibha Patil",
+          "Venkaiah Naidu"
+        ],
+        "question": "Who was elected as the President of India in the 2025 election?",
+        "explanation": "Droupadi Murmu was elected President in 2022; if re-elected in 2025, same applies.",
+        "correctIndex": 0
+      }
+    ],
+    "pillar": "Mixed",
+    "createdBy": "SYSTEM",
+    "publishedAt": "2026-06-09T18:48:00.445Z",
+    "createdAt": "2026-06-09T18:48:00.453Z"
+  },
+  {
+    "id": "cmq7muycl0000kwlqbjjm8csn",
+    "date": "2026-06-04T18:30:00.000Z",
+    "questions": [
+      {
+        "options": [
+          "6",
+          "8",
+          "12",
+          "4"
+        ],
+        "question": "What is the atomic number of Carbon?",
+        "explanation": "Carbon has atomic number 6 with 6 protons in its nucleus.",
+        "correctIndex": 0
+      },
+      {
+        "options": [
+          "BirdLife International",
+          "UNESCO",
+          "WWF",
+          "IUCN"
+        ],
+        "question": "Which organisation declared the Pobitora Wildlife Sanctuary a 'Important Bird Area'?",
+        "explanation": "BirdLife International declared Pobitora an IBA in 2004.",
+        "correctIndex": 0
+      },
+      {
+        "options": [
+          "Rabindranath Tagore",
+          "C.V. Raman",
+          "Amartya Sen",
+          "Mother Teresa"
+        ],
+        "question": "Who was the first Indian to win a Nobel Prize?",
+        "explanation": "Tagore won the Nobel Prize in Literature in 1913.",
+        "correctIndex": 0
+      },
+      {
+        "options": [
+          "Rupee",
+          "Dollar",
+          "Euro",
+          "Yen"
+        ],
+        "question": "What is the currency of India?",
+        "explanation": "The Indian Rupee (₹) is the official currency.",
+        "correctIndex": 0
+      },
+      {
+        "options": [
+          "Nitrogen",
+          "Oxygen",
+          "Carbon Dioxide",
+          "Argon"
+        ],
+        "question": "Which gas is most abundant in the Earth's atmosphere?",
+        "explanation": "Nitrogen makes up about 78% of Earth's atmosphere.",
+        "correctIndex": 0
+      },
+      {
+        "options": [
+          "Kaziranga National Park",
+          "Manas National Park",
+          "Dibru-Saikhowa National Park",
+          "Nameri National Park"
+        ],
+        "question": "Which national park in Assam is a UNESCO World Heritage Site?",
+        "explanation": "Kaziranga was declared a UNESCO World Heritage Site in 1985.",
+        "correctIndex": 0
+      },
+      {
+        "options": [
+          "Akbar vs Maharana Pratap",
+          "Babur vs Rana Sanga",
+          "Humayun vs Sher Shah",
+          "Aurangzeb vs Shivaji"
+        ],
+        "question": "The famous Battle of Haldighati was fought between which two forces?",
+        "explanation": "The Battle of Haldighati (1576) was between Akbar and Maharana Pratap.",
+        "correctIndex": 0
+      },
+      {
+        "options": [
+          "25",
+          "24",
+          "26",
+          "28"
+        ],
+        "question": "How many High Courts are there in India (as of 2025)?",
+        "explanation": "India has 25 High Courts as of 2025.",
+        "correctIndex": 0
+      },
+      {
+        "options": [
+          "Aditya-L1",
+          "Mangalyaan",
+          "Chandrayaan-3",
+          "XPoSat"
+        ],
+        "question": "Which Indian space mission was launched to study the Sun?",
+        "explanation": "Aditya-L1 is India's first solar mission launched in 2023.",
+        "correctIndex": 0
+      },
+      {
+        "options": [
+          "Reliance Industries",
+          "Tata Consultancy Services",
+          "HDFC Bank",
+          "Infosys"
+        ],
+        "question": "Which Indian company became the most valuable company by market cap in 2025?",
+        "explanation": "TCS has been among the most valuable companies.",
+        "correctIndex": 0
+      }
+    ],
+    "pillar": "GK",
+    "createdBy": "SYSTEM",
+    "publishedAt": "2026-06-05T00:30:00.000Z",
+    "createdAt": "2026-06-10T05:33:29.830Z"
+  },
+  {
+    "id": "cmq7muyd90001kwlqd9bdakr4",
+    "date": "2026-06-05T18:30:00.000Z",
+    "questions": [
+      {
+        "options": [
+          "Assam",
+          "Tripura",
+          "Mizoram",
+          "Nagaland"
+        ],
+        "question": "Which Indian state introduced the 'One District One Product' scheme for bamboo products?",
+        "explanation": "Assam has promoted bamboo products under ODOP.",
+        "correctIndex": 0
+      },
+      {
+        "options": [
+          "Lal Bahadur Shastri",
+          "Jawaharlal Nehru",
+          "Indira Gandhi",
+          "Atal Bihari Vajpayee"
+        ],
+        "question": "The slogan 'Jai Jawan Jai Kisan' was given by which leader?",
+        "explanation": "Shastri gave this slogan during the 1965 India-Pakistan war.",
+        "correctIndex": 0
+      },
+      {
+        "options": [
+          "West Bengal",
+          "Nagaland",
+          "Meghalaya",
+          "Arunachal Pradesh"
+        ],
+        "question": "Assam shares the longest border with which Indian state?",
+        "explanation": "Assam borders Arunachal Pradesh for about 800 km.",
+        "correctIndex": 0
+      },
+      {
+        "options": [
+          "Saturn",
+          "Jupiter",
+          "Uranus",
+          "Neptune"
+        ],
+        "question": "Which planet in our solar system has the most moons?",
+        "explanation": "Saturn has 146 confirmed moons as of 2025.",
+        "correctIndex": 0
+      },
+      {
+        "options": [
+          "Droupadi Murmu",
+          "Ram Nath Kovind",
+          "Pratibha Patil",
+          "Venkaiah Naidu"
+        ],
+        "question": "Who was elected as the President of India in the 2025 election?",
+        "explanation": "Droupadi Murmu was elected President in 2022; if re-elected in 2025, same applies.",
+        "correctIndex": 0
+      },
+      {
+        "options": [
+          "Guwahati",
+          "Silchar",
+          "Jorhat",
+          "Tezpur"
+        ],
+        "question": "The Kamakhya Temple is located in which city?",
+        "explanation": "Kamakhya Temple is atop the Nilachal Hill in Guwahati.",
+        "correctIndex": 0
+      },
+      {
+        "options": [
+          "1905",
+          "1911",
+          "1903",
+          "1907"
+        ],
+        "question": "Which year marked the partition of Bengal under Lord Curzon?",
+        "explanation": "Lord Curzon partitioned Bengal in 1905, later revoked in 1911.",
+        "correctIndex": 0
+      },
+      {
+        "options": [
+          "House of the People",
+          "Council of States",
+          "Upper House",
+          "Supreme Court"
+        ],
+        "question": "What does 'Lok Sabha' mean in English?",
+        "explanation": "Lok Sabha is the lower house of Parliament representing the people.",
+        "correctIndex": 0
+      },
+      {
+        "options": [
+          "Dr. B.R. Ambedkar",
+          "Mahatma Gandhi",
+          "Jawaharlal Nehru",
+          "Sardar Patel"
+        ],
+        "question": "Who is known as the 'Father of the Indian Constitution'?",
+        "explanation": "Dr. B.R. Ambedkar was the chairman of the Drafting Committee of the Constitution.",
+        "correctIndex": 0
+      },
+      {
+        "options": [
+          "Vice President of India",
+          "President",
+          "Prime Minister",
+          "Speaker"
+        ],
+        "question": "Who is the chairman of the Rajya Sabha?",
+        "explanation": "The Vice President is the ex-officio chairman of Rajya Sabha.",
+        "correctIndex": 0
+      }
+    ],
+    "pillar": "GK",
+    "createdBy": "SYSTEM",
+    "publishedAt": "2026-06-06T00:30:00.000Z",
+    "createdAt": "2026-06-10T05:33:29.853Z"
+  },
+  {
+    "id": "cmq7muydm0002kwlq8jqpnv8y",
+    "date": "2026-06-06T18:30:00.000Z",
+    "questions": [
+      {
+        "options": [
+          "5 years",
+          "6 years",
+          "4 years",
+          "7 years"
+        ],
+        "question": "What is the term of office of the Vice President of India?",
+        "explanation": "The Vice President serves a term of 5 years.",
+        "correctIndex": 0
+      },
+      {
+        "options": [
+          "USA, Canada, Mexico",
+          "Qatar",
+          "Russia",
+          "Germany"
+        ],
+        "question": "The 2026 FIFA World Cup will be hosted by which countries?",
+        "explanation": "The 2026 World Cup is jointly hosted by USA, Canada, and Mexico.",
+        "correctIndex": 0
+      },
+      {
+        "options": [
+          "Virat Kohli",
+          "Sachin Tendulkar",
+          "Rohit Sharma",
+          "MS Dhoni"
+        ],
+        "question": "Which Indian cricketer scored his 50th ODI century in 2025?",
+        "explanation": "Virat Kohli has been on a record-breaking spree.",
+        "correctIndex": 0
+      },
+      {
+        "options": [
+          "18 years",
+          "21 years",
+          "16 years",
+          "25 years"
+        ],
+        "question": "What is the voting age in India?",
+        "explanation": "The 61st Amendment Act, 1988 reduced the voting age from 21 to 18.",
+        "correctIndex": 0
+      },
+      {
+        "options": [
+          "Ohm",
+          "Volt",
+          "Ampere",
+          "Watt"
+        ],
+        "question": "What is the unit of electrical resistance?",
+        "explanation": "The ohm (Ω) is the SI unit of electrical resistance.",
+        "correctIndex": 0
+      },
+      {
+        "options": [
+          "Australia",
+          "Europe",
+          "Antarctica",
+          "South America"
+        ],
+        "question": "Which is the smallest continent by area?",
+        "explanation": "Australia is the smallest continent at about 8.6 million sq km.",
+        "correctIndex": 0
+      },
+      {
+        "options": [
+          "Rabindranath Tagore",
+          "C.V. Raman",
+          "Amartya Sen",
+          "Mother Teresa"
+        ],
+        "question": "Who was the first Indian to win a Nobel Prize?",
+        "explanation": "Tagore won the Nobel Prize in Literature in 1913.",
+        "correctIndex": 0
+      },
+      {
+        "options": [
+          "Gopinath Bordoloi",
+          "Bishnuram Medhi",
+          "Bimala Prasad Chaliha",
+          "Sarat Chandra Sinha"
+        ],
+        "question": "Who was the first Chief Minister of Assam?",
+        "explanation": "Gopinath Bordoloi was the first CM of Assam after independence.",
+        "correctIndex": 0
+      },
+      {
+        "options": [
+          "Jorhat",
+          "Guwahati",
+          "Tezpur",
+          "Dibrugarh"
+        ],
+        "question": "Which city in Assam is known as the 'Cultural Capital of Assam'?",
+        "explanation": "Tezpur is often called the Cultural Capital of Assam.",
+        "correctIndex": 0
+      },
+      {
+        "options": [
+          "1928",
+          "1930",
+          "1925",
+          "1932"
+        ],
+        "question": "The Simon Commission came to India in which year?",
+        "explanation": "The Simon Commission arrived in India in 1928 and was met with protest.",
+        "correctIndex": 0
+      }
+    ],
+    "pillar": "GK",
+    "createdBy": "SYSTEM",
+    "publishedAt": "2026-06-07T00:30:00.000Z",
+    "createdAt": "2026-06-10T05:33:29.866Z"
+  },
+  {
+    "id": "cmq7muydz0003kwlq714yekvc",
+    "date": "2026-06-07T18:30:00.000Z",
+    "questions": [
+      {
+        "options": [
+          "Assam",
+          "West Bengal",
+          "Kerala",
+          "Tamil Nadu"
+        ],
+        "question": "Which Indian state is the largest producer of tea?",
+        "explanation": "Assam produces about 50% of India's total tea output.",
+        "correctIndex": 0
+      },
+      {
+        "options": [
+          "Maligaon, Guwahati",
+          "Silchar",
+          "Dibrugarh",
+          "Dimapur"
+        ],
+        "question": "The headquarters of the Northeast Frontier Railway is located in which city?",
+        "explanation": "NFR headquarters is at Maligaon, Guwahati.",
+        "correctIndex": 0
+      },
+      {
+        "options": [
+          "Scurvy",
+          "Rickets",
+          "Beriberi",
+          "Night blindness"
+        ],
+        "question": "Which disease is caused by the deficiency of Vitamin C?",
+        "explanation": "Scurvy causes weakness, anaemia, and gum disease.",
+        "correctIndex": 0
+      },
+      {
+        "options": [
+          "Nitrogen",
+          "Oxygen",
+          "Carbon Dioxide",
+          "Argon"
+        ],
+        "question": "Which gas is most abundant in the Earth's atmosphere?",
+        "explanation": "Nitrogen makes up about 78% of Earth's atmosphere.",
+        "correctIndex": 0
+      },
+      {
+        "options": [
+          "USA, Canada, Mexico",
+          "Qatar",
+          "Russia",
+          "Germany"
+        ],
+        "question": "The 2026 FIFA World Cup will be hosted by which countries?",
+        "explanation": "The 2026 World Cup is jointly hosted by USA, Canada, and Mexico.",
+        "correctIndex": 0
+      },
+      {
+        "options": [
+          "Ganga",
+          "Yamuna",
+          "Brahmaputra",
+          "Godavari"
+        ],
+        "question": "Which river is the longest in India?",
+        "explanation": "The Ganga (2,525 km) is the longest river in India.",
+        "correctIndex": 0
+      },
+      {
+        "options": [
+          "Deepor Beel",
+          "Son Beel",
+          "Chandubi Lake",
+          "Haflong Lake"
+        ],
+        "question": "Which is the largest lake in Assam?",
+        "explanation": "Deepor Beel is a freshwater lake near Guwahati, covering about 4,014 hectares.",
+        "correctIndex": 0
+      },
+      {
+        "options": [
+          "Mandamus",
+          "Certiorari",
+          "Habeas Corpus",
+          "Subpoena"
+        ],
+        "question": "Which of the following is not a writ issued by the Supreme Court?",
+        "explanation": "Subpoena is not a constitutional writ; 5 writs exist: Habeas Corpus, Mandamus, Certiorari, Prohibition, Quo Warranto.",
+        "correctIndex": 3
+      },
+      {
+        "options": [
+          "Chang Ghar",
+          "Bhelaghar",
+          "Kutcha House",
+          "Tong Ghar"
+        ],
+        "question": "What type of traditional Assamese house is built on bamboo stilts?",
+        "explanation": "Chang Ghar is an elevated house built on bamboo or wooden stilts.",
+        "correctIndex": 0
+      },
+      {
+        "options": [
+          "1905",
+          "1911",
+          "1903",
+          "1907"
+        ],
+        "question": "Which year marked the partition of Bengal under Lord Curzon?",
+        "explanation": "Lord Curzon partitioned Bengal in 1905, later revoked in 1911.",
+        "correctIndex": 0
+      }
+    ],
+    "pillar": "GK",
+    "createdBy": "SYSTEM",
+    "publishedAt": "2026-06-08T00:30:00.000Z",
+    "createdAt": "2026-06-10T05:33:29.879Z"
+  },
+  {
+    "id": "cmq7muyea0004kwlqk1q5fnb7",
+    "date": "2026-06-08T18:30:00.000Z",
+    "questions": [
+      {
+        "options": [
+          "Bihu",
+          "Durga Puja",
+          "Diwali",
+          "Eid"
+        ],
+        "question": "Which traditional festival of Assam marks the Assamese New Year?",
+        "explanation": "Bohag Bihu or Rongali Bihu marks the Assamese New Year in mid-April.",
+        "correctIndex": 0
+      },
+      {
+        "options": [
+          "Eighth Schedule",
+          "Seventh Schedule",
+          "Ninth Schedule",
+          "Tenth Schedule"
+        ],
+        "question": "Which schedule of the Indian Constitution deals with the official languages?",
+        "explanation": "The Eighth Schedule lists 22 official languages of India.",
+        "correctIndex": 0
+      },
+      {
+        "options": [
+          "Dr. B.R. Ambedkar",
+          "Mahatma Gandhi",
+          "Jawaharlal Nehru",
+          "Sardar Patel"
+        ],
+        "question": "Who is known as the 'Father of the Indian Constitution'?",
+        "explanation": "Dr. B.R. Ambedkar was the chairman of the Drafting Committee of the Constitution.",
+        "correctIndex": 0
+      },
+      {
+        "options": [
+          "Quit India Movement",
+          "Non-Cooperation Movement",
+          "Civil Disobedience Movement",
+          "Rowlatt Satyagraha"
+        ],
+        "question": "Which movement was launched by Gandhiji in 1942?",
+        "explanation": "The Quit India Movement was launched on 8 August 1942.",
+        "correctIndex": 0
+      },
+      {
+        "options": [
+          "Maligaon, Guwahati",
+          "Silchar",
+          "Dibrugarh",
+          "Dimapur"
+        ],
+        "question": "The headquarters of the Northeast Frontier Railway is located in which city?",
+        "explanation": "NFR headquarters is at Maligaon, Guwahati.",
+        "correctIndex": 0
+      },
+      {
+        "options": [
+          "Heart",
+          "Lungs",
+          "Liver",
+          "Kidneys"
+        ],
+        "question": "Which organ in the human body is responsible for pumping blood?",
+        "explanation": "The heart pumps blood throughout the circulatory system.",
+        "correctIndex": 0
+      },
+      {
+        "options": [
+          "Birendra Kumar Bhattacharya",
+          "Mamoni Raisom Goswami",
+          "Indira Goswami",
+          "Nilmani Phookan"
+        ],
+        "question": "Who was the first Assamese to receive the Jnanpith Award?",
+        "explanation": "B.K. Bhattacharya won the Jnanpith in 1979 for his novel 'Mritunjay'.",
+        "correctIndex": 0
+      },
+      {
+        "options": [
+          "UPSC",
+          "SSC",
+          "RRB",
+          "IBPS"
+        ],
+        "question": "Which organization conducts the Union Public Service Commission exams?",
+        "explanation": "UPSC conducts civil services examinations for the central government.",
+        "correctIndex": 0
+      },
+      {
+        "options": [
+          "New Delhi",
+          "Mumbai",
+          "Kolkata",
+          "Chennai"
+        ],
+        "question": "The Supreme Court of India is located in which city?",
+        "explanation": "The Supreme Court is located in New Delhi on Tilak Marg.",
+        "correctIndex": 0
+      },
+      {
+        "options": [
+          "Reliance Industries",
+          "Tata Consultancy Services",
+          "HDFC Bank",
+          "Infosys"
+        ],
+        "question": "Which Indian company became the most valuable company by market cap in 2025?",
+        "explanation": "TCS has been among the most valuable companies.",
+        "correctIndex": 0
+      }
+    ],
+    "pillar": "GK",
+    "createdBy": "SYSTEM",
+    "publishedAt": "2026-06-09T00:30:00.000Z",
+    "createdAt": "2026-06-10T05:33:29.890Z"
+  },
+  {
+    "id": "cmq9c6acu0000d8lqx88t3agk",
+    "date": "2026-06-10T18:30:00.000Z",
+    "questions": [
+      {
+        "options": [
+          "Treaty of Madras",
+          "Treaty of Seringapatam",
+          "Treaty of Mangalore",
+          "Treaty of Srirangam"
+        ],
+        "question": "Which treaty ended the First Anglo-Mysore War?",
+        "explanation": "The Treaty of Madras (1769) ended the First Anglo-Mysore War.",
+        "correctIndex": 0
+      },
+      {
+        "options": [
+          "Shillong Plateau",
+          "Guwahati",
+          "Jorhat",
+          "Tura"
+        ],
+        "question": "The 1897 Assam earthquake had its epicentre near which region?",
+        "explanation": "The great Assam earthquake of 1897 had its epicentre near the Shillong Plateau.",
+        "correctIndex": 0
+      },
+      {
+        "options": [
+          "Shah Jahan",
+          "Akbar",
+          "Jahangir",
+          "Aurangzeb"
+        ],
+        "question": "Which Mughal emperor built the Taj Mahal?",
+        "explanation": "Shah Jahan built the Taj Mahal in memory of his wife Mumtaz Mahal.",
+        "correctIndex": 0
+      },
+      {
+        "options": [
+          "42nd Amendment",
+          "44th Amendment",
+          "73rd Amendment",
+          "74th Amendment"
+        ],
+        "question": "Which amendment to the Indian Constitution is known as the 'Mini-Constitution'?",
+        "explanation": "The 42nd Amendment (1976) made sweeping changes to the Constitution.",
+        "correctIndex": 0
+      },
+      {
+        "options": [
+          "Pragyan Bharti",
+          "Arundhati Scheme",
+          "Mukhyamantri Shiksha Sahayog",
+          "Sopaan"
+        ],
+        "question": "What is the name of Assam's flagship scheme for providing financial assistance to students?",
+        "explanation": "Pragyan Bharti is Assam's scheme for higher education students.",
+        "correctIndex": 0
+      },
+      {
+        "options": [
+          "Oxygen",
+          "Silicon",
+          "Aluminium",
+          "Iron"
+        ],
+        "question": "Which element is the most abundant in the Earth's crust?",
+        "explanation": "Oxygen makes up about 46% of the Earth's crust by weight.",
+        "correctIndex": 0
+      },
+      {
+        "options": [
+          "India",
+          "France",
+          "UK",
+          "China"
+        ],
+        "question": "Which country assumed the presidency of the UN Security Council in January 2026?",
+        "explanation": "India took over as UNSC president in January 2026.",
+        "correctIndex": 0
+      },
+      {
+        "options": [
+          "11",
+          "10",
+          "9",
+          "12"
+        ],
+        "question": "How many fundamental duties are there in the Indian Constitution?",
+        "explanation": "There are 11 fundamental duties under Article 51A.",
+        "correctIndex": 0
+      },
+      {
+        "options": [
+          "Soil erosion",
+          "Deforestation",
+          "Flooding",
+          "Earthquakes"
+        ],
+        "question": "The world's largest river island, Majuli, is threatened mainly by which issue?",
+        "explanation": "Majuli is losing land to soil erosion by the Brahmaputra River.",
+        "correctIndex": 0
+      },
+      {
+        "options": [
+          "Ganga",
+          "Yamuna",
+          "Brahmaputra",
+          "Godavari"
+        ],
+        "question": "Which river is the longest in India?",
+        "explanation": "The Ganga (2,525 km) is the longest river in India.",
+        "correctIndex": 0
+      }
+    ],
+    "pillar": "Mixed",
+    "createdBy": "SYSTEM",
+    "publishedAt": "2026-06-11T10:09:55.177Z",
+    "createdAt": "2026-06-11T10:09:55.182Z"
+  },
+  {
+    "id": "cmq9v3zc40000u0lql54v32g0",
+    "date": "2026-06-11T18:30:00.000Z",
+    "questions": [
+      {
+        "options": [
+          "550",
+          "545",
+          "552",
+          "555"
+        ],
+        "question": "What is the maximum strength of the Lok Sabha?",
+        "explanation": "The maximum strength is 550 members (530 from states + 20 from UTs).",
+        "correctIndex": 0
+      },
+      {
+        "options": [
+          "India",
+          "Brazil",
+          "South Africa",
+          "Indonesia"
+        ],
+        "question": "Which country hosted the G20 Summit in 2025?",
+        "explanation": "India hosted the G20 Summit in New Delhi in September 2025.",
+        "correctIndex": 0
+      },
+      {
+        "options": [
+          "Qutb-ud-din Aibak",
+          "Iltutmish",
+          "Razia Sultana",
+          "Ghiyasuddin Balban"
+        ],
+        "question": "Who was the first ruler of the Slave Dynasty in India?",
+        "explanation": "Qutb-ud-din Aibak founded the Slave (Mamluk) Dynasty in 1206.",
+        "correctIndex": 0
+      },
+      {
+        "options": [
+          "Au",
+          "Ag",
+          "Fe",
+          "Cu"
+        ],
+        "question": "What is the chemical symbol for Gold?",
+        "explanation": "Au comes from the Latin word 'Aurum' meaning gold.",
+        "correctIndex": 0
+      },
+      {
+        "options": [
+          "One-horned Rhinoceros",
+          "Elephant",
+          "Tiger",
+          "Deer"
+        ],
+        "question": "What is the state animal of Assam?",
+        "explanation": "The Indian one-horned rhinoceros is the state animal of Assam.",
+        "correctIndex": 0
+      },
+      {
+        "options": [
+          "3 × 10⁸ m/s",
+          "3 × 10⁶ m/s",
+          "3 × 10¹⁰ m/s",
+          "3 × 10⁴ m/s"
+        ],
+        "question": "What is the speed of light in vacuum approximately?",
+        "explanation": "Light travels at about 299,792,458 m/s in vacuum.",
+        "correctIndex": 0
+      },
+      {
+        "options": [
+          "PM Garib Kalyan Ann Yojana",
+          "Mid Day Meal",
+          "Poshan Abhiyaan",
+          "Annapurna Yojana"
+        ],
+        "question": "What is the name of the central government scheme for providing free food grains to the poor?",
+        "explanation": "PMGKAY was extended for 5 years from 2024.",
+        "correctIndex": 0
+      },
+      {
+        "options": [
+          "Gujarat",
+          "Tamil Nadu",
+          "Maharashtra",
+          "Andhra Pradesh"
+        ],
+        "question": "Which Indian state has the longest coastline?",
+        "explanation": "Gujarat has a coastline of about 1,600 km.",
+        "correctIndex": 0
+      },
+      {
+        "options": [
+          "Lal Bahadur Shastri",
+          "Jawaharlal Nehru",
+          "Indira Gandhi",
+          "Atal Bihari Vajpayee"
+        ],
+        "question": "The slogan 'Jai Jawan Jai Kisan' was given by which leader?",
+        "explanation": "Shastri gave this slogan during the 1965 India-Pakistan war.",
+        "correctIndex": 0
+      },
+      {
+        "options": [
+          "Ahom Kingdom",
+          "Kachari Kingdom",
+          "Chutia Kingdom",
+          "Koch Kingdom"
+        ],
+        "question": "The famous 'Sivasagar' town was the capital of which kingdom?",
+        "explanation": "Sivasagar (formerly Rangpur) was the capital of the Ahom Kingdom.",
+        "correctIndex": 0
+      }
+    ],
+    "pillar": "Mixed",
+    "createdBy": "SYSTEM",
+    "publishedAt": "2026-06-11T19:00:00.285Z",
+    "createdAt": "2026-06-11T19:00:00.292Z"
+  }
+]

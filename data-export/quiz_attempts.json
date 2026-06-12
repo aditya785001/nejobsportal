@@ -1,0 +1,124 @@
+[
+  {
+    "id": "cmq7mxv44001enklqz54nlg2y",
+    "userId": "cmq4t4j1w001l3klq07rzfi9d",
+    "quizId": "cmq7muyea0004kwlqk1q5fnb7",
+    "score": 9,
+    "totalQuestions": 10,
+    "answers": [
+      {
+        "correct": true,
+        "questionIndex": 0,
+        "selectedOption": 0
+      },
+      {
+        "correct": true,
+        "questionIndex": 1,
+        "selectedOption": 0
+      },
+      {
+        "correct": true,
+        "questionIndex": 2,
+        "selectedOption": 0
+      },
+      {
+        "correct": true,
+        "questionIndex": 3,
+        "selectedOption": 0
+      },
+      {
+        "correct": true,
+        "questionIndex": 4,
+        "selectedOption": 0
+      },
+      {
+        "correct": true,
+        "questionIndex": 5,
+        "selectedOption": 0
+      },
+      {
+        "correct": true,
+        "questionIndex": 6,
+        "selectedOption": 0
+      },
+      {
+        "correct": true,
+        "questionIndex": 7,
+        "selectedOption": 0
+      },
+      {
+        "correct": true,
+        "questionIndex": 8,
+        "selectedOption": 0
+      },
+      {
+        "correct": false,
+        "questionIndex": 9,
+        "selectedOption": 1
+      }
+    ],
+    "timeSpent": 75,
+    "completedAt": "2026-06-10T05:35:45.604Z"
+  },
+  {
+    "id": "cmq6ztnin0000bwlqqkwjhjam",
+    "userId": "cmq4t4j1w001l3klq07rzfi9d",
+    "quizId": "cmq6zsukk0000uclqbef6qq7p",
+    "score": 8,
+    "totalQuestions": 10,
+    "answers": [
+      {
+        "correct": true,
+        "questionIndex": 0,
+        "selectedOption": 0
+      },
+      {
+        "correct": false,
+        "questionIndex": 1,
+        "selectedOption": 2
+      },
+      {
+        "correct": true,
+        "questionIndex": 2,
+        "selectedOption": 0
+      },
+      {
+        "correct": true,
+        "questionIndex": 3,
+        "selectedOption": 0
+      },
+      {
+        "correct": false,
+        "questionIndex": 4,
+        "selectedOption": 1
+      },
+      {
+        "correct": true,
+        "questionIndex": 5,
+        "selectedOption": 0
+      },
+      {
+        "correct": true,
+        "questionIndex": 6,
+        "selectedOption": 0
+      },
+      {
+        "correct": true,
+        "questionIndex": 7,
+        "selectedOption": 0
+      },
+      {
+        "correct": true,
+        "questionIndex": 8,
+        "selectedOption": 0
+      },
+      {
+        "correct": true,
+        "questionIndex": 9,
+        "selectedOption": 0
+      }
+    ],
+    "timeSpent": 218,
+    "completedAt": "2026-06-10T08:43:32.224Z"
+  }
+]

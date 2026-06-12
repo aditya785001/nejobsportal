@@ -1,0 +1,4752 @@
+[
+  {
+    "id": "cmq6zs5hk0001hwlq8lkpij2d",
+    "question": "Which is the largest state in India by area?",
+    "options": [
+      "Rajasthan",
+      "Madhya Pradesh",
+      "Maharashtra",
+      "Uttar Pradesh"
+    ],
+    "correctIndex": 0,
+    "explanation": "Rajasthan covers 342,239 sq km, making it the largest state.",
+    "pillar": "GK",
+    "difficulty": "Easy",
+    "section": "DAILY_QUIZ",
+    "status": "ACTIVE",
+    "timesUsed": 0,
+    "createdAt": "2026-06-09T18:47:27.944Z",
+    "updatedAt": "2026-06-09T18:47:27.944Z"
+  },
+  {
+    "id": "cmq6zs5hu0004hwlqoxj8ykkt",
+    "question": "In which year did India gain independence?",
+    "options": [
+      "1947",
+      "1950",
+      "1945",
+      "1942"
+    ],
+    "correctIndex": 0,
+    "explanation": "India gained independence from British rule on 15 August 1947.",
+    "pillar": "GK",
+    "difficulty": "Easy",
+    "section": "DAILY_QUIZ",
+    "status": "ACTIVE",
+    "timesUsed": 0,
+    "createdAt": "2026-06-09T18:47:27.954Z",
+    "updatedAt": "2026-06-09T18:47:27.954Z"
+  },
+  {
+    "id": "cmq6zs5hw0005hwlq50rqifum",
+    "question": "Who was the first Prime Minister of India?",
+    "options": [
+      "Jawaharlal Nehru",
+      "Mahatma Gandhi",
+      "Sardar Patel",
+      "Dr. B.R. Ambedkar"
+    ],
+    "correctIndex": 0,
+    "explanation": "Jawaharlal Nehru served as the first Prime Minister from 1947 to 1964.",
+    "pillar": "GK",
+    "difficulty": "Easy",
+    "section": "DAILY_QUIZ",
+    "status": "ACTIVE",
+    "timesUsed": 0,
+    "createdAt": "2026-06-09T18:47:27.956Z",
+    "updatedAt": "2026-06-09T18:47:27.956Z"
+  },
+  {
+    "id": "cmq6zs5hz0006hwlq0tqv5iit",
+    "question": "Which is the highest civilian award in India?",
+    "options": [
+      "Bharat Ratna",
+      "Padma Vibhushan",
+      "Padma Shri",
+      "Param Vir Chakra"
+    ],
+    "correctIndex": 0,
+    "explanation": "Bharat Ratna is the highest civilian award of India.",
+    "pillar": "GK",
+    "difficulty": "Easy",
+    "section": "DAILY_QUIZ",
+    "status": "ACTIVE",
+    "timesUsed": 0,
+    "createdAt": "2026-06-09T18:47:27.959Z",
+    "updatedAt": "2026-06-09T18:47:27.959Z"
+  },
+  {
+    "id": "cmq6zs5i50008hwlqbt0qu0ji",
+    "question": "Which of the following is not a Fundamental Right in India?",
+    "options": [
+      "Right to Property",
+      "Right to Equality",
+      "Right to Freedom",
+      "Right to Constitutional Remedies"
+    ],
+    "correctIndex": 0,
+    "explanation": "Right to Property was removed as a Fundamental Right by the 44th Amendment, 1978.",
+    "pillar": "GK",
+    "difficulty": "Medium",
+    "section": "DAILY_QUIZ",
+    "status": "ACTIVE",
+    "timesUsed": 0,
+    "createdAt": "2026-06-09T18:47:27.965Z",
+    "updatedAt": "2026-06-09T18:47:27.965Z"
+  },
+  {
+    "id": "cmq6zs5i80009hwlqmv87bgif",
+    "question": "The Parliament of India consists of how many houses?",
+    "options": [
+      "Two",
+      "One",
+      "Three",
+      "Four"
+    ],
+    "correctIndex": 0,
+    "explanation": "The Parliament consists of Lok Sabha, Rajya Sabha, and the President.",
+    "pillar": "GK",
+    "difficulty": "Medium",
+    "section": "DAILY_QUIZ",
+    "status": "ACTIVE",
+    "timesUsed": 0,
+    "createdAt": "2026-06-09T18:47:27.968Z",
+    "updatedAt": "2026-06-09T18:47:27.968Z"
+  },
+  {
+    "id": "cmq6zs5ia000ahwlq82nxxh7d",
+    "question": "Who appoints the Chief Election Commissioner of India?",
+    "options": [
+      "President",
+      "Prime Minister",
+      "Chief Justice",
+      "Vice President"
+    ],
+    "correctIndex": 0,
+    "explanation": "The President of India appoints the CEC.",
+    "pillar": "GK",
+    "difficulty": "Medium",
+    "section": "DAILY_QUIZ",
+    "status": "ACTIVE",
+    "timesUsed": 0,
+    "createdAt": "2026-06-09T18:47:27.970Z",
+    "updatedAt": "2026-06-09T18:47:27.970Z"
+  },
+  {
+    "id": "cmq6zs5id000bhwlq07mhgtlt",
+    "question": "Which article of the Indian Constitution abolishes untouchability?",
+    "options": [
+      "Article 17",
+      "Article 14",
+      "Article 15",
+      "Article 21"
+    ],
+    "correctIndex": 0,
+    "explanation": "Article 17 abolishes untouchability and its practice in any form.",
+    "pillar": "GK",
+    "difficulty": "Medium",
+    "section": "DAILY_QUIZ",
+    "status": "ACTIVE",
+    "timesUsed": 0,
+    "createdAt": "2026-06-09T18:47:27.973Z",
+    "updatedAt": "2026-06-09T18:47:27.973Z"
+  },
+  {
+    "id": "cmq6zs5ig000chwlqok2qey0p",
+    "question": "What is the name of India's first satellite?",
+    "options": [
+      "Aryabhata",
+      "Bhaskara",
+      "Rohini",
+      "INSAT-1A"
+    ],
+    "correctIndex": 0,
+    "explanation": "Aryabhata, launched in 1975, was India's first satellite.",
+    "pillar": "GK",
+    "difficulty": "Medium",
+    "section": "DAILY_QUIZ",
+    "status": "ACTIVE",
+    "timesUsed": 0,
+    "createdAt": "2026-06-09T18:47:27.976Z",
+    "updatedAt": "2026-06-09T18:47:27.976Z"
+  },
+  {
+    "id": "cmq6zs5ii000dhwlqf60uwrjt",
+    "question": "Which bank is known as the 'Lender of Last Resort' in India?",
+    "options": [
+      "RBI",
+      "SBI",
+      "HDFC",
+      "NABARD"
+    ],
+    "correctIndex": 0,
+    "explanation": "The Reserve Bank of India acts as the lender of last resort.",
+    "pillar": "GK",
+    "difficulty": "Medium",
+    "section": "DAILY_QUIZ",
+    "status": "ACTIVE",
+    "timesUsed": 0,
+    "createdAt": "2026-06-09T18:47:27.978Z",
+    "updatedAt": "2026-06-09T18:47:27.978Z"
+  },
+  {
+    "id": "cmq6zs5il000ehwlqtyc8syih",
+    "question": "What is the minimum age to become the President of India?",
+    "options": [
+      "35 years",
+      "30 years",
+      "25 years",
+      "40 years"
+    ],
+    "correctIndex": 0,
+    "explanation": "Article 58 requires the President to be at least 35 years old.",
+    "pillar": "GK",
+    "difficulty": "Easy",
+    "section": "DAILY_QUIZ",
+    "status": "ACTIVE",
+    "timesUsed": 0,
+    "createdAt": "2026-06-09T18:47:27.981Z",
+    "updatedAt": "2026-06-09T18:47:27.981Z"
+  },
+  {
+    "id": "cmq6zs5io000fhwlqdkrh686i",
+    "question": "Which of the following is a UNESCO World Heritage Site in India?",
+    "options": [
+      "Taj Mahal",
+      "Gateway of India",
+      "India Gate",
+      "Qutub Minar"
+    ],
+    "correctIndex": 0,
+    "explanation": "All four are famous, but Taj Mahal is a UNESCO World Heritage Site among these.",
+    "pillar": "GK",
+    "difficulty": "Easy",
+    "section": "DAILY_QUIZ",
+    "status": "ACTIVE",
+    "timesUsed": 0,
+    "createdAt": "2026-06-09T18:47:27.984Z",
+    "updatedAt": "2026-06-09T18:47:27.984Z"
+  },
+  {
+    "id": "cmq6zs5iq000ghwlqd9i784rx",
+    "question": "The headquarters of ISRO is located in which city?",
+    "options": [
+      "Bengaluru",
+      "Mumbai",
+      "New Delhi",
+      "Hyderabad"
+    ],
+    "correctIndex": 0,
+    "explanation": "ISRO headquarters is at Antariksh Bhavan, Bengaluru.",
+    "pillar": "GK",
+    "difficulty": "Easy",
+    "section": "DAILY_QUIZ",
+    "status": "ACTIVE",
+    "timesUsed": 0,
+    "createdAt": "2026-06-09T18:47:27.986Z",
+    "updatedAt": "2026-06-09T18:47:27.986Z"
+  },
+  {
+    "id": "cmq6zs5iv000ihwlqo86jtaqw",
+    "question": "What is the national animal of India?",
+    "options": [
+      "Bengal Tiger",
+      "Peacock",
+      "Elephant",
+      "Lion"
+    ],
+    "correctIndex": 0,
+    "explanation": "The Bengal Tiger (Panthera tigris tigris) is the national animal.",
+    "pillar": "GK",
+    "difficulty": "Easy",
+    "section": "DAILY_QUIZ",
+    "status": "ACTIVE",
+    "timesUsed": 0,
+    "createdAt": "2026-06-09T18:47:27.991Z",
+    "updatedAt": "2026-06-09T18:47:27.991Z"
+  },
+  {
+    "id": "cmq6zs5ix000jhwlqpvet9yu8",
+    "question": "Who wrote the Indian national anthem 'Jana Gana Mana'?",
+    "options": [
+      "Rabindranath Tagore",
+      "Bankim Chandra Chatterjee",
+      "Muhammad Iqbal",
+      "Subramania Bharati"
+    ],
+    "correctIndex": 0,
+    "explanation": "Tagore wrote the national anthem in 1911.",
+    "pillar": "GK",
+    "difficulty": "Easy",
+    "section": "DAILY_QUIZ",
+    "status": "ACTIVE",
+    "timesUsed": 0,
+    "createdAt": "2026-06-09T18:47:27.993Z",
+    "updatedAt": "2026-06-09T18:47:27.993Z"
+  },
+  {
+    "id": "cmq6zs5j2000lhwlqfwb6saek",
+    "question": "The United Nations was founded in which year?",
+    "options": [
+      "1945",
+      "1947",
+      "1950",
+      "1939"
+    ],
+    "correctIndex": 0,
+    "explanation": "The UN was founded on 24 October 1945.",
+    "pillar": "GK",
+    "difficulty": "Easy",
+    "section": "DAILY_QUIZ",
+    "status": "ACTIVE",
+    "timesUsed": 0,
+    "createdAt": "2026-06-09T18:47:27.998Z",
+    "updatedAt": "2026-06-09T18:47:27.998Z"
+  },
+  {
+    "id": "cmq6zs5j7000nhwlq9uwh5aea",
+    "question": "Who was the first woman President of India?",
+    "options": [
+      "Pratibha Patil",
+      "Indira Gandhi",
+      "Sonia Gandhi",
+      "Sarojini Naidu"
+    ],
+    "correctIndex": 0,
+    "explanation": "Pratibha Patil was President from 2007 to 2012.",
+    "pillar": "GK",
+    "difficulty": "Easy",
+    "section": "DAILY_QUIZ",
+    "status": "ACTIVE",
+    "timesUsed": 0,
+    "createdAt": "2026-06-09T18:47:28.003Z",
+    "updatedAt": "2026-06-09T18:47:28.003Z"
+  },
+  {
+    "id": "cmq6zs5ja000ohwlqg2wlv10c",
+    "question": "Which planet is known as the 'Red Planet'?",
+    "options": [
+      "Mars",
+      "Venus",
+      "Jupiter",
+      "Saturn"
+    ],
+    "correctIndex": 0,
+    "explanation": "Mars appears reddish due to iron oxide on its surface.",
+    "pillar": "GK",
+    "difficulty": "Easy",
+    "section": "DAILY_QUIZ",
+    "status": "ACTIVE",
+    "timesUsed": 0,
+    "createdAt": "2026-06-09T18:47:28.006Z",
+    "updatedAt": "2026-06-09T18:47:28.006Z"
+  },
+  {
+    "id": "cmq6zs5jf000qhwlq751omrex",
+    "question": "The Preamble of the Indian Constitution begins with which words?",
+    "options": [
+      "We, the People of India",
+      "I, the People of India",
+      "We, the Citizens of India",
+      "We, the Nation of India"
+    ],
+    "correctIndex": 0,
+    "explanation": "The Preamble begins with 'We, the People of India'.",
+    "pillar": "GK",
+    "difficulty": "Medium",
+    "section": "DAILY_QUIZ",
+    "status": "ACTIVE",
+    "timesUsed": 0,
+    "createdAt": "2026-06-09T18:47:28.011Z",
+    "updatedAt": "2026-06-09T18:47:28.011Z"
+  },
+  {
+    "id": "cmq6zs5hn0002hwlq978tegqc",
+    "question": "What is the currency of India?",
+    "options": [
+      "Rupee",
+      "Dollar",
+      "Euro",
+      "Yen"
+    ],
+    "correctIndex": 0,
+    "explanation": "The Indian Rupee (₹) is the official currency.",
+    "pillar": "GK",
+    "difficulty": "Easy",
+    "section": "DAILY_QUIZ",
+    "status": "ACTIVE",
+    "timesUsed": 1,
+    "createdAt": "2026-06-09T18:47:27.947Z",
+    "updatedAt": "2026-06-10T05:33:29.839Z"
+  },
+  {
+    "id": "cmq6zs5j4000mhwlqfllsbzm4",
+    "question": "Which is the smallest continent by area?",
+    "options": [
+      "Australia",
+      "Europe",
+      "Antarctica",
+      "South America"
+    ],
+    "correctIndex": 0,
+    "explanation": "Australia is the smallest continent at about 8.6 million sq km.",
+    "pillar": "GK",
+    "difficulty": "Easy",
+    "section": "DAILY_QUIZ",
+    "status": "ACTIVE",
+    "timesUsed": 1,
+    "createdAt": "2026-06-09T18:47:28.000Z",
+    "updatedAt": "2026-06-10T05:33:29.868Z"
+  },
+  {
+    "id": "cmq6zs5fh0000hwlqb5f1lj5h",
+    "question": "Who is known as the 'Father of the Indian Constitution'?",
+    "options": [
+      "Dr. B.R. Ambedkar",
+      "Mahatma Gandhi",
+      "Jawaharlal Nehru",
+      "Sardar Patel"
+    ],
+    "correctIndex": 0,
+    "explanation": "Dr. B.R. Ambedkar was the chairman of the Drafting Committee of the Constitution.",
+    "pillar": "GK",
+    "difficulty": "Easy",
+    "section": "DAILY_QUIZ",
+    "status": "ACTIVE",
+    "timesUsed": 2,
+    "createdAt": "2026-06-09T18:47:27.869Z",
+    "updatedAt": "2026-06-10T05:33:29.892Z"
+  },
+  {
+    "id": "cmq6zs5jh000rhwlqs6ojocmb",
+    "question": "How many fundamental duties are there in the Indian Constitution?",
+    "options": [
+      "11",
+      "10",
+      "9",
+      "12"
+    ],
+    "correctIndex": 0,
+    "explanation": "There are 11 fundamental duties under Article 51A.",
+    "pillar": "GK",
+    "difficulty": "Medium",
+    "section": "DAILY_QUIZ",
+    "status": "ACTIVE",
+    "timesUsed": 1,
+    "createdAt": "2026-06-09T18:47:28.013Z",
+    "updatedAt": "2026-06-11T10:09:55.192Z"
+  },
+  {
+    "id": "cmq6zs5hr0003hwlqe4r0r44o",
+    "question": "Which river is the longest in India?",
+    "options": [
+      "Ganga",
+      "Yamuna",
+      "Brahmaputra",
+      "Godavari"
+    ],
+    "correctIndex": 0,
+    "explanation": "The Ganga (2,525 km) is the longest river in India.",
+    "pillar": "GK",
+    "difficulty": "Easy",
+    "section": "DAILY_QUIZ",
+    "status": "ACTIVE",
+    "timesUsed": 2,
+    "createdAt": "2026-06-09T18:47:27.951Z",
+    "updatedAt": "2026-06-11T10:09:55.192Z"
+  },
+  {
+    "id": "cmq6zs5is000hhwlqir9nvs53",
+    "question": "Which Indian state has the longest coastline?",
+    "options": [
+      "Gujarat",
+      "Tamil Nadu",
+      "Maharashtra",
+      "Andhra Pradesh"
+    ],
+    "correctIndex": 0,
+    "explanation": "Gujarat has a coastline of about 1,600 km.",
+    "pillar": "GK",
+    "difficulty": "Easy",
+    "section": "DAILY_QUIZ",
+    "status": "ACTIVE",
+    "timesUsed": 1,
+    "createdAt": "2026-06-09T18:47:27.988Z",
+    "updatedAt": "2026-06-11T19:00:00.307Z"
+  },
+  {
+    "id": "cmq6zs5jn000thwlq3d390n7t",
+    "question": "Which of the following is a Rabi crop in India?",
+    "options": [
+      "Wheat",
+      "Rice",
+      "Jute",
+      "Cotton"
+    ],
+    "correctIndex": 0,
+    "explanation": "Wheat is sown in winter (October-December) and harvested in spring.",
+    "pillar": "GK",
+    "difficulty": "Medium",
+    "section": "DAILY_QUIZ",
+    "status": "ACTIVE",
+    "timesUsed": 0,
+    "createdAt": "2026-06-09T18:47:28.019Z",
+    "updatedAt": "2026-06-09T18:47:28.019Z"
+  },
+  {
+    "id": "cmq6zs5jq000uhwlqbaeql5xa",
+    "question": "The term 'Green Revolution' is associated with which field?",
+    "options": [
+      "Agriculture",
+      "Industry",
+      "Space",
+      "Information Technology"
+    ],
+    "correctIndex": 0,
+    "explanation": "The Green Revolution involved the adoption of high-yielding seed varieties.",
+    "pillar": "GK",
+    "difficulty": "Medium",
+    "section": "DAILY_QUIZ",
+    "status": "ACTIVE",
+    "timesUsed": 0,
+    "createdAt": "2026-06-09T18:47:28.022Z",
+    "updatedAt": "2026-06-09T18:47:28.022Z"
+  },
+  {
+    "id": "cmq6zs5ju000whwlqawq0ullf",
+    "question": "Who is known as the 'Missile Man of India'?",
+    "options": [
+      "Dr. APJ Abdul Kalam",
+      "Dr. Vikram Sarabhai",
+      "Dr. Homi Bhabha",
+      "Dr. C.V. Raman"
+    ],
+    "correctIndex": 0,
+    "explanation": "Dr. APJ Abdul Kalam was instrumental in India's missile development.",
+    "pillar": "GK",
+    "difficulty": "Easy",
+    "section": "DAILY_QUIZ",
+    "status": "ACTIVE",
+    "timesUsed": 0,
+    "createdAt": "2026-06-09T18:47:28.026Z",
+    "updatedAt": "2026-06-09T18:47:28.026Z"
+  },
+  {
+    "id": "cmq6zs5jy000yhwlqvj4qsdrp",
+    "question": "What is the retirement age of a Supreme Court judge in India?",
+    "options": [
+      "65 years",
+      "62 years",
+      "60 years",
+      "68 years"
+    ],
+    "correctIndex": 0,
+    "explanation": "Supreme Court judges retire at age 65.",
+    "pillar": "GK",
+    "difficulty": "Medium",
+    "section": "DAILY_QUIZ",
+    "status": "ACTIVE",
+    "timesUsed": 0,
+    "createdAt": "2026-06-09T18:47:28.031Z",
+    "updatedAt": "2026-06-09T18:47:28.031Z"
+  },
+  {
+    "id": "cmq6zs5k1000zhwlqm1iaanyu",
+    "question": "The Indian Constitution came into effect on which date?",
+    "options": [
+      "26 January 1950",
+      "15 August 1947",
+      "26 November 1949",
+      "30 January 1950"
+    ],
+    "correctIndex": 0,
+    "explanation": "The Constitution was adopted on 26 Nov 1949 and came into effect on 26 Jan 1950.",
+    "pillar": "GK",
+    "difficulty": "Medium",
+    "section": "DAILY_QUIZ",
+    "status": "ACTIVE",
+    "timesUsed": 0,
+    "createdAt": "2026-06-09T18:47:28.033Z",
+    "updatedAt": "2026-06-09T18:47:28.033Z"
+  },
+  {
+    "id": "cmq6zs5k40010hwlqnvg74zpa",
+    "question": "Which of the following is a primary greenhouse gas?",
+    "options": [
+      "Carbon Dioxide",
+      "Nitrogen",
+      "Oxygen",
+      "Hydrogen"
+    ],
+    "correctIndex": 0,
+    "explanation": "CO₂ is the primary greenhouse gas from human activities.",
+    "pillar": "GK",
+    "difficulty": "Easy",
+    "section": "DAILY_QUIZ",
+    "status": "ACTIVE",
+    "timesUsed": 0,
+    "createdAt": "2026-06-09T18:47:28.036Z",
+    "updatedAt": "2026-06-09T18:47:28.036Z"
+  },
+  {
+    "id": "cmq6zs5k60011hwlqe7bdw0o3",
+    "question": "The headquarters of WHO is located in which city?",
+    "options": [
+      "Geneva",
+      "New York",
+      "Paris",
+      "London"
+    ],
+    "correctIndex": 0,
+    "explanation": "The World Health Organization is headquartered in Geneva, Switzerland.",
+    "pillar": "GK",
+    "difficulty": "Easy",
+    "section": "DAILY_QUIZ",
+    "status": "ACTIVE",
+    "timesUsed": 0,
+    "createdAt": "2026-06-09T18:47:28.038Z",
+    "updatedAt": "2026-06-09T18:47:28.038Z"
+  },
+  {
+    "id": "cmq6zs5k80012hwlq6egrrhrz",
+    "question": "Which Indian state has the highest literacy rate?",
+    "options": [
+      "Kerala",
+      "Goa",
+      "Mizoram",
+      "Tamil Nadu"
+    ],
+    "correctIndex": 0,
+    "explanation": "Kerala has the highest literacy rate at about 96.2%.",
+    "pillar": "GK",
+    "difficulty": "Medium",
+    "section": "DAILY_QUIZ",
+    "status": "ACTIVE",
+    "timesUsed": 0,
+    "createdAt": "2026-06-09T18:47:28.040Z",
+    "updatedAt": "2026-06-09T18:47:28.040Z"
+  },
+  {
+    "id": "cmq6zs5kf0016hwlq2f6lmznm",
+    "question": "Which is the largest democracy in the world by population?",
+    "options": [
+      "India",
+      "United States",
+      "Indonesia",
+      "Brazil"
+    ],
+    "correctIndex": 0,
+    "explanation": "India is the world's largest democracy with over 1.4 billion people.",
+    "pillar": "GK",
+    "difficulty": "Easy",
+    "section": "DAILY_QUIZ",
+    "status": "ACTIVE",
+    "timesUsed": 0,
+    "createdAt": "2026-06-09T18:47:28.047Z",
+    "updatedAt": "2026-06-09T18:47:28.047Z"
+  },
+  {
+    "id": "cmq6zs5kn001ahwlqhi8jo7p3",
+    "question": "Which is the largest river in Assam?",
+    "options": [
+      "Brahmaputra",
+      "Barak",
+      "Manas",
+      "Sankosh"
+    ],
+    "correctIndex": 0,
+    "explanation": "The Brahmaputra flows through the entire length of Assam for about 640 km.",
+    "pillar": "AssamGK",
+    "difficulty": "Easy",
+    "section": "DAILY_QUIZ",
+    "status": "ACTIVE",
+    "timesUsed": 0,
+    "createdAt": "2026-06-09T18:47:28.056Z",
+    "updatedAt": "2026-06-09T18:47:28.056Z"
+  },
+  {
+    "id": "cmq6zs5ks001chwlqbyvq2mbq",
+    "question": "Who is the current Chief Minister of Assam (as of 2026)?",
+    "options": [
+      "Himanta Biswa Sarma",
+      "Sarbananda Sonowal",
+      "Tarun Gogoi",
+      "Pijush Hazarika"
+    ],
+    "correctIndex": 0,
+    "explanation": "Himanta Biswa Sarma has been the Chief Minister since 10 May 2021.",
+    "pillar": "AssamGK",
+    "difficulty": "Easy",
+    "section": "DAILY_QUIZ",
+    "status": "ACTIVE",
+    "timesUsed": 0,
+    "createdAt": "2026-06-09T18:47:28.060Z",
+    "updatedAt": "2026-06-09T18:47:28.060Z"
+  },
+  {
+    "id": "cmq6zs5kx001ehwlqb6wahpiz",
+    "question": "The famous 'Majuli' island is located in which river?",
+    "options": [
+      "Brahmaputra",
+      "Ganga",
+      "Yamuna",
+      "Barak"
+    ],
+    "correctIndex": 0,
+    "explanation": "Majuli is the world's largest river island, located in the Brahmaputra River.",
+    "pillar": "AssamGK",
+    "difficulty": "Easy",
+    "section": "DAILY_QUIZ",
+    "status": "ACTIVE",
+    "timesUsed": 0,
+    "createdAt": "2026-06-09T18:47:28.065Z",
+    "updatedAt": "2026-06-09T18:47:28.065Z"
+  },
+  {
+    "id": "cmq6zs5l0001fhwlqzr5o9c8b",
+    "question": "Which is the oldest oil refinery in Assam?",
+    "options": [
+      "Digboi Refinery",
+      "Guwahati Refinery",
+      "Bongaigaon Refinery",
+      "Numaligarh Refinery"
+    ],
+    "correctIndex": 0,
+    "explanation": "Digboi Refinery was established in 1901 and is Asia's oldest.",
+    "pillar": "AssamGK",
+    "difficulty": "Medium",
+    "section": "DAILY_QUIZ",
+    "status": "ACTIVE",
+    "timesUsed": 0,
+    "createdAt": "2026-06-09T18:47:28.068Z",
+    "updatedAt": "2026-06-09T18:47:28.068Z"
+  },
+  {
+    "id": "cmq6zs5l4001hhwlqovyaad4a",
+    "question": "Which Assamese king fought the Battle of Saraighat?",
+    "options": [
+      "Lachit Borphukan",
+      "Rudra Singha",
+      "Sukaphaa",
+      "Gadadhar Singha"
+    ],
+    "correctIndex": 0,
+    "explanation": "Lachit Borphukan led the Ahom army to victory against the Mughals in 1671.",
+    "pillar": "AssamGK",
+    "difficulty": "Medium",
+    "section": "DAILY_QUIZ",
+    "status": "ACTIVE",
+    "timesUsed": 0,
+    "createdAt": "2026-06-09T18:47:28.072Z",
+    "updatedAt": "2026-06-09T18:47:28.072Z"
+  },
+  {
+    "id": "cmq6zs5pn003ohwlqmgxpkh9k",
+    "question": "What is the chemical symbol for Silver?",
+    "options": [
+      "Ag",
+      "Au",
+      "Si",
+      "Sr"
+    ],
+    "correctIndex": 0,
+    "explanation": "Ag comes from the Latin 'Argentum' meaning silver.",
+    "pillar": "Science",
+    "difficulty": "Medium",
+    "section": "DAILY_QUIZ",
+    "status": "ACTIVE",
+    "timesUsed": 0,
+    "createdAt": "2026-06-09T18:47:28.235Z",
+    "updatedAt": "2026-06-09T18:47:28.235Z"
+  },
+  {
+    "id": "cmq6zs5kq001bhwlq0ckv2u4d",
+    "question": "Which national park in Assam is a UNESCO World Heritage Site?",
+    "options": [
+      "Kaziranga National Park",
+      "Manas National Park",
+      "Dibru-Saikhowa National Park",
+      "Nameri National Park"
+    ],
+    "correctIndex": 0,
+    "explanation": "Kaziranga was declared a UNESCO World Heritage Site in 1985.",
+    "pillar": "AssamGK",
+    "difficulty": "Easy",
+    "section": "DAILY_QUIZ",
+    "status": "ACTIVE",
+    "timesUsed": 1,
+    "createdAt": "2026-06-09T18:47:28.058Z",
+    "updatedAt": "2026-06-10T05:33:29.839Z"
+  },
+  {
+    "id": "cmq6zs5kj0018hwlqhhdb8r84",
+    "question": "What does 'Lok Sabha' mean in English?",
+    "options": [
+      "House of the People",
+      "Council of States",
+      "Upper House",
+      "Supreme Court"
+    ],
+    "correctIndex": 0,
+    "explanation": "Lok Sabha is the lower house of Parliament representing the people.",
+    "pillar": "GK",
+    "difficulty": "Easy",
+    "section": "DAILY_QUIZ",
+    "status": "ACTIVE",
+    "timesUsed": 1,
+    "createdAt": "2026-06-09T18:47:28.051Z",
+    "updatedAt": "2026-06-10T05:33:29.855Z"
+  },
+  {
+    "id": "cmq6zs5kh0017hwlqa26d86gc",
+    "question": "Who was the first Indian to win a Nobel Prize?",
+    "options": [
+      "Rabindranath Tagore",
+      "C.V. Raman",
+      "Amartya Sen",
+      "Mother Teresa"
+    ],
+    "correctIndex": 0,
+    "explanation": "Tagore won the Nobel Prize in Literature in 1913.",
+    "pillar": "GK",
+    "difficulty": "Easy",
+    "section": "DAILY_QUIZ",
+    "status": "ACTIVE",
+    "timesUsed": 2,
+    "createdAt": "2026-06-09T18:47:28.049Z",
+    "updatedAt": "2026-06-10T05:33:29.868Z"
+  },
+  {
+    "id": "cmq6zs5js000vhwlqtmliyius",
+    "question": "Which Indian state is the largest producer of tea?",
+    "options": [
+      "Assam",
+      "West Bengal",
+      "Kerala",
+      "Tamil Nadu"
+    ],
+    "correctIndex": 0,
+    "explanation": "Assam produces about 50% of India's total tea output.",
+    "pillar": "GK",
+    "difficulty": "Medium",
+    "section": "DAILY_QUIZ",
+    "status": "ACTIVE",
+    "timesUsed": 1,
+    "createdAt": "2026-06-09T18:47:28.024Z",
+    "updatedAt": "2026-06-10T05:33:29.881Z"
+  },
+  {
+    "id": "cmq6zs5jj000shwlqj7ajmm3z",
+    "question": "The Supreme Court of India is located in which city?",
+    "options": [
+      "New Delhi",
+      "Mumbai",
+      "Kolkata",
+      "Chennai"
+    ],
+    "correctIndex": 0,
+    "explanation": "The Supreme Court is located in New Delhi on Tilak Marg.",
+    "pillar": "GK",
+    "difficulty": "Easy",
+    "section": "DAILY_QUIZ",
+    "status": "ACTIVE",
+    "timesUsed": 1,
+    "createdAt": "2026-06-09T18:47:28.015Z",
+    "updatedAt": "2026-06-10T05:33:29.892Z"
+  },
+  {
+    "id": "cmq6zs5ku001dhwlqhfzc33s8",
+    "question": "Which traditional festival of Assam marks the Assamese New Year?",
+    "options": [
+      "Bihu",
+      "Durga Puja",
+      "Diwali",
+      "Eid"
+    ],
+    "correctIndex": 0,
+    "explanation": "Bohag Bihu or Rongali Bihu marks the Assamese New Year in mid-April.",
+    "pillar": "AssamGK",
+    "difficulty": "Easy",
+    "section": "DAILY_QUIZ",
+    "status": "ACTIVE",
+    "timesUsed": 1,
+    "createdAt": "2026-06-09T18:47:28.062Z",
+    "updatedAt": "2026-06-10T05:33:29.892Z"
+  },
+  {
+    "id": "cmq6zs5kc0014hwlqt2trwkw8",
+    "question": "Which Mughal emperor built the Taj Mahal?",
+    "options": [
+      "Shah Jahan",
+      "Akbar",
+      "Jahangir",
+      "Aurangzeb"
+    ],
+    "correctIndex": 0,
+    "explanation": "Shah Jahan built the Taj Mahal in memory of his wife Mumtaz Mahal.",
+    "pillar": "GK",
+    "difficulty": "Easy",
+    "section": "DAILY_QUIZ",
+    "status": "ACTIVE",
+    "timesUsed": 1,
+    "createdAt": "2026-06-09T18:47:28.044Z",
+    "updatedAt": "2026-06-11T10:09:55.192Z"
+  },
+  {
+    "id": "cmq6zs5ke0015hwlq31l2pdcf",
+    "question": "The slogan 'Jai Jawan Jai Kisan' was given by which leader?",
+    "options": [
+      "Lal Bahadur Shastri",
+      "Jawaharlal Nehru",
+      "Indira Gandhi",
+      "Atal Bihari Vajpayee"
+    ],
+    "correctIndex": 0,
+    "explanation": "Shastri gave this slogan during the 1965 India-Pakistan war.",
+    "pillar": "GK",
+    "difficulty": "Medium",
+    "section": "DAILY_QUIZ",
+    "status": "ACTIVE",
+    "timesUsed": 2,
+    "createdAt": "2026-06-09T18:47:28.046Z",
+    "updatedAt": "2026-06-11T19:00:00.307Z"
+  },
+  {
+    "id": "cmq6zs5l8001jhwlqvf5oa95z",
+    "question": "Which Assamese poet is known as the 'Bard of Brahmaputra'?",
+    "options": [
+      "Bhabananda Deka",
+      "Nabakanta Barua",
+      "Hem Barua",
+      "Birendra Kumar Bhattacharya"
+    ],
+    "correctIndex": 0,
+    "explanation": "Nabakanta Barua is often referred to by this title.",
+    "pillar": "AssamGK",
+    "difficulty": "Hard",
+    "section": "DAILY_QUIZ",
+    "status": "ACTIVE",
+    "timesUsed": 0,
+    "createdAt": "2026-06-09T18:47:28.076Z",
+    "updatedAt": "2026-06-09T18:47:28.076Z"
+  },
+  {
+    "id": "cmq6zs5la001khwlql67jkpvk",
+    "question": "Which wildlife sanctuary in Assam is famous for the one-horned rhinoceros?",
+    "options": [
+      "Pobitora Wildlife Sanctuary",
+      "Deepor Beel Sanctuary",
+      "Laokhowa Sanctuary",
+      "Burachapori Sanctuary"
+    ],
+    "correctIndex": 0,
+    "explanation": "Pobitora has the highest density of one-horned rhinos in Assam.",
+    "pillar": "AssamGK",
+    "difficulty": "Medium",
+    "section": "DAILY_QUIZ",
+    "status": "ACTIVE",
+    "timesUsed": 0,
+    "createdAt": "2026-06-09T18:47:28.078Z",
+    "updatedAt": "2026-06-09T18:47:28.078Z"
+  },
+  {
+    "id": "cmq6zs5lc001lhwlq36bkgofo",
+    "question": "What is the traditional Assamese silk called?",
+    "options": [
+      "Muga Silk",
+      "Pat Silk",
+      "Eri Silk",
+      "All of the above"
+    ],
+    "correctIndex": 3,
+    "explanation": "Assam produces all three: Muga (golden), Pat (white), and Eri (warm).",
+    "pillar": "AssamGK",
+    "difficulty": "Easy",
+    "section": "DAILY_QUIZ",
+    "status": "ACTIVE",
+    "timesUsed": 0,
+    "createdAt": "2026-06-09T18:47:28.080Z",
+    "updatedAt": "2026-06-09T18:47:28.080Z"
+  },
+  {
+    "id": "cmq6zs5le001mhwlqcndsk89n",
+    "question": "Which Assamese festival is celebrated to mark the end of the harvesting season?",
+    "options": [
+      "Magh Bihu",
+      "Bohag Bihu",
+      "Kati Bihu",
+      "Rongali Bihu"
+    ],
+    "correctIndex": 0,
+    "explanation": "Magh Bihu or Bhogali Bihu celebrates the end of the harvest season.",
+    "pillar": "AssamGK",
+    "difficulty": "Easy",
+    "section": "DAILY_QUIZ",
+    "status": "ACTIVE",
+    "timesUsed": 0,
+    "createdAt": "2026-06-09T18:47:28.082Z",
+    "updatedAt": "2026-06-09T18:47:28.082Z"
+  },
+  {
+    "id": "cmq6zs5lg001nhwlquasj1rdv",
+    "question": "The Ahom Kingdom was founded by whom?",
+    "options": [
+      "Sukaphaa",
+      "Suhungmung",
+      "Sukhamphaa",
+      "Sudangphaa"
+    ],
+    "correctIndex": 0,
+    "explanation": "Sukaphaa crossed the Patkai hills and founded the Ahom kingdom in 1228.",
+    "pillar": "AssamGK",
+    "difficulty": "Medium",
+    "section": "DAILY_QUIZ",
+    "status": "ACTIVE",
+    "timesUsed": 0,
+    "createdAt": "2026-06-09T18:47:28.084Z",
+    "updatedAt": "2026-06-09T18:47:28.084Z"
+  },
+  {
+    "id": "cmq6zs5li001ohwlqn6fx643r",
+    "question": "What is the state language of Assam?",
+    "options": [
+      "Assamese",
+      "Bengali",
+      "Bodo",
+      "Hindi"
+    ],
+    "correctIndex": 0,
+    "explanation": "Assamese is the official language of Assam under the Official Language Act, 1960.",
+    "pillar": "AssamGK",
+    "difficulty": "Easy",
+    "section": "DAILY_QUIZ",
+    "status": "ACTIVE",
+    "timesUsed": 0,
+    "createdAt": "2026-06-09T18:47:28.086Z",
+    "updatedAt": "2026-06-09T18:47:28.086Z"
+  },
+  {
+    "id": "cmq6zs5lm001qhwlqvgbjkyys",
+    "question": "Who is considered the first Assamese novelist?",
+    "options": [
+      "Padmanath Gohain Baruah",
+      "Lakshminath Bezbaroa",
+      "Hemchandra Barua",
+      "Ananda Chandra Agarwala"
+    ],
+    "correctIndex": 0,
+    "explanation": "P.G. Baruah wrote the first Assamese novel 'Lahari' in 1894.",
+    "pillar": "AssamGK",
+    "difficulty": "Hard",
+    "section": "DAILY_QUIZ",
+    "status": "ACTIVE",
+    "timesUsed": 0,
+    "createdAt": "2026-06-09T18:47:28.090Z",
+    "updatedAt": "2026-06-09T18:47:28.090Z"
+  },
+  {
+    "id": "cmq6zs5lo001rhwlqxlgdx3sx",
+    "question": "Which place in Assam is known as the 'Tea Capital of the World'?",
+    "options": [
+      "Jorhat",
+      "Dibrugarh",
+      "Tinsukia",
+      "Sivasagar"
+    ],
+    "correctIndex": 0,
+    "explanation": "Jorhat is the hub of Assam's tea industry.",
+    "pillar": "AssamGK",
+    "difficulty": "Medium",
+    "section": "DAILY_QUIZ",
+    "status": "ACTIVE",
+    "timesUsed": 0,
+    "createdAt": "2026-06-09T18:47:28.092Z",
+    "updatedAt": "2026-06-09T18:47:28.092Z"
+  },
+  {
+    "id": "cmq6zs5ls001thwlqozpu50eg",
+    "question": "Which Assamese ruler shifted the Ahom capital to Sivasagar?",
+    "options": [
+      "Rudra Singha",
+      "Rajeshwar Singha",
+      "Sukaphaa",
+      "Gadadhar Singha"
+    ],
+    "correctIndex": 0,
+    "explanation": "Rudra Singha shifted the capital from Garhgaon to Rangpur (Sivasagar).",
+    "pillar": "AssamGK",
+    "difficulty": "Hard",
+    "section": "DAILY_QUIZ",
+    "status": "ACTIVE",
+    "timesUsed": 0,
+    "createdAt": "2026-06-09T18:47:28.096Z",
+    "updatedAt": "2026-06-09T18:47:28.096Z"
+  },
+  {
+    "id": "cmq6zs5lu001uhwlqmqbuwvc3",
+    "question": "How many districts does Assam currently have (as of 2025)?",
+    "options": [
+      "35",
+      "34",
+      "33",
+      "36"
+    ],
+    "correctIndex": 0,
+    "explanation": "As of 2025, Assam has 35 districts.",
+    "pillar": "AssamGK",
+    "difficulty": "Medium",
+    "section": "DAILY_QUIZ",
+    "status": "ACTIVE",
+    "timesUsed": 0,
+    "createdAt": "2026-06-09T18:47:28.098Z",
+    "updatedAt": "2026-06-09T18:47:28.098Z"
+  },
+  {
+    "id": "cmq6zs5lw001vhwlqr56vs766",
+    "question": "Which Assamese journalist and writer is known as 'Sahityarathi'?",
+    "options": [
+      "Lakshminath Bezbaroa",
+      "Hemchandra Barua",
+      "Hiteswar Barbarua",
+      "Birendra Kumar Bhattacharya"
+    ],
+    "correctIndex": 0,
+    "explanation": "Bezbaroa is known as 'Sahityarathi' (Charioteer of Literature).",
+    "pillar": "AssamGK",
+    "difficulty": "Hard",
+    "section": "DAILY_QUIZ",
+    "status": "ACTIVE",
+    "timesUsed": 0,
+    "createdAt": "2026-06-09T18:47:28.100Z",
+    "updatedAt": "2026-06-09T18:47:28.100Z"
+  },
+  {
+    "id": "cmq6zs5lz001whwlq4osxmdbe",
+    "question": "What is the state flower of Assam?",
+    "options": [
+      "Foxtail Orchid",
+      "Lotus",
+      "Rose",
+      "Sunflower"
+    ],
+    "correctIndex": 0,
+    "explanation": "The Foxtail Orchid (Kopou Phool) is the state flower of Assam.",
+    "pillar": "AssamGK",
+    "difficulty": "Medium",
+    "section": "DAILY_QUIZ",
+    "status": "ACTIVE",
+    "timesUsed": 0,
+    "createdAt": "2026-06-09T18:47:28.103Z",
+    "updatedAt": "2026-06-09T18:47:28.103Z"
+  },
+  {
+    "id": "cmq6zs5m1001xhwlqtghnb50o",
+    "question": "Which dance form is a classical dance of Assam?",
+    "options": [
+      "Sattriya",
+      "Bihu",
+      "Ojapali",
+      "Bhortal"
+    ],
+    "correctIndex": 0,
+    "explanation": "Sattriya is one of the 8 classical dance forms of India, originating in Assam.",
+    "pillar": "AssamGK",
+    "difficulty": "Medium",
+    "section": "DAILY_QUIZ",
+    "status": "ACTIVE",
+    "timesUsed": 0,
+    "createdAt": "2026-06-09T18:47:28.105Z",
+    "updatedAt": "2026-06-09T18:47:28.105Z"
+  },
+  {
+    "id": "cmq6zs5m7001zhwlqqcldovs1",
+    "question": "Which Assamese historian wrote 'Ahomar Din'?",
+    "options": [
+      "Suryya Kumar Bhuyan",
+      "Padmanath Gohain Baruah",
+      "Benudhar Sarma",
+      "Dambarudhar Nath"
+    ],
+    "correctIndex": 0,
+    "explanation": "Dr. S.K. Bhuyan was a noted Assamese historian.",
+    "pillar": "AssamGK",
+    "difficulty": "Hard",
+    "section": "DAILY_QUIZ",
+    "status": "ACTIVE",
+    "timesUsed": 0,
+    "createdAt": "2026-06-09T18:47:28.111Z",
+    "updatedAt": "2026-06-09T18:47:28.111Z"
+  },
+  {
+    "id": "cmq6zs5mc0021hwlqqquky20l",
+    "question": "Which Assamese festival involves the building of 'Bhelaghar'?",
+    "options": [
+      "Magh Bihu",
+      "Bohag Bihu",
+      "Kati Bihu",
+      "Janmashtami"
+    ],
+    "correctIndex": 0,
+    "explanation": "During Magh Bihu, temporary huts called Bhelaghar are built.",
+    "pillar": "AssamGK",
+    "difficulty": "Medium",
+    "section": "DAILY_QUIZ",
+    "status": "ACTIVE",
+    "timesUsed": 0,
+    "createdAt": "2026-06-09T18:47:28.116Z",
+    "updatedAt": "2026-06-09T18:47:28.116Z"
+  },
+  {
+    "id": "cmq6zs5me0022hwlq5gk9fk6l",
+    "question": "The famous pilgrimage site of 'Hajo' is located in which district?",
+    "options": [
+      "Kamrup",
+      "Nagaon",
+      "Jorhat",
+      "Darrang"
+    ],
+    "correctIndex": 0,
+    "explanation": "Hajo is in Kamrup district, on the northern bank of the Brahmaputra.",
+    "pillar": "AssamGK",
+    "difficulty": "Medium",
+    "section": "DAILY_QUIZ",
+    "status": "ACTIVE",
+    "timesUsed": 0,
+    "createdAt": "2026-06-09T18:47:28.118Z",
+    "updatedAt": "2026-06-09T18:47:28.118Z"
+  },
+  {
+    "id": "cmq6zs5mm0025hwlqf3qa7udq",
+    "question": "The Barak Valley region of Assam primarily speaks which language?",
+    "options": [
+      "Bengali",
+      "Assamese",
+      "Bodo",
+      "Hindi"
+    ],
+    "correctIndex": 0,
+    "explanation": "Barak Valley, consisting of 3 districts, has Bengali as its predominant language.",
+    "pillar": "AssamGK",
+    "difficulty": "Medium",
+    "section": "DAILY_QUIZ",
+    "status": "ACTIVE",
+    "timesUsed": 0,
+    "createdAt": "2026-06-09T18:47:28.126Z",
+    "updatedAt": "2026-06-09T18:47:28.126Z"
+  },
+  {
+    "id": "cmq6zs5mo0026hwlqwqu3dvnn",
+    "question": "In which year was the Assam Agricultural University established?",
+    "options": [
+      "1969",
+      "1948",
+      "1971",
+      "1965"
+    ],
+    "correctIndex": 0,
+    "explanation": "AAU was established in 1969 at Jorhat.",
+    "pillar": "AssamGK",
+    "difficulty": "Hard",
+    "section": "DAILY_QUIZ",
+    "status": "ACTIVE",
+    "timesUsed": 0,
+    "createdAt": "2026-06-09T18:47:28.128Z",
+    "updatedAt": "2026-06-09T18:47:28.128Z"
+  },
+  {
+    "id": "cmq6zs5mq0027hwlqamjnrj0g",
+    "question": "Which is the smallest district in Assam by area?",
+    "options": [
+      "Kamrup Metropolitan",
+      "Kamrup",
+      "Dibrugarh",
+      "Jorhat"
+    ],
+    "correctIndex": 0,
+    "explanation": "Kamrup Metropolitan (Guwahati) is the smallest at about 955 sq km.",
+    "pillar": "AssamGK",
+    "difficulty": "Hard",
+    "section": "DAILY_QUIZ",
+    "status": "ACTIVE",
+    "timesUsed": 0,
+    "createdAt": "2026-06-09T18:47:28.130Z",
+    "updatedAt": "2026-06-09T18:47:28.130Z"
+  },
+  {
+    "id": "cmq6zs5lq001shwlq93r2cwtg",
+    "question": "The Kamakhya Temple is located in which city?",
+    "options": [
+      "Guwahati",
+      "Silchar",
+      "Jorhat",
+      "Tezpur"
+    ],
+    "correctIndex": 0,
+    "explanation": "Kamakhya Temple is atop the Nilachal Hill in Guwahati.",
+    "pillar": "AssamGK",
+    "difficulty": "Easy",
+    "section": "DAILY_QUIZ",
+    "status": "ACTIVE",
+    "timesUsed": 1,
+    "createdAt": "2026-06-09T18:47:28.094Z",
+    "updatedAt": "2026-06-10T05:33:29.855Z"
+  },
+  {
+    "id": "cmq6zs5mh0023hwlqfxsheo59",
+    "question": "Who was the first Chief Minister of Assam?",
+    "options": [
+      "Gopinath Bordoloi",
+      "Bishnuram Medhi",
+      "Bimala Prasad Chaliha",
+      "Sarat Chandra Sinha"
+    ],
+    "correctIndex": 0,
+    "explanation": "Gopinath Bordoloi was the first CM of Assam after independence.",
+    "pillar": "AssamGK",
+    "difficulty": "Medium",
+    "section": "DAILY_QUIZ",
+    "status": "ACTIVE",
+    "timesUsed": 1,
+    "createdAt": "2026-06-09T18:47:28.121Z",
+    "updatedAt": "2026-06-10T05:33:29.868Z"
+  },
+  {
+    "id": "cmq6zs5lk001phwlqjyn8vcv0",
+    "question": "Which is the largest lake in Assam?",
+    "options": [
+      "Deepor Beel",
+      "Son Beel",
+      "Chandubi Lake",
+      "Haflong Lake"
+    ],
+    "correctIndex": 0,
+    "explanation": "Deepor Beel is a freshwater lake near Guwahati, covering about 4,014 hectares.",
+    "pillar": "AssamGK",
+    "difficulty": "Medium",
+    "section": "DAILY_QUIZ",
+    "status": "ACTIVE",
+    "timesUsed": 1,
+    "createdAt": "2026-06-09T18:47:28.088Z",
+    "updatedAt": "2026-06-10T05:33:29.881Z"
+  },
+  {
+    "id": "cmq6zs5m3001yhwlqmvuv6idj",
+    "question": "The world's largest river island, Majuli, is threatened mainly by which issue?",
+    "options": [
+      "Soil erosion",
+      "Deforestation",
+      "Flooding",
+      "Earthquakes"
+    ],
+    "correctIndex": 0,
+    "explanation": "Majuli is losing land to soil erosion by the Brahmaputra River.",
+    "pillar": "AssamGK",
+    "difficulty": "Medium",
+    "section": "DAILY_QUIZ",
+    "status": "ACTIVE",
+    "timesUsed": 1,
+    "createdAt": "2026-06-09T18:47:28.107Z",
+    "updatedAt": "2026-06-11T10:09:55.192Z"
+  },
+  {
+    "id": "cmq6zs5l6001ihwlqslrdmh0c",
+    "question": "The famous 'Sivasagar' town was the capital of which kingdom?",
+    "options": [
+      "Ahom Kingdom",
+      "Kachari Kingdom",
+      "Chutia Kingdom",
+      "Koch Kingdom"
+    ],
+    "correctIndex": 0,
+    "explanation": "Sivasagar (formerly Rangpur) was the capital of the Ahom Kingdom.",
+    "pillar": "AssamGK",
+    "difficulty": "Medium",
+    "section": "DAILY_QUIZ",
+    "status": "ACTIVE",
+    "timesUsed": 1,
+    "createdAt": "2026-06-09T18:47:28.074Z",
+    "updatedAt": "2026-06-11T19:00:00.307Z"
+  },
+  {
+    "id": "cmq6zs5mt0028hwlq1n7zmejz",
+    "question": "The Assam Association founded in 1903 was renamed to which organisation?",
+    "options": [
+      "Assam Congress",
+      "Assam Pradesh Congress Committee",
+      "Assam Sahitya Sabha",
+      "Assam Jatiya Parishad"
+    ],
+    "correctIndex": 0,
+    "explanation": "It later became the Assam Pradesh Congress Committee.",
+    "pillar": "AssamGK",
+    "difficulty": "Hard",
+    "section": "DAILY_QUIZ",
+    "status": "ACTIVE",
+    "timesUsed": 0,
+    "createdAt": "2026-06-09T18:47:28.133Z",
+    "updatedAt": "2026-06-09T18:47:28.133Z"
+  },
+  {
+    "id": "cmq6zs5mv0029hwlqcr9eztwn",
+    "question": "What is 'Gamosa'?",
+    "options": [
+      "A traditional Assamese towel/cloth",
+      "A dance",
+      "A musical instrument",
+      "A type of curry"
+    ],
+    "correctIndex": 0,
+    "explanation": "Gamosa is a traditional rectangular piece of cloth used in Assamese culture.",
+    "pillar": "AssamGK",
+    "difficulty": "Easy",
+    "section": "DAILY_QUIZ",
+    "status": "ACTIVE",
+    "timesUsed": 0,
+    "createdAt": "2026-06-09T18:47:28.135Z",
+    "updatedAt": "2026-06-09T18:47:28.135Z"
+  },
+  {
+    "id": "cmq6zs5mx002ahwlq213uqbv7",
+    "question": "Which Assamese personality was the first to receive the Bharat Ratna?",
+    "options": [
+      "Bharat Ratna has not been awarded to any Assamese",
+      "Birendra Kumar Bhattacharya",
+      "Gopinath Bordoloi",
+      "Lakshminath Bezbaroa"
+    ],
+    "correctIndex": 0,
+    "explanation": "As of 2025, no Assamese has received the Bharat Ratna.",
+    "pillar": "AssamGK",
+    "difficulty": "Medium",
+    "section": "DAILY_QUIZ",
+    "status": "ACTIVE",
+    "timesUsed": 0,
+    "createdAt": "2026-06-09T18:47:28.137Z",
+    "updatedAt": "2026-06-09T18:47:28.137Z"
+  },
+  {
+    "id": "cmq6zs5n2002chwlq7tl0g5eh",
+    "question": "Which Mughal general invaded Assam during the reign of Ahom king Jayadhwaj Singha?",
+    "options": [
+      "Mir Jumla",
+      "Raja Man Singh",
+      "Islam Khan",
+      "Shaista Khan"
+    ],
+    "correctIndex": 0,
+    "explanation": "Mir Jumla invaded Assam in 1662-63.",
+    "pillar": "AssamGK",
+    "difficulty": "Hard",
+    "section": "DAILY_QUIZ",
+    "status": "ACTIVE",
+    "timesUsed": 0,
+    "createdAt": "2026-06-09T18:47:28.142Z",
+    "updatedAt": "2026-06-09T18:47:28.142Z"
+  },
+  {
+    "id": "cmq6zs5nc002hhwlqexlzyqq1",
+    "question": "The UNESCO site 'Manas National Park' is located in which Assam district?",
+    "options": [
+      "Barpeta",
+      "Baksa",
+      "Kokrajhar",
+      "Chirang"
+    ],
+    "correctIndex": 0,
+    "explanation": "Manas National Park spans Barpeta, Baksa and Chirang districts.",
+    "pillar": "AssamGK",
+    "difficulty": "Medium",
+    "section": "DAILY_QUIZ",
+    "status": "ACTIVE",
+    "timesUsed": 0,
+    "createdAt": "2026-06-09T18:47:28.152Z",
+    "updatedAt": "2026-06-09T18:47:28.152Z"
+  },
+  {
+    "id": "cmq6zs5ni002khwlqc8wz3u0e",
+    "question": "Which Indian state launched the 'Mukhyamantri Mahila Samman Yojana' recently?",
+    "options": [
+      "Delhi",
+      "Assam",
+      "Uttar Pradesh",
+      "Maharashtra"
+    ],
+    "correctIndex": 0,
+    "explanation": "Assam launched this scheme for women's empowerment.",
+    "pillar": "CurrentAffairs",
+    "difficulty": "Medium",
+    "section": "DAILY_QUIZ",
+    "status": "ACTIVE",
+    "timesUsed": 0,
+    "createdAt": "2026-06-09T18:47:28.158Z",
+    "updatedAt": "2026-06-09T18:47:28.158Z"
+  },
+  {
+    "id": "cmq6zs5nk002lhwlq53z3bl1h",
+    "question": "What is the name of India's first manned space mission planned by ISRO?",
+    "options": [
+      "Gaganyaan",
+      "Chandrayaan",
+      "Mangalyaan",
+      "Aditya-L1"
+    ],
+    "correctIndex": 0,
+    "explanation": "Gaganyaan is India's first human spaceflight mission.",
+    "pillar": "CurrentAffairs",
+    "difficulty": "Medium",
+    "section": "DAILY_QUIZ",
+    "status": "ACTIVE",
+    "timesUsed": 0,
+    "createdAt": "2026-06-09T18:47:28.160Z",
+    "updatedAt": "2026-06-09T18:47:28.160Z"
+  },
+  {
+    "id": "cmq6zs5nn002nhwlqun3at4an",
+    "question": "Which country hosted the 2025 Commonwealth Youth Games?",
+    "options": [
+      "India",
+      "Australia",
+      "England",
+      "Canada"
+    ],
+    "correctIndex": 0,
+    "explanation": "The 2025 Commonwealth Youth Games are planned for a host nation.",
+    "pillar": "CurrentAffairs",
+    "difficulty": "Medium",
+    "section": "DAILY_QUIZ",
+    "status": "ACTIVE",
+    "timesUsed": 0,
+    "createdAt": "2026-06-09T18:47:28.163Z",
+    "updatedAt": "2026-06-09T18:47:28.163Z"
+  },
+  {
+    "id": "cmq6zs5np002ohwlqon1mcyjz",
+    "question": "The 2025 Assam Budget allocated highest share to which sector?",
+    "options": [
+      "Education",
+      "Healthcare",
+      "Infrastructure",
+      "Agriculture"
+    ],
+    "correctIndex": 0,
+    "explanation": "Assam's budget has prioritised education.",
+    "pillar": "CurrentAffairs",
+    "difficulty": "Hard",
+    "section": "DAILY_QUIZ",
+    "status": "ACTIVE",
+    "timesUsed": 0,
+    "createdAt": "2026-06-09T18:47:28.165Z",
+    "updatedAt": "2026-06-09T18:47:28.165Z"
+  },
+  {
+    "id": "cmq6zs5nr002phwlqree820ve",
+    "question": "Which digital payment platform launched the 'RuPay Credit Card on UPI' feature in 2025?",
+    "options": [
+      "Google Pay",
+      "PhonePe",
+      "Paytm",
+      "Amazon Pay"
+    ],
+    "correctIndex": 0,
+    "explanation": "Google Pay launched this integration in 2025.",
+    "pillar": "CurrentAffairs",
+    "difficulty": "Medium",
+    "section": "DAILY_QUIZ",
+    "status": "ACTIVE",
+    "timesUsed": 0,
+    "createdAt": "2026-06-09T18:47:28.167Z",
+    "updatedAt": "2026-06-09T18:47:28.167Z"
+  },
+  {
+    "id": "cmq6zs5nu002rhwlqibw9fu96",
+    "question": "Which railway zone in India launched Vande Bharat sleeper trains in 2025?",
+    "options": [
+      "Northeast Frontier Railway",
+      "Northern Railway",
+      "Western Railway",
+      "Southern Railway"
+    ],
+    "correctIndex": 0,
+    "explanation": "NFR has introduced multiple Vande Bharat services.",
+    "pillar": "CurrentAffairs",
+    "difficulty": "Hard",
+    "section": "DAILY_QUIZ",
+    "status": "ACTIVE",
+    "timesUsed": 0,
+    "createdAt": "2026-06-09T18:47:28.170Z",
+    "updatedAt": "2026-06-09T18:47:28.170Z"
+  },
+  {
+    "id": "cmq6zs5nz002thwlq5pbcs4tb",
+    "question": "Who won the Men's Singles title at the 2025 Australian Open?",
+    "options": [
+      "Jannik Sinner",
+      "Novak Djokovic",
+      "Carlos Alcaraz",
+      "Daniil Medvedev"
+    ],
+    "correctIndex": 0,
+    "explanation": "Sinner won the 2025 Australian Open.",
+    "pillar": "CurrentAffairs",
+    "difficulty": "Hard",
+    "section": "DAILY_QUIZ",
+    "status": "ACTIVE",
+    "timesUsed": 0,
+    "createdAt": "2026-06-09T18:47:28.175Z",
+    "updatedAt": "2026-06-09T18:47:28.175Z"
+  },
+  {
+    "id": "cmq6zs5o3002vhwlqpzhpo86z",
+    "question": "What is the new GST rate for restaurant services introduced in 2025?",
+    "options": [
+      "5% without ITC",
+      "12%",
+      "18%",
+      "0%"
+    ],
+    "correctIndex": 0,
+    "explanation": "GST on restaurant services was revised to 5% without ITC.",
+    "pillar": "CurrentAffairs",
+    "difficulty": "Medium",
+    "section": "DAILY_QUIZ",
+    "status": "ACTIVE",
+    "timesUsed": 0,
+    "createdAt": "2026-06-09T18:47:28.179Z",
+    "updatedAt": "2026-06-09T18:47:28.179Z"
+  },
+  {
+    "id": "cmq6zs5o5002whwlq55btf6oc",
+    "question": "Which Indian space mission was launched to study the Sun?",
+    "options": [
+      "Aditya-L1",
+      "Mangalyaan",
+      "Chandrayaan-3",
+      "XPoSat"
+    ],
+    "correctIndex": 0,
+    "explanation": "Aditya-L1 is India's first solar mission launched in 2023.",
+    "pillar": "CurrentAffairs",
+    "difficulty": "Medium",
+    "section": "DAILY_QUIZ",
+    "status": "ACTIVE",
+    "timesUsed": 1,
+    "createdAt": "2026-06-09T18:47:28.181Z",
+    "updatedAt": "2026-06-10T05:33:29.839Z"
+  },
+  {
+    "id": "cmq6zs5n4002dhwlqv0mi83pc",
+    "question": "Assam shares the longest border with which Indian state?",
+    "options": [
+      "West Bengal",
+      "Nagaland",
+      "Meghalaya",
+      "Arunachal Pradesh"
+    ],
+    "correctIndex": 0,
+    "explanation": "Assam borders Arunachal Pradesh for about 800 km.",
+    "pillar": "AssamGK",
+    "difficulty": "Medium",
+    "section": "DAILY_QUIZ",
+    "status": "ACTIVE",
+    "timesUsed": 1,
+    "createdAt": "2026-06-09T18:47:28.144Z",
+    "updatedAt": "2026-06-10T05:33:29.855Z"
+  },
+  {
+    "id": "cmq6zs5o1002uhwlqbygsa0pm",
+    "question": "Which Indian state introduced the 'One District One Product' scheme for bamboo products?",
+    "options": [
+      "Assam",
+      "Tripura",
+      "Mizoram",
+      "Nagaland"
+    ],
+    "correctIndex": 0,
+    "explanation": "Assam has promoted bamboo products under ODOP.",
+    "pillar": "CurrentAffairs",
+    "difficulty": "Hard",
+    "section": "DAILY_QUIZ",
+    "status": "ACTIVE",
+    "timesUsed": 1,
+    "createdAt": "2026-06-09T18:47:28.177Z",
+    "updatedAt": "2026-06-10T05:33:29.855Z"
+  },
+  {
+    "id": "cmq6zs5na002ghwlqidsj49e3",
+    "question": "Which city in Assam is known as the 'Cultural Capital of Assam'?",
+    "options": [
+      "Jorhat",
+      "Guwahati",
+      "Tezpur",
+      "Dibrugarh"
+    ],
+    "correctIndex": 0,
+    "explanation": "Tezpur is often called the Cultural Capital of Assam.",
+    "pillar": "AssamGK",
+    "difficulty": "Medium",
+    "section": "DAILY_QUIZ",
+    "status": "ACTIVE",
+    "timesUsed": 1,
+    "createdAt": "2026-06-09T18:47:28.150Z",
+    "updatedAt": "2026-06-10T05:33:29.868Z"
+  },
+  {
+    "id": "cmq6zs5nm002mhwlqmk2m8i3t",
+    "question": "Which Indian cricketer scored his 50th ODI century in 2025?",
+    "options": [
+      "Virat Kohli",
+      "Sachin Tendulkar",
+      "Rohit Sharma",
+      "MS Dhoni"
+    ],
+    "correctIndex": 0,
+    "explanation": "Virat Kohli has been on a record-breaking spree.",
+    "pillar": "CurrentAffairs",
+    "difficulty": "Medium",
+    "section": "DAILY_QUIZ",
+    "status": "ACTIVE",
+    "timesUsed": 1,
+    "createdAt": "2026-06-09T18:47:28.162Z",
+    "updatedAt": "2026-06-10T05:33:29.868Z"
+  },
+  {
+    "id": "cmq6zs5n6002ehwlqut5oe4xm",
+    "question": "What type of traditional Assamese house is built on bamboo stilts?",
+    "options": [
+      "Chang Ghar",
+      "Bhelaghar",
+      "Kutcha House",
+      "Tong Ghar"
+    ],
+    "correctIndex": 0,
+    "explanation": "Chang Ghar is an elevated house built on bamboo or wooden stilts.",
+    "pillar": "AssamGK",
+    "difficulty": "Medium",
+    "section": "DAILY_QUIZ",
+    "status": "ACTIVE",
+    "timesUsed": 1,
+    "createdAt": "2026-06-09T18:47:28.146Z",
+    "updatedAt": "2026-06-10T05:33:29.881Z"
+  },
+  {
+    "id": "cmq6zs5n0002bhwlqlr16lo86",
+    "question": "The 1897 Assam earthquake had its epicentre near which region?",
+    "options": [
+      "Shillong Plateau",
+      "Guwahati",
+      "Jorhat",
+      "Tura"
+    ],
+    "correctIndex": 0,
+    "explanation": "The great Assam earthquake of 1897 had its epicentre near the Shillong Plateau.",
+    "pillar": "AssamGK",
+    "difficulty": "Hard",
+    "section": "DAILY_QUIZ",
+    "status": "ACTIVE",
+    "timesUsed": 1,
+    "createdAt": "2026-06-09T18:47:28.140Z",
+    "updatedAt": "2026-06-11T10:09:55.192Z"
+  },
+  {
+    "id": "cmq6zs5nt002qhwlqr6qkjlik",
+    "question": "What is the name of Assam's flagship scheme for providing financial assistance to students?",
+    "options": [
+      "Pragyan Bharti",
+      "Arundhati Scheme",
+      "Mukhyamantri Shiksha Sahayog",
+      "Sopaan"
+    ],
+    "correctIndex": 0,
+    "explanation": "Pragyan Bharti is Assam's scheme for higher education students.",
+    "pillar": "CurrentAffairs",
+    "difficulty": "Hard",
+    "section": "DAILY_QUIZ",
+    "status": "ACTIVE",
+    "timesUsed": 1,
+    "createdAt": "2026-06-09T18:47:28.169Z",
+    "updatedAt": "2026-06-11T10:09:55.192Z"
+  },
+  {
+    "id": "cmq6zs5ne002ihwlqoya7bsl7",
+    "question": "Which country hosted the G20 Summit in 2025?",
+    "options": [
+      "India",
+      "Brazil",
+      "South Africa",
+      "Indonesia"
+    ],
+    "correctIndex": 0,
+    "explanation": "India hosted the G20 Summit in New Delhi in September 2025.",
+    "pillar": "CurrentAffairs",
+    "difficulty": "Medium",
+    "section": "DAILY_QUIZ",
+    "status": "ACTIVE",
+    "timesUsed": 1,
+    "createdAt": "2026-06-09T18:47:28.154Z",
+    "updatedAt": "2026-06-11T19:00:00.307Z"
+  },
+  {
+    "id": "cmq6zs5oc0030hwlq7ccsh18k",
+    "question": "Which North Eastern state implemented the 'Inner Line Permit' system in 2025?",
+    "options": [
+      "Manipur",
+      "Nagaland",
+      "Mizoram",
+      "Arunachal Pradesh"
+    ],
+    "correctIndex": 0,
+    "explanation": "Manipur implemented ILP in 2025 for certain districts.",
+    "pillar": "CurrentAffairs",
+    "difficulty": "Hard",
+    "section": "DAILY_QUIZ",
+    "status": "ACTIVE",
+    "timesUsed": 0,
+    "createdAt": "2026-06-09T18:47:28.188Z",
+    "updatedAt": "2026-06-09T18:47:28.188Z"
+  },
+  {
+    "id": "cmq6zs5of0032hwlqh8ubiw3d",
+    "question": "The 2025 Assam Assembly session passed which bill related to temples?",
+    "options": [
+      "Assam Temple Bill, 2025",
+      "Assam Religious Act",
+      "Assam Dharam Bill",
+      "Mandir Protection Bill"
+    ],
+    "correctIndex": 0,
+    "explanation": "The bill pertains to management of state temples.",
+    "pillar": "CurrentAffairs",
+    "difficulty": "Hard",
+    "section": "DAILY_QUIZ",
+    "status": "ACTIVE",
+    "timesUsed": 0,
+    "createdAt": "2026-06-09T18:47:28.191Z",
+    "updatedAt": "2026-06-09T18:47:28.191Z"
+  },
+  {
+    "id": "cmq6zs5oh0033hwlqcybnekfz",
+    "question": "Which new Indian Navy flag was unveiled in 2025?",
+    "options": [
+      "New Naval Ensign",
+      "New Naval Jack",
+      "New Naval Crest",
+      "New Naval Flag"
+    ],
+    "correctIndex": 0,
+    "explanation": "India unveiled a new Naval Ensign in 2025.",
+    "pillar": "CurrentAffairs",
+    "difficulty": "Hard",
+    "section": "DAILY_QUIZ",
+    "status": "ACTIVE",
+    "timesUsed": 0,
+    "createdAt": "2026-06-09T18:47:28.193Z",
+    "updatedAt": "2026-06-09T18:47:28.193Z"
+  },
+  {
+    "id": "cmq6zs5oj0034hwlq5hk0by4j",
+    "question": "What is the repo rate as of 2025 set by the RBI?",
+    "options": [
+      "5.50%",
+      "6.00%",
+      "6.50%",
+      "5.00%"
+    ],
+    "correctIndex": 0,
+    "explanation": "The RBI's repo rate as of mid-2025 stood at 5.50%.",
+    "pillar": "CurrentAffairs",
+    "difficulty": "Medium",
+    "section": "DAILY_QUIZ",
+    "status": "ACTIVE",
+    "timesUsed": 0,
+    "createdAt": "2026-06-09T18:47:28.195Z",
+    "updatedAt": "2026-06-09T18:47:28.195Z"
+  },
+  {
+    "id": "cmq6zs5ol0035hwlq53ie2pvx",
+    "question": "Which country opened its embassy in Bhutan for the first time in 2025?",
+    "options": [
+      "India",
+      "China",
+      "Japan",
+      "Bangladesh"
+    ],
+    "correctIndex": 0,
+    "explanation": "India opened a new diplomatic mission in Bhutan.",
+    "pillar": "CurrentAffairs",
+    "difficulty": "Hard",
+    "section": "DAILY_QUIZ",
+    "status": "ACTIVE",
+    "timesUsed": 0,
+    "createdAt": "2026-06-09T18:47:28.197Z",
+    "updatedAt": "2026-06-09T18:47:28.197Z"
+  },
+  {
+    "id": "cmq6zs5on0036hwlqx2219qu1",
+    "question": "The 2025 Women's Premier League (WPL) was won by which team?",
+    "options": [
+      "Mumbai Indians",
+      "Delhi Capitals",
+      "Royal Challengers Bangalore",
+      "UP Warriorz"
+    ],
+    "correctIndex": 0,
+    "explanation": "Mumbai Indians won the 2025 WPL title.",
+    "pillar": "CurrentAffairs",
+    "difficulty": "Hard",
+    "section": "DAILY_QUIZ",
+    "status": "ACTIVE",
+    "timesUsed": 0,
+    "createdAt": "2026-06-09T18:47:28.199Z",
+    "updatedAt": "2026-06-09T18:47:28.199Z"
+  },
+  {
+    "id": "cmq6zs5op0037hwlqoncthlyc",
+    "question": "Which Indian city hosted the 2025 International Film Festival of India (IFFI)?",
+    "options": [
+      "Panaji",
+      "Bengaluru",
+      "Kolkata",
+      "Mumbai"
+    ],
+    "correctIndex": 0,
+    "explanation": "IFFI is hosted annually in Goa.",
+    "pillar": "CurrentAffairs",
+    "difficulty": "Medium",
+    "section": "DAILY_QUIZ",
+    "status": "ACTIVE",
+    "timesUsed": 0,
+    "createdAt": "2026-06-09T18:47:28.201Z",
+    "updatedAt": "2026-06-09T18:47:28.201Z"
+  },
+  {
+    "id": "cmq6zs5oq0038hwlqr05t1o7c",
+    "question": "What is the new reservation for Economically Weaker Sections (EWS) in Assam government jobs (2025)?",
+    "options": [
+      "10%",
+      "5%",
+      "15%",
+      "20%"
+    ],
+    "correctIndex": 0,
+    "explanation": "Assam provides 10% reservation for EWS.",
+    "pillar": "CurrentAffairs",
+    "difficulty": "Medium",
+    "section": "DAILY_QUIZ",
+    "status": "ACTIVE",
+    "timesUsed": 0,
+    "createdAt": "2026-06-09T18:47:28.202Z",
+    "updatedAt": "2026-06-09T18:47:28.202Z"
+  },
+  {
+    "id": "cmq6zs5os0039hwlq57oc9xge",
+    "question": "Which country launched the 'Digital Rupee' pilot for cross-border payments?",
+    "options": [
+      "India",
+      "China",
+      "UAE",
+      "Singapore"
+    ],
+    "correctIndex": 0,
+    "explanation": "India launched CBDC (Digital Rupee) pilot for cross-border transactions.",
+    "pillar": "CurrentAffairs",
+    "difficulty": "Medium",
+    "section": "DAILY_QUIZ",
+    "status": "ACTIVE",
+    "timesUsed": 0,
+    "createdAt": "2026-06-09T18:47:28.204Z",
+    "updatedAt": "2026-06-09T18:47:28.204Z"
+  },
+  {
+    "id": "cmq6zs5ox003bhwlqdw2b6nz1",
+    "question": "Which government scheme provides free electricity to farmers in Assam?",
+    "options": [
+      "Mukhyamantri Krishi Saśakti Yojana",
+      "PM Kisan",
+      "Assam Free Power Scheme",
+      "Kisan Urja Suraksha"
+    ],
+    "correctIndex": 0,
+    "explanation": "Mukhyamantri Krishi Saśakti Yojana provides free electricity to farmers.",
+    "pillar": "CurrentAffairs",
+    "difficulty": "Hard",
+    "section": "DAILY_QUIZ",
+    "status": "ACTIVE",
+    "timesUsed": 0,
+    "createdAt": "2026-06-09T18:47:28.209Z",
+    "updatedAt": "2026-06-09T18:47:28.209Z"
+  },
+  {
+    "id": "cmq6zs5p0003chwlqshzrn63l",
+    "question": "What is the chemical formula of water?",
+    "options": [
+      "H₂O",
+      "CO₂",
+      "NaCl",
+      "H₂SO₄"
+    ],
+    "correctIndex": 0,
+    "explanation": "Water consists of two hydrogen atoms and one oxygen atom.",
+    "pillar": "Science",
+    "difficulty": "Easy",
+    "section": "DAILY_QUIZ",
+    "status": "ACTIVE",
+    "timesUsed": 0,
+    "createdAt": "2026-06-09T18:47:28.212Z",
+    "updatedAt": "2026-06-09T18:47:28.212Z"
+  },
+  {
+    "id": "cmq6zs5p2003dhwlq6w9jvb79",
+    "question": "Which vitamin is produced by the human body when exposed to sunlight?",
+    "options": [
+      "Vitamin D",
+      "Vitamin C",
+      "Vitamin A",
+      "Vitamin B12"
+    ],
+    "correctIndex": 0,
+    "explanation": "Sunlight triggers Vitamin D synthesis in the skin.",
+    "pillar": "Science",
+    "difficulty": "Easy",
+    "section": "DAILY_QUIZ",
+    "status": "ACTIVE",
+    "timesUsed": 0,
+    "createdAt": "2026-06-09T18:47:28.214Z",
+    "updatedAt": "2026-06-09T18:47:28.214Z"
+  },
+  {
+    "id": "cmq6zs5p9003ghwlqfi9tgpwm",
+    "question": "What is the SI unit of force?",
+    "options": [
+      "Newton",
+      "Joule",
+      "Watt",
+      "Pascal"
+    ],
+    "correctIndex": 0,
+    "explanation": "The newton is the SI unit of force, named after Sir Isaac Newton.",
+    "pillar": "Science",
+    "difficulty": "Easy",
+    "section": "DAILY_QUIZ",
+    "status": "ACTIVE",
+    "timesUsed": 0,
+    "createdAt": "2026-06-09T18:47:28.221Z",
+    "updatedAt": "2026-06-09T18:47:28.221Z"
+  },
+  {
+    "id": "cmq6zs5pe003ihwlq9pfn1ewg",
+    "question": "What is the largest organ in the human body?",
+    "options": [
+      "Skin",
+      "Liver",
+      "Brain",
+      "Heart"
+    ],
+    "correctIndex": 0,
+    "explanation": "The skin is the largest organ, covering about 1.5-2 m².",
+    "pillar": "Science",
+    "difficulty": "Easy",
+    "section": "DAILY_QUIZ",
+    "status": "ACTIVE",
+    "timesUsed": 0,
+    "createdAt": "2026-06-09T18:47:28.226Z",
+    "updatedAt": "2026-06-09T18:47:28.226Z"
+  },
+  {
+    "id": "cmq6zs5pj003lhwlqngyp7vb7",
+    "question": "Which instrument is used to measure earthquakes?",
+    "options": [
+      "Seismograph",
+      "Barometer",
+      "Thermometer",
+      "Hygrometer"
+    ],
+    "correctIndex": 0,
+    "explanation": "A seismograph records ground motion during earthquakes.",
+    "pillar": "Science",
+    "difficulty": "Easy",
+    "section": "DAILY_QUIZ",
+    "status": "ACTIVE",
+    "timesUsed": 0,
+    "createdAt": "2026-06-09T18:47:28.231Z",
+    "updatedAt": "2026-06-09T18:47:28.231Z"
+  },
+  {
+    "id": "cmq6zs5pk003mhwlqhicia6po",
+    "question": "What is the pH of pure water?",
+    "options": [
+      "7",
+      "0",
+      "14",
+      "1"
+    ],
+    "correctIndex": 0,
+    "explanation": "Pure water has a neutral pH of 7 at 25°C.",
+    "pillar": "Science",
+    "difficulty": "Easy",
+    "section": "DAILY_QUIZ",
+    "status": "ACTIVE",
+    "timesUsed": 0,
+    "createdAt": "2026-06-09T18:47:28.232Z",
+    "updatedAt": "2026-06-09T18:47:28.232Z"
+  },
+  {
+    "id": "cmq6zs5pf003jhwlq2fnmf6h3",
+    "question": "Which planet in our solar system has the most moons?",
+    "options": [
+      "Saturn",
+      "Jupiter",
+      "Uranus",
+      "Neptune"
+    ],
+    "correctIndex": 0,
+    "explanation": "Saturn has 146 confirmed moons as of 2025.",
+    "pillar": "Science",
+    "difficulty": "Medium",
+    "section": "DAILY_QUIZ",
+    "status": "ACTIVE",
+    "timesUsed": 1,
+    "createdAt": "2026-06-09T18:47:28.227Z",
+    "updatedAt": "2026-06-10T05:33:29.855Z"
+  },
+  {
+    "id": "cmq6zs5pm003nhwlql4vkkv7f",
+    "question": "Which disease is caused by the deficiency of Vitamin C?",
+    "options": [
+      "Scurvy",
+      "Rickets",
+      "Beriberi",
+      "Night blindness"
+    ],
+    "correctIndex": 0,
+    "explanation": "Scurvy causes weakness, anaemia, and gum disease.",
+    "pillar": "Science",
+    "difficulty": "Medium",
+    "section": "DAILY_QUIZ",
+    "status": "ACTIVE",
+    "timesUsed": 1,
+    "createdAt": "2026-06-09T18:47:28.234Z",
+    "updatedAt": "2026-06-10T05:33:29.881Z"
+  },
+  {
+    "id": "cmq6zs5p6003fhwlqlqpijz5r",
+    "question": "Which organ in the human body is responsible for pumping blood?",
+    "options": [
+      "Heart",
+      "Lungs",
+      "Liver",
+      "Kidneys"
+    ],
+    "correctIndex": 0,
+    "explanation": "The heart pumps blood throughout the circulatory system.",
+    "pillar": "Science",
+    "difficulty": "Easy",
+    "section": "DAILY_QUIZ",
+    "status": "ACTIVE",
+    "timesUsed": 1,
+    "createdAt": "2026-06-09T18:47:28.218Z",
+    "updatedAt": "2026-06-10T05:33:29.892Z"
+  },
+  {
+    "id": "cmq6zs5oe0031hwlqxb3za38e",
+    "question": "Which Indian company became the most valuable company by market cap in 2025?",
+    "options": [
+      "Reliance Industries",
+      "Tata Consultancy Services",
+      "HDFC Bank",
+      "Infosys"
+    ],
+    "correctIndex": 0,
+    "explanation": "TCS has been among the most valuable companies.",
+    "pillar": "CurrentAffairs",
+    "difficulty": "Medium",
+    "section": "DAILY_QUIZ",
+    "status": "ACTIVE",
+    "timesUsed": 2,
+    "createdAt": "2026-06-09T18:47:28.190Z",
+    "updatedAt": "2026-06-10T05:33:29.892Z"
+  },
+  {
+    "id": "cmq6zs5o9002yhwlqma5egz18",
+    "question": "Which country assumed the presidency of the UN Security Council in January 2026?",
+    "options": [
+      "India",
+      "France",
+      "UK",
+      "China"
+    ],
+    "correctIndex": 0,
+    "explanation": "India took over as UNSC president in January 2026.",
+    "pillar": "CurrentAffairs",
+    "difficulty": "Hard",
+    "section": "DAILY_QUIZ",
+    "status": "ACTIVE",
+    "timesUsed": 1,
+    "createdAt": "2026-06-09T18:47:28.185Z",
+    "updatedAt": "2026-06-11T10:09:55.192Z"
+  },
+  {
+    "id": "cmq6zs5oa002zhwlq6mog55hw",
+    "question": "What is the name of the central government scheme for providing free food grains to the poor?",
+    "options": [
+      "PM Garib Kalyan Ann Yojana",
+      "Mid Day Meal",
+      "Poshan Abhiyaan",
+      "Annapurna Yojana"
+    ],
+    "correctIndex": 0,
+    "explanation": "PMGKAY was extended for 5 years from 2024.",
+    "pillar": "CurrentAffairs",
+    "difficulty": "Medium",
+    "section": "DAILY_QUIZ",
+    "status": "ACTIVE",
+    "timesUsed": 1,
+    "createdAt": "2026-06-09T18:47:28.186Z",
+    "updatedAt": "2026-06-11T19:00:00.307Z"
+  },
+  {
+    "id": "cmq6zs5p4003ehwlq9s2swhj6",
+    "question": "What is the speed of light in vacuum approximately?",
+    "options": [
+      "3 × 10⁸ m/s",
+      "3 × 10⁶ m/s",
+      "3 × 10¹⁰ m/s",
+      "3 × 10⁴ m/s"
+    ],
+    "correctIndex": 0,
+    "explanation": "Light travels at about 299,792,458 m/s in vacuum.",
+    "pillar": "Science",
+    "difficulty": "Easy",
+    "section": "DAILY_QUIZ",
+    "status": "ACTIVE",
+    "timesUsed": 1,
+    "createdAt": "2026-06-09T18:47:28.216Z",
+    "updatedAt": "2026-06-11T19:00:00.307Z"
+  },
+  {
+    "id": "cmq6zs5pp003phwlqvibplomx",
+    "question": "Which part of the cell contains genetic material?",
+    "options": [
+      "Nucleus",
+      "Cytoplasm",
+      "Cell membrane",
+      "Mitochondria"
+    ],
+    "correctIndex": 0,
+    "explanation": "The nucleus contains the cell's DNA.",
+    "pillar": "Science",
+    "difficulty": "Easy",
+    "section": "DAILY_QUIZ",
+    "status": "ACTIVE",
+    "timesUsed": 0,
+    "createdAt": "2026-06-09T18:47:28.237Z",
+    "updatedAt": "2026-06-09T18:47:28.237Z"
+  },
+  {
+    "id": "cmq6zs5pq003qhwlqk2n1rl96",
+    "question": "What is the hardest natural substance on Earth?",
+    "options": [
+      "Diamond",
+      "Gold",
+      "Graphite",
+      "Iron"
+    ],
+    "correctIndex": 0,
+    "explanation": "Diamond, composed of carbon, is the hardest known natural material.",
+    "pillar": "Science",
+    "difficulty": "Easy",
+    "section": "DAILY_QUIZ",
+    "status": "ACTIVE",
+    "timesUsed": 0,
+    "createdAt": "2026-06-09T18:47:28.238Z",
+    "updatedAt": "2026-06-09T18:47:28.238Z"
+  },
+  {
+    "id": "cmq6zs5ps003rhwlqh2lges6k",
+    "question": "Which blood type is known as the universal donor?",
+    "options": [
+      "O Negative",
+      "A Positive",
+      "B Negative",
+      "AB Positive"
+    ],
+    "correctIndex": 0,
+    "explanation": "O Negative blood can be donated to any patient.",
+    "pillar": "Science",
+    "difficulty": "Medium",
+    "section": "DAILY_QUIZ",
+    "status": "ACTIVE",
+    "timesUsed": 0,
+    "createdAt": "2026-06-09T18:47:28.240Z",
+    "updatedAt": "2026-06-09T18:47:28.240Z"
+  },
+  {
+    "id": "cmq6zs5pt003shwlqs3ejoehr",
+    "question": "What is the boiling point of water at sea level in Celsius?",
+    "options": [
+      "100°C",
+      "0°C",
+      "50°C",
+      "212°C"
+    ],
+    "correctIndex": 0,
+    "explanation": "Water boils at 100°C (212°F) at standard atmospheric pressure.",
+    "pillar": "Science",
+    "difficulty": "Easy",
+    "section": "DAILY_QUIZ",
+    "status": "ACTIVE",
+    "timesUsed": 0,
+    "createdAt": "2026-06-09T18:47:28.241Z",
+    "updatedAt": "2026-06-09T18:47:28.241Z"
+  },
+  {
+    "id": "cmq6zs5pv003thwlqbg9y05f7",
+    "question": "Which scientist proposed the theory of relativity?",
+    "options": [
+      "Albert Einstein",
+      "Isaac Newton",
+      "Galileo Galilei",
+      "Stephen Hawking"
+    ],
+    "correctIndex": 0,
+    "explanation": "Einstein proposed both special (1905) and general (1915) relativity.",
+    "pillar": "Science",
+    "difficulty": "Easy",
+    "section": "DAILY_QUIZ",
+    "status": "ACTIVE",
+    "timesUsed": 0,
+    "createdAt": "2026-06-09T18:47:28.243Z",
+    "updatedAt": "2026-06-09T18:47:28.243Z"
+  },
+  {
+    "id": "cmq6zs5pw003uhwlqjkkd1wom",
+    "question": "What is the main function of red blood cells?",
+    "options": [
+      "Carry oxygen",
+      "Fight infection",
+      "Clot blood",
+      "Digest food"
+    ],
+    "correctIndex": 0,
+    "explanation": "Red blood cells contain haemoglobin, which carries oxygen.",
+    "pillar": "Science",
+    "difficulty": "Easy",
+    "section": "DAILY_QUIZ",
+    "status": "ACTIVE",
+    "timesUsed": 0,
+    "createdAt": "2026-06-09T18:47:28.244Z",
+    "updatedAt": "2026-06-09T18:47:28.244Z"
+  },
+  {
+    "id": "cmq6zs5q1003xhwlqemwei1gs",
+    "question": "Which vitamin is known as the 'Sunshine Vitamin'?",
+    "options": [
+      "Vitamin D",
+      "Vitamin A",
+      "Vitamin E",
+      "Vitamin K"
+    ],
+    "correctIndex": 0,
+    "explanation": "Vitamin D is synthesised in the skin upon exposure to sunlight.",
+    "pillar": "Science",
+    "difficulty": "Easy",
+    "section": "DAILY_QUIZ",
+    "status": "ACTIVE",
+    "timesUsed": 0,
+    "createdAt": "2026-06-09T18:47:28.249Z",
+    "updatedAt": "2026-06-09T18:47:28.249Z"
+  },
+  {
+    "id": "cmq6zs5q3003yhwlqb2jp09pw",
+    "question": "What type of lens is used in a magnifying glass?",
+    "options": [
+      "Convex lens",
+      "Concave lens",
+      "Plano lens",
+      "Cylindrical lens"
+    ],
+    "correctIndex": 0,
+    "explanation": "Convex lenses converge light rays and magnify objects.",
+    "pillar": "Science",
+    "difficulty": "Medium",
+    "section": "DAILY_QUIZ",
+    "status": "ACTIVE",
+    "timesUsed": 0,
+    "createdAt": "2026-06-09T18:47:28.251Z",
+    "updatedAt": "2026-06-09T18:47:28.251Z"
+  },
+  {
+    "id": "cmq6zs5q4003zhwlqzk5ffp80",
+    "question": "Which metal is liquid at room temperature?",
+    "options": [
+      "Mercury",
+      "Lead",
+      "Copper",
+      "Zinc"
+    ],
+    "correctIndex": 0,
+    "explanation": "Mercury (Hg) is liquid at room temperature with a melting point of -38.83°C.",
+    "pillar": "Science",
+    "difficulty": "Medium",
+    "section": "DAILY_QUIZ",
+    "status": "ACTIVE",
+    "timesUsed": 0,
+    "createdAt": "2026-06-09T18:47:28.252Z",
+    "updatedAt": "2026-06-09T18:47:28.252Z"
+  },
+  {
+    "id": "cmq6zs5q50040hwlqj5r578dz",
+    "question": "What is the human body's normal temperature in Celsius?",
+    "options": [
+      "37°C",
+      "36°C",
+      "38°C",
+      "35°C"
+    ],
+    "correctIndex": 0,
+    "explanation": "Average normal body temperature is about 37°C (98.6°F).",
+    "pillar": "Science",
+    "difficulty": "Easy",
+    "section": "DAILY_QUIZ",
+    "status": "ACTIVE",
+    "timesUsed": 0,
+    "createdAt": "2026-06-09T18:47:28.253Z",
+    "updatedAt": "2026-06-09T18:47:28.253Z"
+  },
+  {
+    "id": "cmq6zs5q70041hwlqr8f5hvax",
+    "question": "Who led the Salt March (Dandi March) in 1930?",
+    "options": [
+      "Mahatma Gandhi",
+      "Jawaharlal Nehru",
+      "Sardar Patel",
+      "Subhas Chandra Bose"
+    ],
+    "correctIndex": 0,
+    "explanation": "Gandhi led the Salt March from Sabarmati to Dandi to protest the salt tax.",
+    "pillar": "History",
+    "difficulty": "Easy",
+    "section": "DAILY_QUIZ",
+    "status": "ACTIVE",
+    "timesUsed": 0,
+    "createdAt": "2026-06-09T18:47:28.255Z",
+    "updatedAt": "2026-06-09T18:47:28.255Z"
+  },
+  {
+    "id": "cmq6zs5qa0043hwlqkb69ez60",
+    "question": "Who was the last Mughal emperor of India?",
+    "options": [
+      "Bahadur Shah Zafar",
+      "Aurangzeb",
+      "Shah Alam II",
+      "Akbar II"
+    ],
+    "correctIndex": 0,
+    "explanation": "Bahadur Shah Zafar was the last Mughal emperor, exiled after 1857.",
+    "pillar": "History",
+    "difficulty": "Easy",
+    "section": "DAILY_QUIZ",
+    "status": "ACTIVE",
+    "timesUsed": 0,
+    "createdAt": "2026-06-09T18:47:28.258Z",
+    "updatedAt": "2026-06-09T18:47:28.258Z"
+  },
+  {
+    "id": "cmq6zs5qc0044hwlqr68mmu4u",
+    "question": "The Indus Valley Civilization belonged to which period?",
+    "options": [
+      "2500-1500 BCE",
+      "5000-3000 BCE",
+      "1500-1000 BCE",
+      "1000-500 BCE"
+    ],
+    "correctIndex": 0,
+    "explanation": "The Indus Valley Civilization flourished from about 2500 to 1500 BCE.",
+    "pillar": "History",
+    "difficulty": "Medium",
+    "section": "DAILY_QUIZ",
+    "status": "ACTIVE",
+    "timesUsed": 0,
+    "createdAt": "2026-06-09T18:47:28.260Z",
+    "updatedAt": "2026-06-09T18:47:28.260Z"
+  },
+  {
+    "id": "cmq6zs5qd0045hwlqlm8ng1cx",
+    "question": "Who founded the Maurya Empire in India?",
+    "options": [
+      "Chandragupta Maurya",
+      "Ashoka",
+      "Bindusara",
+      "Chandragupta II"
+    ],
+    "correctIndex": 0,
+    "explanation": "Chandragupta Maurya founded the Maurya Empire in 322 BCE.",
+    "pillar": "History",
+    "difficulty": "Medium",
+    "section": "DAILY_QUIZ",
+    "status": "ACTIVE",
+    "timesUsed": 0,
+    "createdAt": "2026-06-09T18:47:28.261Z",
+    "updatedAt": "2026-06-09T18:47:28.261Z"
+  },
+  {
+    "id": "cmq6zs5qf0046hwlq4gbaiqsk",
+    "question": "The Jallianwala Bagh massacre occurred in which year?",
+    "options": [
+      "1919",
+      "1915",
+      "1920",
+      "1922"
+    ],
+    "correctIndex": 0,
+    "explanation": "The massacre took place on 13 April 1919 in Amritsar.",
+    "pillar": "History",
+    "difficulty": "Easy",
+    "section": "DAILY_QUIZ",
+    "status": "ACTIVE",
+    "timesUsed": 0,
+    "createdAt": "2026-06-09T18:47:28.263Z",
+    "updatedAt": "2026-06-09T18:47:28.263Z"
+  },
+  {
+    "id": "cmq6zs5qh0047hwlqvgdg35wb",
+    "question": "Who was the founder of the Indian National Congress?",
+    "options": [
+      "A.O. Hume",
+      "W.C. Bonnerjee",
+      "Dadabhai Naoroji",
+      "Surendranath Banerjee"
+    ],
+    "correctIndex": 0,
+    "explanation": "A.O. Hume, a retired British civil servant, founded the INC in 1885.",
+    "pillar": "History",
+    "difficulty": "Medium",
+    "section": "DAILY_QUIZ",
+    "status": "ACTIVE",
+    "timesUsed": 0,
+    "createdAt": "2026-06-09T18:47:28.265Z",
+    "updatedAt": "2026-06-09T18:47:28.265Z"
+  },
+  {
+    "id": "cmq6zs5ql0048hwlqj5edxy4q",
+    "question": "The Chola Empire reached its peak under which ruler?",
+    "options": [
+      "Raja Raja Chola I",
+      "Rajendra Chola I",
+      "Kulothunga Chola I",
+      "Vijayalaya Chola"
+    ],
+    "correctIndex": 0,
+    "explanation": "Raja Raja Chola I expanded the Chola Empire extensively.",
+    "pillar": "History",
+    "difficulty": "Medium",
+    "section": "DAILY_QUIZ",
+    "status": "ACTIVE",
+    "timesUsed": 0,
+    "createdAt": "2026-06-09T18:47:28.269Z",
+    "updatedAt": "2026-06-09T18:47:28.269Z"
+  },
+  {
+    "id": "cmq6zs5qp004ahwlqu9aq9jum",
+    "question": "Who established the Ramakrishna Mission?",
+    "options": [
+      "Swami Vivekananda",
+      "Ramakrishna Paramahamsa",
+      "Swami Shivananda",
+      "Swami Ranganathananda"
+    ],
+    "correctIndex": 0,
+    "explanation": "Swami Vivekananda founded the Ramakrishna Mission in 1897.",
+    "pillar": "History",
+    "difficulty": "Easy",
+    "section": "DAILY_QUIZ",
+    "status": "ACTIVE",
+    "timesUsed": 0,
+    "createdAt": "2026-06-09T18:47:28.273Z",
+    "updatedAt": "2026-06-09T18:47:28.273Z"
+  },
+  {
+    "id": "cmq6zs5qu004dhwlqiuptbvqg",
+    "question": "Who was the first Governor-General of independent India?",
+    "options": [
+      "Lord Mountbatten",
+      "Rajendra Prasad",
+      "C. Rajagopalachari",
+      "Jawaharlal Nehru"
+    ],
+    "correctIndex": 0,
+    "explanation": "Lord Mountbatten was the first Governor-General of independent India.",
+    "pillar": "History",
+    "difficulty": "Medium",
+    "section": "DAILY_QUIZ",
+    "status": "ACTIVE",
+    "timesUsed": 0,
+    "createdAt": "2026-06-09T18:47:28.278Z",
+    "updatedAt": "2026-06-09T18:47:28.278Z"
+  },
+  {
+    "id": "cmq6zs5qv004ehwlq3uf21zom",
+    "question": "Which ancient university was located in present-day Bihar?",
+    "options": [
+      "Nalanda",
+      "Takshashila",
+      "Vikramashila",
+      "Odantapuri"
+    ],
+    "correctIndex": 0,
+    "explanation": "Nalanda University was a major Buddhist learning centre in ancient India.",
+    "pillar": "History",
+    "difficulty": "Medium",
+    "section": "DAILY_QUIZ",
+    "status": "ACTIVE",
+    "timesUsed": 0,
+    "createdAt": "2026-06-09T18:47:28.279Z",
+    "updatedAt": "2026-06-09T18:47:28.279Z"
+  },
+  {
+    "id": "cmq6zs5q80042hwlqft4z2bt6",
+    "question": "The Battle of Plassey was fought in which year?",
+    "options": [
+      "1757",
+      "1764",
+      "1746",
+      "1772"
+    ],
+    "correctIndex": 0,
+    "explanation": "The Battle of Plassey (1757) marked the beginning of British rule in India.",
+    "pillar": "History",
+    "difficulty": "Easy",
+    "section": "DAILY_QUIZ",
+    "status": "ACTIVE",
+    "timesUsed": 1,
+    "createdAt": "2026-06-09T18:47:28.256Z",
+    "updatedAt": "2026-06-09T18:48:00.485Z"
+  },
+  {
+    "id": "cmq7lv9b4000unklqe36m0824",
+    "question": "ISRO headquarters is in which city?",
+    "options": [
+      "Bengaluru",
+      "Mumbai",
+      "New Delhi",
+      "Hyderabad"
+    ],
+    "correctIndex": 0,
+    "explanation": "ISRO HQ is at Antariksh Bhavan, Bengaluru.",
+    "pillar": "GK",
+    "difficulty": "Easy",
+    "section": "MOCK_TEST",
+    "status": "ACTIVE",
+    "timesUsed": 0,
+    "createdAt": "2026-06-10T05:05:44.414Z",
+    "updatedAt": "2026-06-10T05:05:44.414Z"
+  },
+  {
+    "id": "cmq6zs5pz003whwlqust2a2j5",
+    "question": "What is the unit of electrical resistance?",
+    "options": [
+      "Ohm",
+      "Volt",
+      "Ampere",
+      "Watt"
+    ],
+    "correctIndex": 0,
+    "explanation": "The ohm (Ω) is the SI unit of electrical resistance.",
+    "pillar": "Science",
+    "difficulty": "Medium",
+    "section": "DAILY_QUIZ",
+    "status": "ACTIVE",
+    "timesUsed": 1,
+    "createdAt": "2026-06-09T18:47:28.247Z",
+    "updatedAt": "2026-06-10T05:33:29.868Z"
+  },
+  {
+    "id": "cmq6zs5qs004chwlquxse6sfu",
+    "question": "Which year marked the partition of Bengal under Lord Curzon?",
+    "options": [
+      "1905",
+      "1911",
+      "1903",
+      "1907"
+    ],
+    "correctIndex": 0,
+    "explanation": "Lord Curzon partitioned Bengal in 1905, later revoked in 1911.",
+    "pillar": "History",
+    "difficulty": "Medium",
+    "section": "DAILY_QUIZ",
+    "status": "ACTIVE",
+    "timesUsed": 2,
+    "createdAt": "2026-06-09T18:47:28.276Z",
+    "updatedAt": "2026-06-10T05:33:29.881Z"
+  },
+  {
+    "id": "cmq6zs5py003vhwlqctjhpnc9",
+    "question": "Which element is the most abundant in the Earth's crust?",
+    "options": [
+      "Oxygen",
+      "Silicon",
+      "Aluminium",
+      "Iron"
+    ],
+    "correctIndex": 0,
+    "explanation": "Oxygen makes up about 46% of the Earth's crust by weight.",
+    "pillar": "Science",
+    "difficulty": "Medium",
+    "section": "DAILY_QUIZ",
+    "status": "ACTIVE",
+    "timesUsed": 1,
+    "createdAt": "2026-06-09T18:47:28.246Z",
+    "updatedAt": "2026-06-11T10:09:55.192Z"
+  },
+  {
+    "id": "cmq6zs5qx004fhwlqbik0faka",
+    "question": "Who among the following was a prominent leader of the 1857 Revolt?",
+    "options": [
+      "Rani Lakshmibai",
+      "Bhagat Singh",
+      "Chandrasekhar Azad",
+      "Lala Lajpat Rai"
+    ],
+    "correctIndex": 0,
+    "explanation": "Rani Lakshmibai of Jhansi was a key leader of the 1857 Rebellion.",
+    "pillar": "History",
+    "difficulty": "Easy",
+    "section": "DAILY_QUIZ",
+    "status": "ACTIVE",
+    "timesUsed": 0,
+    "createdAt": "2026-06-09T18:47:28.281Z",
+    "updatedAt": "2026-06-09T18:47:28.281Z"
+  },
+  {
+    "id": "cmq6zs5r0004hhwlqqjhcyfdw",
+    "question": "Who was the founder of the Gupta Empire?",
+    "options": [
+      "Shri Gupta",
+      "Chandragupta I",
+      "Samudragupta",
+      "Chandragupta II"
+    ],
+    "correctIndex": 0,
+    "explanation": "Shri Gupta is considered the founder of the Gupta Empire in 240 CE.",
+    "pillar": "History",
+    "difficulty": "Hard",
+    "section": "DAILY_QUIZ",
+    "status": "ACTIVE",
+    "timesUsed": 0,
+    "createdAt": "2026-06-09T18:47:28.284Z",
+    "updatedAt": "2026-06-09T18:47:28.284Z"
+  },
+  {
+    "id": "cmq6zs5r5004khwlqz62zc4tn",
+    "question": "The Cripps Mission visited India in which year?",
+    "options": [
+      "1942",
+      "1940",
+      "1945",
+      "1939"
+    ],
+    "correctIndex": 0,
+    "explanation": "The Cripps Mission came to India in March 1942.",
+    "pillar": "History",
+    "difficulty": "Medium",
+    "section": "DAILY_QUIZ",
+    "status": "ACTIVE",
+    "timesUsed": 0,
+    "createdAt": "2026-06-09T18:47:28.289Z",
+    "updatedAt": "2026-06-09T18:47:28.289Z"
+  },
+  {
+    "id": "cmq6zs5r6004lhwlq06elycr4",
+    "question": "Which of the following was a cause of the First War of Independence 1857?",
+    "options": [
+      "Greased cartridge issue",
+      "Economic exploitation",
+      "Doctrine of Lapse",
+      "All of the above"
+    ],
+    "correctIndex": 3,
+    "explanation": "Multiple factors including greased cartridges, economic exploitation, and Doctrine of Lapse caused the revolt.",
+    "pillar": "History",
+    "difficulty": "Medium",
+    "section": "DAILY_QUIZ",
+    "status": "ACTIVE",
+    "timesUsed": 0,
+    "createdAt": "2026-06-09T18:47:28.290Z",
+    "updatedAt": "2026-06-09T18:47:28.290Z"
+  },
+  {
+    "id": "cmq6zs5r8004mhwlq6l5ra50o",
+    "question": "Who composed the epic 'Mahabharata'?",
+    "options": [
+      "Ved Vyasa",
+      "Valmiki",
+      "Tulsidas",
+      "Kalidasa"
+    ],
+    "correctIndex": 0,
+    "explanation": "Ved Vyasa is traditionally credited as the author of the Mahabharata.",
+    "pillar": "History",
+    "difficulty": "Easy",
+    "section": "DAILY_QUIZ",
+    "status": "ACTIVE",
+    "timesUsed": 0,
+    "createdAt": "2026-06-09T18:47:28.292Z",
+    "updatedAt": "2026-06-09T18:47:28.292Z"
+  },
+  {
+    "id": "cmq6zs5ra004nhwlqhm93nce6",
+    "question": "The Sangam literature belonged to which region?",
+    "options": [
+      "Tamil Nadu",
+      "Kerala",
+      "Karnataka",
+      "Andhra Pradesh"
+    ],
+    "correctIndex": 0,
+    "explanation": "Sangam literature is associated with ancient Tamilakam (present-day Tamil Nadu).",
+    "pillar": "History",
+    "difficulty": "Medium",
+    "section": "DAILY_QUIZ",
+    "status": "ACTIVE",
+    "timesUsed": 0,
+    "createdAt": "2026-06-09T18:47:28.294Z",
+    "updatedAt": "2026-06-09T18:47:28.294Z"
+  },
+  {
+    "id": "cmq6zs5rb004ohwlqop3uhqqu",
+    "question": "Who founded the city of Agra?",
+    "options": [
+      "Sikandar Lodhi",
+      "Babur",
+      "Akbar",
+      "Shah Jahan"
+    ],
+    "correctIndex": 0,
+    "explanation": "Sikandar Lodhi founded Agra in 1504.",
+    "pillar": "History",
+    "difficulty": "Hard",
+    "section": "DAILY_QUIZ",
+    "status": "ACTIVE",
+    "timesUsed": 0,
+    "createdAt": "2026-06-09T18:47:28.296Z",
+    "updatedAt": "2026-06-09T18:47:28.296Z"
+  },
+  {
+    "id": "cmq6zs5re004phwlqxe809xnz",
+    "question": "The Konark Sun Temple is located in which state?",
+    "options": [
+      "Odisha",
+      "Tamil Nadu",
+      "Karnataka",
+      "Andhra Pradesh"
+    ],
+    "correctIndex": 0,
+    "explanation": "The Sun Temple at Konark, Odisha, is a UNESCO World Heritage Site.",
+    "pillar": "History",
+    "difficulty": "Medium",
+    "section": "DAILY_QUIZ",
+    "status": "ACTIVE",
+    "timesUsed": 0,
+    "createdAt": "2026-06-09T18:47:28.298Z",
+    "updatedAt": "2026-06-09T18:47:28.298Z"
+  },
+  {
+    "id": "cmq6zs5rg004qhwlqsl36cnnx",
+    "question": "How many members can be nominated by the President to the Rajya Sabha?",
+    "options": [
+      "12",
+      "10",
+      "14",
+      "16"
+    ],
+    "correctIndex": 0,
+    "explanation": "The President can nominate 12 members to the Rajya Sabha for their expertise.",
+    "pillar": "Polity",
+    "difficulty": "Medium",
+    "section": "DAILY_QUIZ",
+    "status": "ACTIVE",
+    "timesUsed": 0,
+    "createdAt": "2026-06-09T18:47:28.300Z",
+    "updatedAt": "2026-06-09T18:47:28.300Z"
+  },
+  {
+    "id": "cmq6zs5ri004rhwlqgevw7jqy",
+    "question": "Who has the power to declare a state of emergency in India?",
+    "options": [
+      "President",
+      "Prime Minister",
+      "Chief Justice",
+      "Home Minister"
+    ],
+    "correctIndex": 0,
+    "explanation": "The President can declare three types of emergencies under Articles 352, 356, and 360.",
+    "pillar": "Polity",
+    "difficulty": "Easy",
+    "section": "DAILY_QUIZ",
+    "status": "ACTIVE",
+    "timesUsed": 0,
+    "createdAt": "2026-06-09T18:47:28.302Z",
+    "updatedAt": "2026-06-09T18:47:28.302Z"
+  },
+  {
+    "id": "cmq6zs5rk004shwlqnz6riuma",
+    "question": "The concept of 'Judicial Review' in India is borrowed from which country's constitution?",
+    "options": [
+      "USA",
+      "Britain",
+      "Canada",
+      "Ireland"
+    ],
+    "correctIndex": 0,
+    "explanation": "Judicial Review is borrowed from the US Constitution.",
+    "pillar": "Polity",
+    "difficulty": "Medium",
+    "section": "DAILY_QUIZ",
+    "status": "ACTIVE",
+    "timesUsed": 0,
+    "createdAt": "2026-06-09T18:47:28.304Z",
+    "updatedAt": "2026-06-09T18:47:28.304Z"
+  },
+  {
+    "id": "cmq6zs5ro004uhwlqthcegcrf",
+    "question": "Who is the head of the State Government in India?",
+    "options": [
+      "Governor",
+      "Chief Minister",
+      "Chief Secretary",
+      "President"
+    ],
+    "correctIndex": 0,
+    "explanation": "The Governor is the constitutional head of a state.",
+    "pillar": "Polity",
+    "difficulty": "Easy",
+    "section": "DAILY_QUIZ",
+    "status": "ACTIVE",
+    "timesUsed": 0,
+    "createdAt": "2026-06-09T18:47:28.308Z",
+    "updatedAt": "2026-06-09T18:47:28.308Z"
+  },
+  {
+    "id": "cmq6zs5rv004xhwlqsdltzpmm",
+    "question": "Who appoints the Chief Justice of India?",
+    "options": [
+      "President",
+      "Prime Minister",
+      "Law Minister",
+      "Collegium"
+    ],
+    "correctIndex": 0,
+    "explanation": "The President appoints the CJI based on the recommendation of the collegium.",
+    "pillar": "Polity",
+    "difficulty": "Easy",
+    "section": "DAILY_QUIZ",
+    "status": "ACTIVE",
+    "timesUsed": 0,
+    "createdAt": "2026-06-09T18:47:28.315Z",
+    "updatedAt": "2026-06-09T18:47:28.315Z"
+  },
+  {
+    "id": "cmq6zs5rz004zhwlqp800sfsg",
+    "question": "Which article of the Indian Constitution deals with the Right to Education?",
+    "options": [
+      "Article 21A",
+      "Article 21",
+      "Article 14",
+      "Article 19"
+    ],
+    "correctIndex": 0,
+    "explanation": "Article 21A was added by the 86th Amendment Act, 2002.",
+    "pillar": "Polity",
+    "difficulty": "Medium",
+    "section": "DAILY_QUIZ",
+    "status": "ACTIVE",
+    "timesUsed": 0,
+    "createdAt": "2026-06-09T18:47:28.319Z",
+    "updatedAt": "2026-06-09T18:47:28.319Z"
+  },
+  {
+    "id": "cmq6zs5s90054hwlqajpa3rt9",
+    "question": "What is the minimum age to become a member of the Rajya Sabha?",
+    "options": [
+      "30 years",
+      "25 years",
+      "35 years",
+      "21 years"
+    ],
+    "correctIndex": 0,
+    "explanation": "A Rajya Sabha member must be at least 30 years old.",
+    "pillar": "Polity",
+    "difficulty": "Medium",
+    "section": "DAILY_QUIZ",
+    "status": "ACTIVE",
+    "timesUsed": 0,
+    "createdAt": "2026-06-09T18:47:28.329Z",
+    "updatedAt": "2026-06-09T18:47:28.329Z"
+  },
+  {
+    "id": "cmq6zs5s10050hwlqmojcl0ov",
+    "question": "How many High Courts are there in India (as of 2025)?",
+    "options": [
+      "25",
+      "24",
+      "26",
+      "28"
+    ],
+    "correctIndex": 0,
+    "explanation": "India has 25 High Courts as of 2025.",
+    "pillar": "Polity",
+    "difficulty": "Medium",
+    "section": "DAILY_QUIZ",
+    "status": "ACTIVE",
+    "timesUsed": 1,
+    "createdAt": "2026-06-09T18:47:28.321Z",
+    "updatedAt": "2026-06-10T05:33:29.839Z"
+  },
+  {
+    "id": "cmq6zs5s20051hwlq7g3dpvg4",
+    "question": "Who is the chairman of the Rajya Sabha?",
+    "options": [
+      "Vice President of India",
+      "President",
+      "Prime Minister",
+      "Speaker"
+    ],
+    "correctIndex": 0,
+    "explanation": "The Vice President is the ex-officio chairman of Rajya Sabha.",
+    "pillar": "Polity",
+    "difficulty": "Easy",
+    "section": "DAILY_QUIZ",
+    "status": "ACTIVE",
+    "timesUsed": 1,
+    "createdAt": "2026-06-09T18:47:28.322Z",
+    "updatedAt": "2026-06-10T05:33:29.855Z"
+  },
+  {
+    "id": "cmq6zs5qy004ghwlqeswba6v1",
+    "question": "The Simon Commission came to India in which year?",
+    "options": [
+      "1928",
+      "1930",
+      "1925",
+      "1932"
+    ],
+    "correctIndex": 0,
+    "explanation": "The Simon Commission arrived in India in 1928 and was met with protest.",
+    "pillar": "History",
+    "difficulty": "Medium",
+    "section": "DAILY_QUIZ",
+    "status": "ACTIVE",
+    "timesUsed": 1,
+    "createdAt": "2026-06-09T18:47:28.282Z",
+    "updatedAt": "2026-06-10T05:33:29.868Z"
+  },
+  {
+    "id": "cmq6zs5s40052hwlqlstps13s",
+    "question": "Which of the following is not a writ issued by the Supreme Court?",
+    "options": [
+      "Mandamus",
+      "Certiorari",
+      "Habeas Corpus",
+      "Subpoena"
+    ],
+    "correctIndex": 3,
+    "explanation": "Subpoena is not a constitutional writ; 5 writs exist: Habeas Corpus, Mandamus, Certiorari, Prohibition, Quo Warranto.",
+    "pillar": "Polity",
+    "difficulty": "Medium",
+    "section": "DAILY_QUIZ",
+    "status": "ACTIVE",
+    "timesUsed": 1,
+    "createdAt": "2026-06-09T18:47:28.324Z",
+    "updatedAt": "2026-06-10T05:33:29.881Z"
+  },
+  {
+    "id": "cmq6zs5r2004ihwlqqgtum6af",
+    "question": "Which movement was launched by Gandhiji in 1942?",
+    "options": [
+      "Quit India Movement",
+      "Non-Cooperation Movement",
+      "Civil Disobedience Movement",
+      "Rowlatt Satyagraha"
+    ],
+    "correctIndex": 0,
+    "explanation": "The Quit India Movement was launched on 8 August 1942.",
+    "pillar": "History",
+    "difficulty": "Easy",
+    "section": "DAILY_QUIZ",
+    "status": "ACTIVE",
+    "timesUsed": 1,
+    "createdAt": "2026-06-09T18:47:28.286Z",
+    "updatedAt": "2026-06-10T05:33:29.892Z"
+  },
+  {
+    "id": "cmq6zs5rs004whwlqaeo5wt7v",
+    "question": "Which amendment to the Indian Constitution is known as the 'Mini-Constitution'?",
+    "options": [
+      "42nd Amendment",
+      "44th Amendment",
+      "73rd Amendment",
+      "74th Amendment"
+    ],
+    "correctIndex": 0,
+    "explanation": "The 42nd Amendment (1976) made sweeping changes to the Constitution.",
+    "pillar": "Polity",
+    "difficulty": "Medium",
+    "section": "DAILY_QUIZ",
+    "status": "ACTIVE",
+    "timesUsed": 1,
+    "createdAt": "2026-06-09T18:47:28.312Z",
+    "updatedAt": "2026-06-11T10:09:55.192Z"
+  },
+  {
+    "id": "cmq6zs5r3004jhwlqouoo112w",
+    "question": "Who was the first ruler of the Slave Dynasty in India?",
+    "options": [
+      "Qutb-ud-din Aibak",
+      "Iltutmish",
+      "Razia Sultana",
+      "Ghiyasuddin Balban"
+    ],
+    "correctIndex": 0,
+    "explanation": "Qutb-ud-din Aibak founded the Slave (Mamluk) Dynasty in 1206.",
+    "pillar": "History",
+    "difficulty": "Medium",
+    "section": "DAILY_QUIZ",
+    "status": "ACTIVE",
+    "timesUsed": 1,
+    "createdAt": "2026-06-09T18:47:28.287Z",
+    "updatedAt": "2026-06-11T19:00:00.307Z"
+  },
+  {
+    "id": "cmq6zs5rq004vhwlqp6rmb179",
+    "question": "What is the maximum strength of the Lok Sabha?",
+    "options": [
+      "550",
+      "545",
+      "552",
+      "555"
+    ],
+    "correctIndex": 0,
+    "explanation": "The maximum strength is 550 members (530 from states + 20 from UTs).",
+    "pillar": "Polity",
+    "difficulty": "Medium",
+    "section": "DAILY_QUIZ",
+    "status": "ACTIVE",
+    "timesUsed": 1,
+    "createdAt": "2026-06-09T18:47:28.310Z",
+    "updatedAt": "2026-06-11T19:00:00.307Z"
+  },
+  {
+    "id": "cmq6zs5sb0055hwlqnpdpyla1",
+    "question": "Who among the following can vote in the election of the President of India?",
+    "options": [
+      "All elected MPs and MLAs",
+      "All citizens above 18",
+      "All elected MPs only",
+      "All MPs and MLAs"
+    ],
+    "correctIndex": 0,
+    "explanation": "The President is elected by an electoral college consisting of elected MPs and MLAs.",
+    "pillar": "Polity",
+    "difficulty": "Medium",
+    "section": "DAILY_QUIZ",
+    "status": "ACTIVE",
+    "timesUsed": 0,
+    "createdAt": "2026-06-09T18:47:28.331Z",
+    "updatedAt": "2026-06-09T18:47:28.331Z"
+  },
+  {
+    "id": "cmq6zs5sd0056hwlqkinad21d",
+    "question": "Which article of the Indian Constitution abolishes untouchability?",
+    "options": [
+      "Article 17",
+      "Article 14",
+      "Article 15",
+      "Article 16"
+    ],
+    "correctIndex": 0,
+    "explanation": "Article 17 abolishes 'untouchability' and forbids its practice.",
+    "pillar": "Polity",
+    "difficulty": "Easy",
+    "section": "DAILY_QUIZ",
+    "status": "ACTIVE",
+    "timesUsed": 0,
+    "createdAt": "2026-06-09T18:47:28.333Z",
+    "updatedAt": "2026-06-09T18:47:28.333Z"
+  },
+  {
+    "id": "cmq6zs5sf0057hwlqnn0cv5f4",
+    "question": "Who was the first Speaker of the Lok Sabha?",
+    "options": [
+      "G.V. Mavalankar",
+      "M.A. Ayyangar",
+      "Hukam Singh",
+      "N. Sanjiva Reddy"
+    ],
+    "correctIndex": 0,
+    "explanation": "G.V. Mavalankar served as the first Speaker from 1952 to 1956.",
+    "pillar": "Polity",
+    "difficulty": "Medium",
+    "section": "DAILY_QUIZ",
+    "status": "ACTIVE",
+    "timesUsed": 0,
+    "createdAt": "2026-06-09T18:47:28.335Z",
+    "updatedAt": "2026-06-09T18:47:28.335Z"
+  },
+  {
+    "id": "cmq6zs5sh0058hwlqbkjg1rmf",
+    "question": "The Indian Constitution is which type of document?",
+    "options": [
+      "Federal with unitary bias",
+      "Unitary",
+      "Federal",
+      "Confederal"
+    ],
+    "correctIndex": 0,
+    "explanation": "The Indian Constitution establishes a federal system with unitary features.",
+    "pillar": "Polity",
+    "difficulty": "Medium",
+    "section": "DAILY_QUIZ",
+    "status": "ACTIVE",
+    "timesUsed": 0,
+    "createdAt": "2026-06-09T18:47:28.337Z",
+    "updatedAt": "2026-06-09T18:47:28.337Z"
+  },
+  {
+    "id": "cmq6zs5sj0059hwlqgsm6zwsf",
+    "question": "Which part of the Indian Constitution deals with Directive Principles of State Policy?",
+    "options": [
+      "Part IV",
+      "Part III",
+      "Part II",
+      "Part V"
+    ],
+    "correctIndex": 0,
+    "explanation": "Part IV (Articles 36-51) deals with Directive Principles.",
+    "pillar": "Polity",
+    "difficulty": "Medium",
+    "section": "DAILY_QUIZ",
+    "status": "ACTIVE",
+    "timesUsed": 0,
+    "createdAt": "2026-06-09T18:47:28.339Z",
+    "updatedAt": "2026-06-09T18:47:28.339Z"
+  },
+  {
+    "id": "cmq6zs5sl005ahwlq4n0c7uub",
+    "question": "The APSC (Assam Public Service Commission) was established in which year?",
+    "options": [
+      "1972",
+      "1950",
+      "1960",
+      "1980"
+    ],
+    "correctIndex": 0,
+    "explanation": "APSC was established on 1 October 1972 under Article 315 of the Constitution.",
+    "pillar": "Mixed",
+    "difficulty": "Medium",
+    "section": "DAILY_QUIZ",
+    "status": "ACTIVE",
+    "timesUsed": 0,
+    "createdAt": "2026-06-09T18:47:28.341Z",
+    "updatedAt": "2026-06-09T18:47:28.341Z"
+  },
+  {
+    "id": "cmq6zs5sn005bhwlqyqtiatmy",
+    "question": "Which of the following exams is conducted by APSC?",
+    "options": [
+      "ACS (Assam Civil Service)",
+      "UPSC Civil Services",
+      "SSC CGL",
+      "IBPS PO"
+    ],
+    "correctIndex": 0,
+    "explanation": "APSC conducts the Assam Civil Service (ACS) and other state-level exams.",
+    "pillar": "Mixed",
+    "difficulty": "Easy",
+    "section": "DAILY_QUIZ",
+    "status": "ACTIVE",
+    "timesUsed": 0,
+    "createdAt": "2026-06-09T18:47:28.343Z",
+    "updatedAt": "2026-06-09T18:47:28.343Z"
+  },
+  {
+    "id": "cmq6zs5sp005chwlql6oymxmb",
+    "question": "What is the full form of APSC?",
+    "options": [
+      "Assam Public Service Commission",
+      "Assam Professional Services Commission",
+      "Assam Personnel Selection Commission",
+      "Assam Provincial Service Commission"
+    ],
+    "correctIndex": 0,
+    "explanation": "APSC stands for Assam Public Service Commission.",
+    "pillar": "Mixed",
+    "difficulty": "Easy",
+    "section": "DAILY_QUIZ",
+    "status": "ACTIVE",
+    "timesUsed": 0,
+    "createdAt": "2026-06-09T18:47:28.345Z",
+    "updatedAt": "2026-06-09T18:47:28.345Z"
+  },
+  {
+    "id": "cmq6zs5ss005dhwlqrhck5dz3",
+    "question": "The APSC CC (Combined Competitive) Examination consists of how many stages?",
+    "options": [
+      "Three (Prelims, Mains, Interview)",
+      "Two (Written, Interview)",
+      "Four",
+      "Only one"
+    ],
+    "correctIndex": 0,
+    "explanation": "The APSC CC exam has three stages: prelims, mains, and interview/personality test.",
+    "pillar": "Mixed",
+    "difficulty": "Medium",
+    "section": "DAILY_QUIZ",
+    "status": "ACTIVE",
+    "timesUsed": 0,
+    "createdAt": "2026-06-09T18:47:28.348Z",
+    "updatedAt": "2026-06-09T18:47:28.348Z"
+  },
+  {
+    "id": "cmq6zs5su005ehwlq2djnvftz",
+    "question": "Which article of the Indian Constitution provides for the establishment of Public Service Commissions?",
+    "options": [
+      "Article 315",
+      "Article 320",
+      "Article 312",
+      "Article 335"
+    ],
+    "correctIndex": 0,
+    "explanation": "Article 315 provides for PSCs at the Union and state levels.",
+    "pillar": "Mixed",
+    "difficulty": "Medium",
+    "section": "DAILY_QUIZ",
+    "status": "ACTIVE",
+    "timesUsed": 0,
+    "createdAt": "2026-06-09T18:47:28.350Z",
+    "updatedAt": "2026-06-09T18:47:28.350Z"
+  },
+  {
+    "id": "cmq6zs5sw005fhwlq6lbrujuc",
+    "question": "What is the maximum age limit for APSC CC Exam for General category candidates?",
+    "options": [
+      "35 years",
+      "30 years",
+      "38 years",
+      "40 years"
+    ],
+    "correctIndex": 0,
+    "explanation": "For the APSC CC exam, the upper age limit is 35 years for General candidates.",
+    "pillar": "Mixed",
+    "difficulty": "Easy",
+    "section": "DAILY_QUIZ",
+    "status": "ACTIVE",
+    "timesUsed": 0,
+    "createdAt": "2026-06-09T18:47:28.352Z",
+    "updatedAt": "2026-06-09T18:47:28.352Z"
+  },
+  {
+    "id": "cmq6zs5sy005ghwlqgabf70bs",
+    "question": "How many papers are there in the APSC Mains examination?",
+    "options": [
+      "6 papers",
+      "7 papers",
+      "5 papers",
+      "4 papers"
+    ],
+    "correctIndex": 0,
+    "explanation": "APSC Mains consists of 6 papers including General Studies, Essay, and Optional.",
+    "pillar": "Mixed",
+    "difficulty": "Medium",
+    "section": "DAILY_QUIZ",
+    "status": "ACTIVE",
+    "timesUsed": 0,
+    "createdAt": "2026-06-09T18:47:28.354Z",
+    "updatedAt": "2026-06-09T18:47:28.354Z"
+  },
+  {
+    "id": "cmq6zs5t0005hhwlq3z5i14k5",
+    "question": "Which river island is a popular tourist destination in Assam?",
+    "options": [
+      "Majuli",
+      "Umananda",
+      "Brahmaputra Island",
+      "Dibru Island"
+    ],
+    "correctIndex": 0,
+    "explanation": "Majuli is the world's largest inhabited river island.",
+    "pillar": "Mixed",
+    "difficulty": "Easy",
+    "section": "DAILY_QUIZ",
+    "status": "ACTIVE",
+    "timesUsed": 0,
+    "createdAt": "2026-06-09T18:47:28.356Z",
+    "updatedAt": "2026-06-09T18:47:28.356Z"
+  },
+  {
+    "id": "cmq6zs5t2005ihwlqkijokbp0",
+    "question": "Who was the first member of the Assam Legislative Assembly to become the Chief Minister?",
+    "options": [
+      "Gopinath Bordoloi",
+      "Bishnuram Medhi",
+      "Bimala Prasad Chaliha",
+      "Mahendra Mohan Choudhury"
+    ],
+    "correctIndex": 0,
+    "explanation": "Gopinath Bordoloi was the first CM after the formation of Assam.",
+    "pillar": "Mixed",
+    "difficulty": "Medium",
+    "section": "DAILY_QUIZ",
+    "status": "ACTIVE",
+    "timesUsed": 0,
+    "createdAt": "2026-06-09T18:47:28.358Z",
+    "updatedAt": "2026-06-09T18:47:28.358Z"
+  },
+  {
+    "id": "cmq6zs5t5005jhwlqpozhtr2f",
+    "question": "The Assam Accord was signed in which year?",
+    "options": [
+      "1985",
+      "1983",
+      "1987",
+      "1990"
+    ],
+    "correctIndex": 0,
+    "explanation": "The Assam Accord was signed on 15 August 1985 between the central government and AASU.",
+    "pillar": "Mixed",
+    "difficulty": "Medium",
+    "section": "DAILY_QUIZ",
+    "status": "ACTIVE",
+    "timesUsed": 0,
+    "createdAt": "2026-06-09T18:47:28.361Z",
+    "updatedAt": "2026-06-09T18:47:28.361Z"
+  },
+  {
+    "id": "cmq6zs5i20007hwlqkzvic9eh",
+    "question": "How many schedules are there in the Indian Constitution?",
+    "options": [
+      "12",
+      "8",
+      "10",
+      "14"
+    ],
+    "correctIndex": 0,
+    "explanation": "The Indian Constitution originally had 8 schedules, now has 12.",
+    "pillar": "GK",
+    "difficulty": "Medium",
+    "section": "DAILY_QUIZ",
+    "status": "ACTIVE",
+    "timesUsed": 1,
+    "createdAt": "2026-06-09T18:47:27.962Z",
+    "updatedAt": "2026-06-09T18:48:00.485Z"
+  },
+  {
+    "id": "cmq6zs5kl0019hwlquybknrto",
+    "question": "What is the capital of Assam?",
+    "options": [
+      "Dispur",
+      "Guwahati",
+      "Jorhat",
+      "Silchar"
+    ],
+    "correctIndex": 0,
+    "explanation": "Dispur, within the Guwahati metropolitan area, is the capital of Assam.",
+    "pillar": "AssamGK",
+    "difficulty": "Easy",
+    "section": "DAILY_QUIZ",
+    "status": "ACTIVE",
+    "timesUsed": 1,
+    "createdAt": "2026-06-09T18:47:28.053Z",
+    "updatedAt": "2026-06-09T18:48:00.485Z"
+  },
+  {
+    "id": "cmq6zs5n8002fhwlqqt02i1fd",
+    "question": "Which Assamese literary figure wrote 'Miri Jiyori'?",
+    "options": [
+      "Rajanikanta Bordoloi",
+      "Birendra Kumar Bhattacharya",
+      "Padmanath Gohain Baruah",
+      "Lakshminath Bezbaroa"
+    ],
+    "correctIndex": 0,
+    "explanation": "Rajanikanta Bordoloi wrote the famous Assamese novel 'Miri Jiyori'.",
+    "pillar": "AssamGK",
+    "difficulty": "Hard",
+    "section": "DAILY_QUIZ",
+    "status": "ACTIVE",
+    "timesUsed": 1,
+    "createdAt": "2026-06-09T18:47:28.148Z",
+    "updatedAt": "2026-06-09T18:48:00.485Z"
+  },
+  {
+    "id": "cmq6zs5o7002xhwlql5s9946r",
+    "question": "The 2025 Assam flood affected approximately how many people?",
+    "options": [
+      "30 lakh",
+      "10 lakh",
+      "50 lakh",
+      "15 lakh"
+    ],
+    "correctIndex": 0,
+    "explanation": "Assam floods in 2025 affected about 30 lakh people.",
+    "pillar": "CurrentAffairs",
+    "difficulty": "Hard",
+    "section": "DAILY_QUIZ",
+    "status": "ACTIVE",
+    "timesUsed": 1,
+    "createdAt": "2026-06-09T18:47:28.183Z",
+    "updatedAt": "2026-06-09T18:48:00.485Z"
+  },
+  {
+    "id": "cmq6zs5pb003hhwlqpgryaw60",
+    "question": "Which gas is required for photosynthesis?",
+    "options": [
+      "Carbon Dioxide",
+      "Oxygen",
+      "Nitrogen",
+      "Hydrogen"
+    ],
+    "correctIndex": 0,
+    "explanation": "Plants use CO₂ and sunlight to produce glucose during photosynthesis.",
+    "pillar": "Science",
+    "difficulty": "Easy",
+    "section": "DAILY_QUIZ",
+    "status": "ACTIVE",
+    "timesUsed": 1,
+    "createdAt": "2026-06-09T18:47:28.223Z",
+    "updatedAt": "2026-06-09T18:48:00.485Z"
+  },
+  {
+    "id": "cmq6zs5s70053hwlq7pfofeng",
+    "question": "The Panchayati Raj system was constitutionalised by which amendment?",
+    "options": [
+      "73rd Amendment",
+      "74th Amendment",
+      "72nd Amendment",
+      "44th Amendment"
+    ],
+    "correctIndex": 0,
+    "explanation": "The 73rd Amendment (1992) gave constitutional status to Panchayati Raj.",
+    "pillar": "Polity",
+    "difficulty": "Medium",
+    "section": "DAILY_QUIZ",
+    "status": "ACTIVE",
+    "timesUsed": 1,
+    "createdAt": "2026-06-09T18:47:28.327Z",
+    "updatedAt": "2026-06-09T18:48:00.485Z"
+  },
+  {
+    "id": "cmq7lv9b20000nklqx1mrj3za",
+    "question": "What is the capital of India?",
+    "options": [
+      "New Delhi",
+      "Mumbai",
+      "Kolkata",
+      "Chennai"
+    ],
+    "correctIndex": 0,
+    "explanation": "New Delhi is the capital of India.",
+    "pillar": "GK",
+    "difficulty": "Easy",
+    "section": "MOCK_TEST",
+    "status": "ACTIVE",
+    "timesUsed": 0,
+    "createdAt": "2026-06-10T05:05:44.414Z",
+    "updatedAt": "2026-06-10T05:05:44.414Z"
+  },
+  {
+    "id": "cmq6zs5ka0013hwlqcyh9babv",
+    "question": "What is the voting age in India?",
+    "options": [
+      "18 years",
+      "21 years",
+      "16 years",
+      "25 years"
+    ],
+    "correctIndex": 0,
+    "explanation": "The 61st Amendment Act, 1988 reduced the voting age from 21 to 18.",
+    "pillar": "GK",
+    "difficulty": "Easy",
+    "section": "DAILY_QUIZ",
+    "status": "ACTIVE",
+    "timesUsed": 2,
+    "createdAt": "2026-06-09T18:47:28.042Z",
+    "updatedAt": "2026-06-10T05:33:29.868Z"
+  },
+  {
+    "id": "cmq6zs5jw000xhwlqe7ec2ekt",
+    "question": "Which organization conducts the Union Public Service Commission exams?",
+    "options": [
+      "UPSC",
+      "SSC",
+      "RRB",
+      "IBPS"
+    ],
+    "correctIndex": 0,
+    "explanation": "UPSC conducts civil services examinations for the central government.",
+    "pillar": "GK",
+    "difficulty": "Easy",
+    "section": "DAILY_QUIZ",
+    "status": "ACTIVE",
+    "timesUsed": 2,
+    "createdAt": "2026-06-09T18:47:28.028Z",
+    "updatedAt": "2026-06-10T05:33:29.892Z"
+  },
+  {
+    "id": "cmq7lv9b30001nklqf53uuiyg",
+    "question": "Who is known as the Father of the Indian Constitution?",
+    "options": [
+      "Dr. B.R. Ambedkar",
+      "Mahatma Gandhi",
+      "Jawaharlal Nehru",
+      "Sardar Patel"
+    ],
+    "correctIndex": 0,
+    "explanation": "Dr. B.R. Ambedkar was chairman of the Drafting Committee.",
+    "pillar": "GK",
+    "difficulty": "Easy",
+    "section": "MOCK_TEST",
+    "status": "ACTIVE",
+    "timesUsed": 0,
+    "createdAt": "2026-06-10T05:05:44.414Z",
+    "updatedAt": "2026-06-10T05:05:44.414Z"
+  },
+  {
+    "id": "cmq7lv9b30002nklqrnuibt9q",
+    "question": "Which is the largest state in India by area?",
+    "options": [
+      "Rajasthan",
+      "Madhya Pradesh",
+      "Maharashtra",
+      "Uttar Pradesh"
+    ],
+    "correctIndex": 0,
+    "explanation": "Rajasthan covers 342,239 sq km.",
+    "pillar": "GK",
+    "difficulty": "Easy",
+    "section": "MOCK_TEST",
+    "status": "ACTIVE",
+    "timesUsed": 0,
+    "createdAt": "2026-06-10T05:05:44.414Z",
+    "updatedAt": "2026-06-10T05:05:44.414Z"
+  },
+  {
+    "id": "cmq7lv9b30003nklqjk2e8zyj",
+    "question": "What is the currency of India?",
+    "options": [
+      "Rupee",
+      "Dollar",
+      "Euro",
+      "Yen"
+    ],
+    "correctIndex": 0,
+    "explanation": "The Indian Rupee is the official currency.",
+    "pillar": "GK",
+    "difficulty": "Easy",
+    "section": "MOCK_TEST",
+    "status": "ACTIVE",
+    "timesUsed": 0,
+    "createdAt": "2026-06-10T05:05:44.414Z",
+    "updatedAt": "2026-06-10T05:05:44.414Z"
+  },
+  {
+    "id": "cmq7lv9b30004nklqk236frnj",
+    "question": "Which river is the longest in India?",
+    "options": [
+      "Ganga",
+      "Yamuna",
+      "Brahmaputra",
+      "Godavari"
+    ],
+    "correctIndex": 0,
+    "explanation": "The Ganga is 2,525 km long.",
+    "pillar": "GK",
+    "difficulty": "Easy",
+    "section": "MOCK_TEST",
+    "status": "ACTIVE",
+    "timesUsed": 0,
+    "createdAt": "2026-06-10T05:05:44.414Z",
+    "updatedAt": "2026-06-10T05:05:44.414Z"
+  },
+  {
+    "id": "cmq7lv9b30005nklqfo9ib36v",
+    "question": "In which year did India gain independence?",
+    "options": [
+      "1947",
+      "1950",
+      "1945",
+      "1942"
+    ],
+    "correctIndex": 0,
+    "explanation": "India gained independence on 15 August 1947.",
+    "pillar": "GK",
+    "difficulty": "Easy",
+    "section": "MOCK_TEST",
+    "status": "ACTIVE",
+    "timesUsed": 0,
+    "createdAt": "2026-06-10T05:05:44.414Z",
+    "updatedAt": "2026-06-10T05:05:44.414Z"
+  },
+  {
+    "id": "cmq7lv9b30006nklqrlx33ld5",
+    "question": "Who was the first Prime Minister of India?",
+    "options": [
+      "Jawaharlal Nehru",
+      "Mahatma Gandhi",
+      "Sardar Patel",
+      "Dr. B.R. Ambedkar"
+    ],
+    "correctIndex": 0,
+    "explanation": "Nehru served from 1947 to 1964.",
+    "pillar": "GK",
+    "difficulty": "Easy",
+    "section": "MOCK_TEST",
+    "status": "ACTIVE",
+    "timesUsed": 0,
+    "createdAt": "2026-06-10T05:05:44.414Z",
+    "updatedAt": "2026-06-10T05:05:44.414Z"
+  },
+  {
+    "id": "cmq7lv9b30007nklq8r71mrht",
+    "question": "Which is the highest civilian award in India?",
+    "options": [
+      "Bharat Ratna",
+      "Padma Vibhushan",
+      "Padma Shri",
+      "Param Vir Chakra"
+    ],
+    "correctIndex": 0,
+    "explanation": "Bharat Ratna is the highest civilian award.",
+    "pillar": "GK",
+    "difficulty": "Easy",
+    "section": "MOCK_TEST",
+    "status": "ACTIVE",
+    "timesUsed": 0,
+    "createdAt": "2026-06-10T05:05:44.414Z",
+    "updatedAt": "2026-06-10T05:05:44.414Z"
+  },
+  {
+    "id": "cmq7lv9b30008nklqlz3atvcc",
+    "question": "What is the national animal of India?",
+    "options": [
+      "Bengal Tiger",
+      "Peacock",
+      "Elephant",
+      "Lion"
+    ],
+    "correctIndex": 0,
+    "explanation": "The Bengal Tiger is the national animal.",
+    "pillar": "GK",
+    "difficulty": "Easy",
+    "section": "MOCK_TEST",
+    "status": "ACTIVE",
+    "timesUsed": 0,
+    "createdAt": "2026-06-10T05:05:44.414Z",
+    "updatedAt": "2026-06-10T05:05:44.414Z"
+  },
+  {
+    "id": "cmq7lv9b30009nklq5w5vjtvn",
+    "question": "Who wrote Jana Gana Mana?",
+    "options": [
+      "Rabindranath Tagore",
+      "Bankim Chandra Chatterjee",
+      "Muhammad Iqbal",
+      "Subramania Bharati"
+    ],
+    "correctIndex": 0,
+    "explanation": "Tagore wrote the national anthem in 1911.",
+    "pillar": "GK",
+    "difficulty": "Easy",
+    "section": "MOCK_TEST",
+    "status": "ACTIVE",
+    "timesUsed": 0,
+    "createdAt": "2026-06-10T05:05:44.414Z",
+    "updatedAt": "2026-06-10T05:05:44.414Z"
+  },
+  {
+    "id": "cmq7lv9b3000anklqtv69r389",
+    "question": "Which gas is most abundant in Earth atmosphere?",
+    "options": [
+      "Nitrogen",
+      "Oxygen",
+      "Carbon Dioxide",
+      "Argon"
+    ],
+    "correctIndex": 0,
+    "explanation": "Nitrogen makes up about 78%.",
+    "pillar": "GK",
+    "difficulty": "Easy",
+    "section": "MOCK_TEST",
+    "status": "ACTIVE",
+    "timesUsed": 0,
+    "createdAt": "2026-06-10T05:05:44.414Z",
+    "updatedAt": "2026-06-10T05:05:44.414Z"
+  },
+  {
+    "id": "cmq7lv9b3000bnklqvk3vc3qd",
+    "question": "The UN was founded in which year?",
+    "options": [
+      "1945",
+      "1947",
+      "1950",
+      "1939"
+    ],
+    "correctIndex": 0,
+    "explanation": "The UN was founded on 24 October 1945.",
+    "pillar": "GK",
+    "difficulty": "Easy",
+    "section": "MOCK_TEST",
+    "status": "ACTIVE",
+    "timesUsed": 0,
+    "createdAt": "2026-06-10T05:05:44.414Z",
+    "updatedAt": "2026-06-10T05:05:44.414Z"
+  },
+  {
+    "id": "cmq7lv9b3000cnklqb55xb5rr",
+    "question": "Which planet is known as the Red Planet?",
+    "options": [
+      "Mars",
+      "Venus",
+      "Jupiter",
+      "Saturn"
+    ],
+    "correctIndex": 0,
+    "explanation": "Mars appears reddish due to iron oxide.",
+    "pillar": "GK",
+    "difficulty": "Easy",
+    "section": "MOCK_TEST",
+    "status": "ACTIVE",
+    "timesUsed": 0,
+    "createdAt": "2026-06-10T05:05:44.414Z",
+    "updatedAt": "2026-06-10T05:05:44.414Z"
+  },
+  {
+    "id": "cmq7lv9b3000dnklqzp7xqv5v",
+    "question": "What is the chemical symbol for Gold?",
+    "options": [
+      "Au",
+      "Ag",
+      "Fe",
+      "Cu"
+    ],
+    "correctIndex": 0,
+    "explanation": "Au comes from Latin Aurum.",
+    "pillar": "GK",
+    "difficulty": "Easy",
+    "section": "MOCK_TEST",
+    "status": "ACTIVE",
+    "timesUsed": 0,
+    "createdAt": "2026-06-10T05:05:44.414Z",
+    "updatedAt": "2026-06-10T05:05:44.414Z"
+  },
+  {
+    "id": "cmq7lv9b3000enklqa0iif7ks",
+    "question": "Who is known as the Missile Man of India?",
+    "options": [
+      "Dr. APJ Abdul Kalam",
+      "Dr. Vikram Sarabhai",
+      "Dr. Homi Bhabha",
+      "Dr. C.V. Raman"
+    ],
+    "correctIndex": 0,
+    "explanation": "Kalam was instrumental in Indias missile development.",
+    "pillar": "GK",
+    "difficulty": "Easy",
+    "section": "MOCK_TEST",
+    "status": "ACTIVE",
+    "timesUsed": 0,
+    "createdAt": "2026-06-10T05:05:44.414Z",
+    "updatedAt": "2026-06-10T05:05:44.414Z"
+  },
+  {
+    "id": "cmq7lv9b3000fnklqjcqtio6p",
+    "question": "Which organization conducts UPSC exams?",
+    "options": [
+      "UPSC",
+      "SSC",
+      "RRB",
+      "IBPS"
+    ],
+    "correctIndex": 0,
+    "explanation": "UPSC conducts civil services examinations.",
+    "pillar": "GK",
+    "difficulty": "Easy",
+    "section": "MOCK_TEST",
+    "status": "ACTIVE",
+    "timesUsed": 0,
+    "createdAt": "2026-06-10T05:05:44.414Z",
+    "updatedAt": "2026-06-10T05:05:44.414Z"
+  },
+  {
+    "id": "cmq7lv9b4000gnklqy2rl79aa",
+    "question": "What is the voting age in India?",
+    "options": [
+      "18 years",
+      "21 years",
+      "16 years",
+      "25 years"
+    ],
+    "correctIndex": 0,
+    "explanation": "The 61st Amendment reduced it from 21 to 18.",
+    "pillar": "GK",
+    "difficulty": "Easy",
+    "section": "MOCK_TEST",
+    "status": "ACTIVE",
+    "timesUsed": 0,
+    "createdAt": "2026-06-10T05:05:44.414Z",
+    "updatedAt": "2026-06-10T05:05:44.414Z"
+  },
+  {
+    "id": "cmq7lv9b4000hnklqzom0a9i8",
+    "question": "Which Mughal emperor built the Taj Mahal?",
+    "options": [
+      "Shah Jahan",
+      "Akbar",
+      "Jahangir",
+      "Aurangzeb"
+    ],
+    "correctIndex": 0,
+    "explanation": "Shah Jahan built it in memory of Mumtaz Mahal.",
+    "pillar": "GK",
+    "difficulty": "Easy",
+    "section": "MOCK_TEST",
+    "status": "ACTIVE",
+    "timesUsed": 0,
+    "createdAt": "2026-06-10T05:05:44.414Z",
+    "updatedAt": "2026-06-10T05:05:44.414Z"
+  },
+  {
+    "id": "cmq7lv9b4000inklqj2q601q4",
+    "question": "The slogan Jai Jawan Jai Kisan was given by?",
+    "options": [
+      "Lal Bahadur Shastri",
+      "Jawaharlal Nehru",
+      "Indira Gandhi",
+      "Atal Bihari Vajpayee"
+    ],
+    "correctIndex": 0,
+    "explanation": "Shastri gave this slogan during the 1965 war.",
+    "pillar": "GK",
+    "difficulty": "Easy",
+    "section": "MOCK_TEST",
+    "status": "ACTIVE",
+    "timesUsed": 0,
+    "createdAt": "2026-06-10T05:05:44.414Z",
+    "updatedAt": "2026-06-10T05:05:44.414Z"
+  },
+  {
+    "id": "cmq7lv9b4000jnklqh3cir8oj",
+    "question": "Which is the largest democracy in the world?",
+    "options": [
+      "India",
+      "United States",
+      "Indonesia",
+      "Brazil"
+    ],
+    "correctIndex": 0,
+    "explanation": "India has over 1.4 billion people.",
+    "pillar": "GK",
+    "difficulty": "Easy",
+    "section": "MOCK_TEST",
+    "status": "ACTIVE",
+    "timesUsed": 0,
+    "createdAt": "2026-06-10T05:05:44.414Z",
+    "updatedAt": "2026-06-10T05:05:44.414Z"
+  },
+  {
+    "id": "cmq7lv9b4000knklq8u437ay2",
+    "question": "Who was the first Indian Nobel laureate?",
+    "options": [
+      "Rabindranath Tagore",
+      "C.V. Raman",
+      "Amartya Sen",
+      "Mother Teresa"
+    ],
+    "correctIndex": 0,
+    "explanation": "Tagore won the Nobel Prize in Literature in 1913.",
+    "pillar": "GK",
+    "difficulty": "Easy",
+    "section": "MOCK_TEST",
+    "status": "ACTIVE",
+    "timesUsed": 0,
+    "createdAt": "2026-06-10T05:05:44.414Z",
+    "updatedAt": "2026-06-10T05:05:44.414Z"
+  },
+  {
+    "id": "cmq7lv9b4000lnklqrqyigpgy",
+    "question": "What does Lok Sabha mean?",
+    "options": [
+      "House of the People",
+      "Council of States",
+      "Upper House",
+      "Supreme Court"
+    ],
+    "correctIndex": 0,
+    "explanation": "Lok Sabha is the lower house of Parliament.",
+    "pillar": "GK",
+    "difficulty": "Easy",
+    "section": "MOCK_TEST",
+    "status": "ACTIVE",
+    "timesUsed": 0,
+    "createdAt": "2026-06-10T05:05:44.414Z",
+    "updatedAt": "2026-06-10T05:05:44.414Z"
+  },
+  {
+    "id": "cmq7lv9b4000mnklqt5td7u6x",
+    "question": "How many schedules are in the Indian Constitution?",
+    "options": [
+      "12",
+      "8",
+      "10",
+      "14"
+    ],
+    "correctIndex": 0,
+    "explanation": "Originally 8, now 12 schedules.",
+    "pillar": "GK",
+    "difficulty": "Medium",
+    "section": "MOCK_TEST",
+    "status": "ACTIVE",
+    "timesUsed": 0,
+    "createdAt": "2026-06-10T05:05:44.414Z",
+    "updatedAt": "2026-06-10T05:05:44.414Z"
+  },
+  {
+    "id": "cmq7lv9b4000nnklqs3tjmxxk",
+    "question": "Which is not a Fundamental Right in India?",
+    "options": [
+      "Right to Property",
+      "Right to Equality",
+      "Right to Freedom",
+      "Right to Constitutional Remedies"
+    ],
+    "correctIndex": 0,
+    "explanation": "Right to Property was removed by 44th Amendment.",
+    "pillar": "GK",
+    "difficulty": "Medium",
+    "section": "MOCK_TEST",
+    "status": "ACTIVE",
+    "timesUsed": 0,
+    "createdAt": "2026-06-10T05:05:44.414Z",
+    "updatedAt": "2026-06-10T05:05:44.414Z"
+  },
+  {
+    "id": "cmq7lv9b4000onklqqhx496g3",
+    "question": "The Parliament of India consists of how many houses?",
+    "options": [
+      "Two",
+      "One",
+      "Three",
+      "Four"
+    ],
+    "correctIndex": 0,
+    "explanation": "Lok Sabha, Rajya Sabha, and the President.",
+    "pillar": "GK",
+    "difficulty": "Medium",
+    "section": "MOCK_TEST",
+    "status": "ACTIVE",
+    "timesUsed": 0,
+    "createdAt": "2026-06-10T05:05:44.414Z",
+    "updatedAt": "2026-06-10T05:05:44.414Z"
+  },
+  {
+    "id": "cmq7lv9b4000pnklqxbnccnfd",
+    "question": "Who appoints the Chief Election Commissioner?",
+    "options": [
+      "President",
+      "Prime Minister",
+      "Chief Justice",
+      "Vice President"
+    ],
+    "correctIndex": 0,
+    "explanation": "The President appoints the CEC.",
+    "pillar": "GK",
+    "difficulty": "Medium",
+    "section": "MOCK_TEST",
+    "status": "ACTIVE",
+    "timesUsed": 0,
+    "createdAt": "2026-06-10T05:05:44.414Z",
+    "updatedAt": "2026-06-10T05:05:44.414Z"
+  },
+  {
+    "id": "cmq7lv9b4000qnklq7363qf26",
+    "question": "Which article abolishes untouchability?",
+    "options": [
+      "Article 17",
+      "Article 14",
+      "Article 15",
+      "Article 21"
+    ],
+    "correctIndex": 0,
+    "explanation": "Article 17 abolishes untouchability.",
+    "pillar": "GK",
+    "difficulty": "Medium",
+    "section": "MOCK_TEST",
+    "status": "ACTIVE",
+    "timesUsed": 0,
+    "createdAt": "2026-06-10T05:05:44.414Z",
+    "updatedAt": "2026-06-10T05:05:44.414Z"
+  },
+  {
+    "id": "cmq7lv9b4000rnklq4tdcbztj",
+    "question": "What was Indias first satellite?",
+    "options": [
+      "Aryabhata",
+      "Bhaskara",
+      "Rohini",
+      "INSAT-1A"
+    ],
+    "correctIndex": 0,
+    "explanation": "Aryabhata was launched in 1975.",
+    "pillar": "GK",
+    "difficulty": "Medium",
+    "section": "MOCK_TEST",
+    "status": "ACTIVE",
+    "timesUsed": 0,
+    "createdAt": "2026-06-10T05:05:44.414Z",
+    "updatedAt": "2026-06-10T05:05:44.414Z"
+  },
+  {
+    "id": "cmq7lv9b4000snklq8rz6ege0",
+    "question": "Which bank is the Lender of Last Resort?",
+    "options": [
+      "RBI",
+      "SBI",
+      "HDFC",
+      "NABARD"
+    ],
+    "correctIndex": 0,
+    "explanation": "Reserve Bank of India acts as lender of last resort.",
+    "pillar": "GK",
+    "difficulty": "Medium",
+    "section": "MOCK_TEST",
+    "status": "ACTIVE",
+    "timesUsed": 0,
+    "createdAt": "2026-06-10T05:05:44.414Z",
+    "updatedAt": "2026-06-10T05:05:44.414Z"
+  },
+  {
+    "id": "cmq7lv9b4000tnklqkt107h3x",
+    "question": "What is the minimum age to become President of India?",
+    "options": [
+      "35 years",
+      "30 years",
+      "25 years",
+      "40 years"
+    ],
+    "correctIndex": 0,
+    "explanation": "Article 58 requires the President to be at least 35.",
+    "pillar": "GK",
+    "difficulty": "Easy",
+    "section": "MOCK_TEST",
+    "status": "ACTIVE",
+    "timesUsed": 0,
+    "createdAt": "2026-06-10T05:05:44.414Z",
+    "updatedAt": "2026-06-10T05:05:44.414Z"
+  },
+  {
+    "id": "cmq7lv9b4000vnklq909xbudy",
+    "question": "Which Indian state has the longest coastline?",
+    "options": [
+      "Gujarat",
+      "Tamil Nadu",
+      "Maharashtra",
+      "Andhra Pradesh"
+    ],
+    "correctIndex": 0,
+    "explanation": "Gujarat has a coastline of about 1,600 km.",
+    "pillar": "GK",
+    "difficulty": "Easy",
+    "section": "MOCK_TEST",
+    "status": "ACTIVE",
+    "timesUsed": 0,
+    "createdAt": "2026-06-10T05:05:44.414Z",
+    "updatedAt": "2026-06-10T05:05:44.414Z"
+  },
+  {
+    "id": "cmq7lv9b4000wnklql20clfgl",
+    "question": "The Preamble begins with which words?",
+    "options": [
+      "We, the People of India",
+      "I, the People of India",
+      "We, the Citizens of India",
+      "We, the Nation of India"
+    ],
+    "correctIndex": 0,
+    "explanation": "The Preamble begins with We, the People of India.",
+    "pillar": "GK",
+    "difficulty": "Medium",
+    "section": "MOCK_TEST",
+    "status": "ACTIVE",
+    "timesUsed": 0,
+    "createdAt": "2026-06-10T05:05:44.414Z",
+    "updatedAt": "2026-06-10T05:05:44.414Z"
+  },
+  {
+    "id": "cmq7lv9b4000xnklqgt8d8zdc",
+    "question": "How many fundamental duties are there?",
+    "options": [
+      "11",
+      "10",
+      "9",
+      "12"
+    ],
+    "correctIndex": 0,
+    "explanation": "There are 11 fundamental duties under Article 51A.",
+    "pillar": "GK",
+    "difficulty": "Medium",
+    "section": "MOCK_TEST",
+    "status": "ACTIVE",
+    "timesUsed": 0,
+    "createdAt": "2026-06-10T05:05:44.414Z",
+    "updatedAt": "2026-06-10T05:05:44.414Z"
+  },
+  {
+    "id": "cmq7lv9b4000ynklqlebbqdcp",
+    "question": "The Supreme Court is located in which city?",
+    "options": [
+      "New Delhi",
+      "Mumbai",
+      "Kolkata",
+      "Chennai"
+    ],
+    "correctIndex": 0,
+    "explanation": "The Supreme Court is on Tilak Marg, New Delhi.",
+    "pillar": "GK",
+    "difficulty": "Easy",
+    "section": "MOCK_TEST",
+    "status": "ACTIVE",
+    "timesUsed": 0,
+    "createdAt": "2026-06-10T05:05:44.414Z",
+    "updatedAt": "2026-06-10T05:05:44.414Z"
+  },
+  {
+    "id": "cmq7lv9b4000znklqezdiy218",
+    "question": "Which is a Rabi crop in India?",
+    "options": [
+      "Wheat",
+      "Rice",
+      "Jute",
+      "Cotton"
+    ],
+    "correctIndex": 0,
+    "explanation": "Wheat is sown in winter and harvested in spring.",
+    "pillar": "GK",
+    "difficulty": "Medium",
+    "section": "MOCK_TEST",
+    "status": "ACTIVE",
+    "timesUsed": 0,
+    "createdAt": "2026-06-10T05:05:44.414Z",
+    "updatedAt": "2026-06-10T05:05:44.414Z"
+  },
+  {
+    "id": "cmq7lv9b50010nklqh8hzaw4e",
+    "question": "Green Revolution is associated with which field?",
+    "options": [
+      "Agriculture",
+      "Industry",
+      "Space",
+      "Information Technology"
+    ],
+    "correctIndex": 0,
+    "explanation": "It involved high-yielding seed varieties.",
+    "pillar": "GK",
+    "difficulty": "Medium",
+    "section": "MOCK_TEST",
+    "status": "ACTIVE",
+    "timesUsed": 0,
+    "createdAt": "2026-06-10T05:05:44.414Z",
+    "updatedAt": "2026-06-10T05:05:44.414Z"
+  },
+  {
+    "id": "cmq7lv9b50011nklqb8melkvp",
+    "question": "Which state is the largest producer of tea?",
+    "options": [
+      "Assam",
+      "West Bengal",
+      "Kerala",
+      "Tamil Nadu"
+    ],
+    "correctIndex": 0,
+    "explanation": "Assam produces about 50% of Indias tea.",
+    "pillar": "GK",
+    "difficulty": "Medium",
+    "section": "MOCK_TEST",
+    "status": "ACTIVE",
+    "timesUsed": 0,
+    "createdAt": "2026-06-10T05:05:44.414Z",
+    "updatedAt": "2026-06-10T05:05:44.414Z"
+  },
+  {
+    "id": "cmq7lv9b50012nklqv2sdvnbk",
+    "question": "Retirement age of a Supreme Court judge?",
+    "options": [
+      "65 years",
+      "62 years",
+      "60 years",
+      "68 years"
+    ],
+    "correctIndex": 0,
+    "explanation": "Supreme Court judges retire at 65.",
+    "pillar": "GK",
+    "difficulty": "Medium",
+    "section": "MOCK_TEST",
+    "status": "ACTIVE",
+    "timesUsed": 0,
+    "createdAt": "2026-06-10T05:05:44.414Z",
+    "updatedAt": "2026-06-10T05:05:44.414Z"
+  },
+  {
+    "id": "cmq7lv9b50013nklq3wpehrej",
+    "question": "When did the Constitution come into effect?",
+    "options": [
+      "26 January 1950",
+      "15 August 1947",
+      "26 November 1949",
+      "30 January 1950"
+    ],
+    "correctIndex": 0,
+    "explanation": "Adopted 26 Nov 1949, effective 26 Jan 1950.",
+    "pillar": "GK",
+    "difficulty": "Medium",
+    "section": "MOCK_TEST",
+    "status": "ACTIVE",
+    "timesUsed": 0,
+    "createdAt": "2026-06-10T05:05:44.414Z",
+    "updatedAt": "2026-06-10T05:05:44.414Z"
+  },
+  {
+    "id": "cmq7lv9b50014nklqmbsqvunv",
+    "question": "Which is a primary greenhouse gas?",
+    "options": [
+      "Carbon Dioxide",
+      "Nitrogen",
+      "Oxygen",
+      "Hydrogen"
+    ],
+    "correctIndex": 0,
+    "explanation": "CO2 is the primary greenhouse gas.",
+    "pillar": "GK",
+    "difficulty": "Easy",
+    "section": "MOCK_TEST",
+    "status": "ACTIVE",
+    "timesUsed": 0,
+    "createdAt": "2026-06-10T05:05:44.414Z",
+    "updatedAt": "2026-06-10T05:05:44.414Z"
+  },
+  {
+    "id": "cmq7lv9b50015nklqpkdg1xv1",
+    "question": "WHO headquarters is in which city?",
+    "options": [
+      "Geneva",
+      "New York",
+      "Paris",
+      "London"
+    ],
+    "correctIndex": 0,
+    "explanation": "WHO is headquartered in Geneva, Switzerland.",
+    "pillar": "GK",
+    "difficulty": "Easy",
+    "section": "MOCK_TEST",
+    "status": "ACTIVE",
+    "timesUsed": 0,
+    "createdAt": "2026-06-10T05:05:44.414Z",
+    "updatedAt": "2026-06-10T05:05:44.414Z"
+  },
+  {
+    "id": "cmq7lv9b50016nklqcfl7uomv",
+    "question": "Which state has the highest literacy rate?",
+    "options": [
+      "Kerala",
+      "Goa",
+      "Mizoram",
+      "Tamil Nadu"
+    ],
+    "correctIndex": 0,
+    "explanation": "Kerala has the highest literacy rate at about 96.2%.",
+    "pillar": "GK",
+    "difficulty": "Medium",
+    "section": "MOCK_TEST",
+    "status": "ACTIVE",
+    "timesUsed": 0,
+    "createdAt": "2026-06-10T05:05:44.414Z",
+    "updatedAt": "2026-06-10T05:05:44.414Z"
+  },
+  {
+    "id": "cmq7lv9b50017nklqc301p0ks",
+    "question": "Which of these is a UNESCO World Heritage Site?",
+    "options": [
+      "Taj Mahal",
+      "Gateway of India",
+      "India Gate",
+      "Qutub Minar"
+    ],
+    "correctIndex": 0,
+    "explanation": "Taj Mahal is a UNESCO World Heritage Site.",
+    "pillar": "GK",
+    "difficulty": "Easy",
+    "section": "MOCK_TEST",
+    "status": "ACTIVE",
+    "timesUsed": 0,
+    "createdAt": "2026-06-10T05:05:44.414Z",
+    "updatedAt": "2026-06-10T05:05:44.414Z"
+  },
+  {
+    "id": "cmq7lv9b50018nklq6jvpnawt",
+    "question": "Who was the first woman President of India?",
+    "options": [
+      "Pratibha Patil",
+      "Indira Gandhi",
+      "Sonia Gandhi",
+      "Sarojini Naidu"
+    ],
+    "correctIndex": 0,
+    "explanation": "Pratibha Patil was President from 2007-2012.",
+    "pillar": "GK",
+    "difficulty": "Easy",
+    "section": "MOCK_TEST",
+    "status": "ACTIVE",
+    "timesUsed": 0,
+    "createdAt": "2026-06-10T05:05:44.414Z",
+    "updatedAt": "2026-06-10T05:05:44.414Z"
+  },
+  {
+    "id": "cmq7lv9b50019nklqvk53e5kr",
+    "question": "Which is the smallest continent by area?",
+    "options": [
+      "Australia",
+      "Europe",
+      "Antarctica",
+      "South America"
+    ],
+    "correctIndex": 0,
+    "explanation": "Australia is about 8.6 million sq km.",
+    "pillar": "GK",
+    "difficulty": "Easy",
+    "section": "MOCK_TEST",
+    "status": "ACTIVE",
+    "timesUsed": 0,
+    "createdAt": "2026-06-10T05:05:44.414Z",
+    "updatedAt": "2026-06-10T05:05:44.414Z"
+  },
+  {
+    "id": "cmq7lv9b5001anklq4zw8k5js",
+    "question": "The term Lok Sabha means?",
+    "options": [
+      "House of the People",
+      "Council of States",
+      "Upper House",
+      "Supreme Court"
+    ],
+    "correctIndex": 0,
+    "explanation": "Lok Sabha is the House of the People.",
+    "pillar": "GK",
+    "difficulty": "Easy",
+    "section": "MOCK_TEST",
+    "status": "ACTIVE",
+    "timesUsed": 0,
+    "createdAt": "2026-06-10T05:05:44.414Z",
+    "updatedAt": "2026-06-10T05:05:44.414Z"
+  },
+  {
+    "id": "cmq7lv9b5001bnklq1bmutwqq",
+    "question": "Who founded the Indian National Congress?",
+    "options": [
+      "A.O. Hume",
+      "W.C. Bonnerjee",
+      "Dadabhai Naoroji",
+      "Surendranath Banerjee"
+    ],
+    "correctIndex": 0,
+    "explanation": "A.O. Hume founded the INC in 1885.",
+    "pillar": "GK",
+    "difficulty": "Medium",
+    "section": "MOCK_TEST",
+    "status": "ACTIVE",
+    "timesUsed": 0,
+    "createdAt": "2026-06-10T05:05:44.414Z",
+    "updatedAt": "2026-06-10T05:05:44.414Z"
+  },
+  {
+    "id": "cmq7lv9b5001cnklqz6fjdwg6",
+    "question": "The Indian Constitution came into effect on?",
+    "options": [
+      "26 January 1950",
+      "15 August 1947",
+      "26 November 1949",
+      "2 October 1947"
+    ],
+    "correctIndex": 0,
+    "explanation": "It replaced the Government of India Act 1935.",
+    "pillar": "GK",
+    "difficulty": "Medium",
+    "section": "MOCK_TEST",
+    "status": "ACTIVE",
+    "timesUsed": 0,
+    "createdAt": "2026-06-10T05:05:44.414Z",
+    "updatedAt": "2026-06-10T05:05:44.414Z"
+  },
+  {
+    "id": "cmq7lv9b5001dnklqxlwcjmg9",
+    "question": "Who is the current Chief Minister of Assam?",
+    "options": [
+      "Himanta Biswa Sarma",
+      "Sarbananda Sonowal",
+      "Tarun Gogoi",
+      "Pijush Hazarika"
+    ],
+    "correctIndex": 0,
+    "explanation": "Himanta Biswa Sarma has been CM since 10 May 2021.",
+    "pillar": "GK",
+    "difficulty": "Easy",
+    "section": "MOCK_TEST",
+    "status": "ACTIVE",
+    "timesUsed": 0,
+    "createdAt": "2026-06-10T05:05:44.414Z",
+    "updatedAt": "2026-06-10T05:05:44.414Z"
+  },
+  {
+    "id": "cmq6zs5mk0024hwlqaeyqchz7",
+    "question": "Which organisation declared the Pobitora Wildlife Sanctuary a 'Important Bird Area'?",
+    "options": [
+      "BirdLife International",
+      "UNESCO",
+      "WWF",
+      "IUCN"
+    ],
+    "correctIndex": 0,
+    "explanation": "BirdLife International declared Pobitora an IBA in 2004.",
+    "pillar": "AssamGK",
+    "difficulty": "Hard",
+    "section": "DAILY_QUIZ",
+    "status": "ACTIVE",
+    "timesUsed": 1,
+    "createdAt": "2026-06-09T18:47:28.124Z",
+    "updatedAt": "2026-06-10T05:33:29.839Z"
+  },
+  {
+    "id": "cmq6zs5ph003khwlqsvf91vqk",
+    "question": "What is the atomic number of Carbon?",
+    "options": [
+      "6",
+      "8",
+      "12",
+      "4"
+    ],
+    "correctIndex": 0,
+    "explanation": "Carbon has atomic number 6 with 6 protons in its nucleus.",
+    "pillar": "Science",
+    "difficulty": "Easy",
+    "section": "DAILY_QUIZ",
+    "status": "ACTIVE",
+    "timesUsed": 1,
+    "createdAt": "2026-06-09T18:47:28.229Z",
+    "updatedAt": "2026-06-10T05:33:29.839Z"
+  },
+  {
+    "id": "cmq6zs5qr004bhwlq0612c0yw",
+    "question": "The famous Battle of Haldighati was fought between which two forces?",
+    "options": [
+      "Akbar vs Maharana Pratap",
+      "Babur vs Rana Sanga",
+      "Humayun vs Sher Shah",
+      "Aurangzeb vs Shivaji"
+    ],
+    "correctIndex": 0,
+    "explanation": "The Battle of Haldighati (1576) was between Akbar and Maharana Pratap.",
+    "pillar": "History",
+    "difficulty": "Medium",
+    "section": "DAILY_QUIZ",
+    "status": "ACTIVE",
+    "timesUsed": 1,
+    "createdAt": "2026-06-09T18:47:28.275Z",
+    "updatedAt": "2026-06-10T05:33:29.839Z"
+  },
+  {
+    "id": "cmq6zs5ng002jhwlqapzkepxp",
+    "question": "Who was elected as the President of India in the 2025 election?",
+    "options": [
+      "Droupadi Murmu",
+      "Ram Nath Kovind",
+      "Pratibha Patil",
+      "Venkaiah Naidu"
+    ],
+    "correctIndex": 0,
+    "explanation": "Droupadi Murmu was elected President in 2022; if re-elected in 2025, same applies.",
+    "pillar": "CurrentAffairs",
+    "difficulty": "Medium",
+    "section": "DAILY_QUIZ",
+    "status": "ACTIVE",
+    "timesUsed": 2,
+    "createdAt": "2026-06-09T18:47:28.156Z",
+    "updatedAt": "2026-06-10T05:33:29.855Z"
+  },
+  {
+    "id": "cmq6zs5rx004yhwlqygkk3kb9",
+    "question": "What is the term of office of the Vice President of India?",
+    "options": [
+      "5 years",
+      "6 years",
+      "4 years",
+      "7 years"
+    ],
+    "correctIndex": 0,
+    "explanation": "The Vice President serves a term of 5 years.",
+    "pillar": "Polity",
+    "difficulty": "Medium",
+    "section": "DAILY_QUIZ",
+    "status": "ACTIVE",
+    "timesUsed": 1,
+    "createdAt": "2026-06-09T18:47:28.317Z",
+    "updatedAt": "2026-06-10T05:33:29.868Z"
+  },
+  {
+    "id": "cmq6zs5j0000khwlqrsgm3vud",
+    "question": "Which gas is most abundant in the Earth's atmosphere?",
+    "options": [
+      "Nitrogen",
+      "Oxygen",
+      "Carbon Dioxide",
+      "Argon"
+    ],
+    "correctIndex": 0,
+    "explanation": "Nitrogen makes up about 78% of Earth's atmosphere.",
+    "pillar": "GK",
+    "difficulty": "Easy",
+    "section": "DAILY_QUIZ",
+    "status": "ACTIVE",
+    "timesUsed": 2,
+    "createdAt": "2026-06-09T18:47:27.996Z",
+    "updatedAt": "2026-06-10T05:33:29.881Z"
+  },
+  {
+    "id": "cmq6zs5nx002shwlq0mhmkssc",
+    "question": "The 2026 FIFA World Cup will be hosted by which countries?",
+    "options": [
+      "USA, Canada, Mexico",
+      "Qatar",
+      "Russia",
+      "Germany"
+    ],
+    "correctIndex": 0,
+    "explanation": "The 2026 World Cup is jointly hosted by USA, Canada, and Mexico.",
+    "pillar": "CurrentAffairs",
+    "difficulty": "Medium",
+    "section": "DAILY_QUIZ",
+    "status": "ACTIVE",
+    "timesUsed": 2,
+    "createdAt": "2026-06-09T18:47:28.173Z",
+    "updatedAt": "2026-06-10T05:33:29.881Z"
+  },
+  {
+    "id": "cmq6zs5l2001ghwlq5u2mk34o",
+    "question": "Who was the first Assamese to receive the Jnanpith Award?",
+    "options": [
+      "Birendra Kumar Bhattacharya",
+      "Mamoni Raisom Goswami",
+      "Indira Goswami",
+      "Nilmani Phookan"
+    ],
+    "correctIndex": 0,
+    "explanation": "B.K. Bhattacharya won the Jnanpith in 1979 for his novel 'Mritunjay'.",
+    "pillar": "AssamGK",
+    "difficulty": "Medium",
+    "section": "DAILY_QUIZ",
+    "status": "ACTIVE",
+    "timesUsed": 1,
+    "createdAt": "2026-06-09T18:47:28.070Z",
+    "updatedAt": "2026-06-10T05:33:29.892Z"
+  },
+  {
+    "id": "cmq6zs5ou003ahwlqklm7ijn3",
+    "question": "The headquarters of the Northeast Frontier Railway is located in which city?",
+    "options": [
+      "Maligaon, Guwahati",
+      "Silchar",
+      "Dibrugarh",
+      "Dimapur"
+    ],
+    "correctIndex": 0,
+    "explanation": "NFR headquarters is at Maligaon, Guwahati.",
+    "pillar": "CurrentAffairs",
+    "difficulty": "Easy",
+    "section": "DAILY_QUIZ",
+    "status": "ACTIVE",
+    "timesUsed": 2,
+    "createdAt": "2026-06-09T18:47:28.206Z",
+    "updatedAt": "2026-06-10T05:33:29.892Z"
+  },
+  {
+    "id": "cmq6zs5rm004thwlqb53abvtp",
+    "question": "Which schedule of the Indian Constitution deals with the official languages?",
+    "options": [
+      "Eighth Schedule",
+      "Seventh Schedule",
+      "Ninth Schedule",
+      "Tenth Schedule"
+    ],
+    "correctIndex": 0,
+    "explanation": "The Eighth Schedule lists 22 official languages of India.",
+    "pillar": "Polity",
+    "difficulty": "Medium",
+    "section": "DAILY_QUIZ",
+    "status": "ACTIVE",
+    "timesUsed": 1,
+    "createdAt": "2026-06-09T18:47:28.306Z",
+    "updatedAt": "2026-06-10T05:33:29.892Z"
+  },
+  {
+    "id": "cmq6zs5qn0049hwlqf20iw6d4",
+    "question": "Which treaty ended the First Anglo-Mysore War?",
+    "options": [
+      "Treaty of Madras",
+      "Treaty of Seringapatam",
+      "Treaty of Mangalore",
+      "Treaty of Srirangam"
+    ],
+    "correctIndex": 0,
+    "explanation": "The Treaty of Madras (1769) ended the First Anglo-Mysore War.",
+    "pillar": "History",
+    "difficulty": "Hard",
+    "section": "DAILY_QUIZ",
+    "status": "ACTIVE",
+    "timesUsed": 1,
+    "createdAt": "2026-06-09T18:47:28.272Z",
+    "updatedAt": "2026-06-11T10:09:55.192Z"
+  },
+  {
+    "id": "cmq6zs5jc000phwlqxmo7a9tz",
+    "question": "What is the chemical symbol for Gold?",
+    "options": [
+      "Au",
+      "Ag",
+      "Fe",
+      "Cu"
+    ],
+    "correctIndex": 0,
+    "explanation": "Au comes from the Latin word 'Aurum' meaning gold.",
+    "pillar": "GK",
+    "difficulty": "Easy",
+    "section": "DAILY_QUIZ",
+    "status": "ACTIVE",
+    "timesUsed": 1,
+    "createdAt": "2026-06-09T18:47:28.008Z",
+    "updatedAt": "2026-06-11T19:00:00.307Z"
+  },
+  {
+    "id": "cmq6zs5m90020hwlq3tfwntsa",
+    "question": "What is the state animal of Assam?",
+    "options": [
+      "One-horned Rhinoceros",
+      "Elephant",
+      "Tiger",
+      "Deer"
+    ],
+    "correctIndex": 0,
+    "explanation": "The Indian one-horned rhinoceros is the state animal of Assam.",
+    "pillar": "AssamGK",
+    "difficulty": "Easy",
+    "section": "DAILY_QUIZ",
+    "status": "ACTIVE",
+    "timesUsed": 1,
+    "createdAt": "2026-06-09T18:47:28.113Z",
+    "updatedAt": "2026-06-11T19:00:00.307Z"
+  }
+]
