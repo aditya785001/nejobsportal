@@ -12,7 +12,7 @@ export interface ScrapeSource {
   /** URL template for category listing pages. {page} = page number */
   listingUrl: string;
   /** Selector/strategy to extract post URLs + titles from a listing page */
-  strategy: "wordpress-generic";
+  strategy: "wordpress-generic" | "blogger-generic";
   /** Whether this source is active */
   enabled: boolean;
 }
@@ -26,15 +26,14 @@ export const JOB_SOURCES: ScrapeSource[] = [
     strategy: "wordpress-generic",
     enabled: true,
   },
-  // assamcareer.in currently redirects to spam — disabled until it's back
-  // {
-  //   id: "assamcareer",
-  //   name: "AssamCareer.in",
-  //   baseUrl: "https://assamcareer.in",
-  //   listingUrl: "https://assamcareer.in/category/jobs/page/{page}/",
-  //   strategy: "wordpress-generic",
-  //   enabled: false,
-  // },
+  {
+    id: "assamcareer",
+    name: "AssamCareer.com",
+    baseUrl: "https://assamcareer.com",
+    listingUrl: "https://assamcareer.com",
+    strategy: "blogger-generic",
+    enabled: true,
+  },
 ];
 
 /** Max age of posts to import during initial load (30 days) */

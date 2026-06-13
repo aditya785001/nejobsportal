@@ -1,6 +1,7 @@
 import { NextRequest, NextResponse } from "next/server";
 import { prisma } from "@/lib/prisma";
-import { scrapeJobAssam } from "@/lib/scrapers/jobassam";
+import { JOB_SOURCES } from "@/lib/scrapers/config";
+import { scrapeSource } from "@/lib/scrapers/jobassam";
 import { slugify } from "@/lib/utils/slugify";
 import { syncExamEventsFromPost } from "@/lib/exam-calendar";
 
@@ -13,8 +14,18 @@ export async function POST(request: NextRequest) {
 
     console.log(`[jobs/scrape] Starting scrape in ${mode} mode...`);
 
-    // 1. Scrape
-    const scrapedPosts = await scrapeJobAssam(mode);
+    // 1. Scrape all enabled sources
+    const enabledSources = JOB_SOURCES.filter((s) => s.enabled);
+    const allSourcePosts = await Promise.all(
+      enabledSources.map((s) => scrapeSource(s.id, mode))
+    );
+    // Deduplicate across sources by URL (same post may appear on multiple sites)
+    const seenUrls = new Set<string>();
+    const scrapedPosts = allSourcePosts.flat().filter((p) => {
+      if (seenUrls.has(p.sourceUrl)) return false;
+      seenUrls.add(p.sourceUrl);
+      return true;
+    });
 
     if (scrapedPosts.length === 0) {
       return NextResponse.json({
@@ -83,7 +94,7 @@ export async function POST(request: NextRequest) {
             contentEn: post.content.slice(0, 50000),
             status: "PENDING_REVIEW",
             publishedAt: post.postedDate,
-            scrapeSource: "JobAssam.in",
+            scrapeSource: post.scrapeSource,
             scrapeTimestamp: new Date(),
           },
         });
@@ -128,9 +139,11 @@ export async function GET() {
   return NextResponse.json({
     status: "ready",
     lastRun: null,
-    sources: [
-      { id: "jobassam", name: "JobAssam.in", enabled: true },
-    ],
+    sources: JOB_SOURCES.filter(s => s.enabled).map(s => ({
+      id: s.id,
+      name: s.name,
+      enabled: s.enabled,
+    })),
   });
 }
 

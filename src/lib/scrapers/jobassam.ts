@@ -1,5 +1,5 @@
 import * as cheerio from "cheerio";
-import { JOB_SOURCES, INITIAL_MAX_AGE_DAYS, DAILY_WINDOW_HOURS } from "./config";
+import { JOB_SOURCES, type ScrapeSource, INITIAL_MAX_AGE_DAYS, DAILY_WINDOW_HOURS } from "./config";
 import { slugify } from "@/lib/utils/slugify";
 
 // ─── Types ─────────────────────────────────────────────────────
@@ -11,6 +11,8 @@ export interface ScrapedPost {
   content: string;
   description: string;
   imageUrl: string | null;
+  /** Source display name */
+  scrapeSource: string;
   /** Parsed structured fields */
   lastDate: Date | null;
   totalVacancies: number | null;
@@ -40,12 +42,17 @@ type ScrapeMode = "initial" | "daily";
 
 // ─── Main scrape function ──────────────────────────────────────
 
-export async function scrapeJobAssam(
+/**
+ * Scrape a single source by ID (from JOB_SOURCES config).
+ * Supports "wordpress-generic" and "blogger-generic" strategies.
+ */
+export async function scrapeSource(
+  sourceId: string,
   mode: ScrapeMode = "daily"
 ): Promise<ScrapedPost[]> {
-  const source = JOB_SOURCES.find((s) => s.id === "jobassam");
+  const source = JOB_SOURCES.find((s) => s.id === sourceId);
   if (!source || !source.enabled) {
-    console.log("[scraper] JobAssam source disabled or not found");
+    console.log(`[scraper] Source "${sourceId}" disabled or not found`);
     return [];
   }
 
@@ -58,145 +65,242 @@ export async function scrapeJobAssam(
   );
 
   const allPosts: ScrapedPost[] = [];
-  let page = 1;
-  let hasMore = true;
 
-  while (hasMore) {
-    console.log(
-      `[scraper] Fetching JobAssam page ${page}...`
-    );
-    const listingHtml = await fetchPage(
-      source.listingUrl.replace("{page}", String(page))
-    );
-    if (!listingHtml) break;
+  if (source.strategy === "blogger-generic") {
+    // Blogger uses a cursor-based pagination with "Older Posts" links
+    let nextPageUrl: string | null = source.listingUrl;
+    let page = 1;
 
-    const $ = cheerio.load(listingHtml);
-    const posts = extractListingPosts($, source.baseUrl);
+    while (nextPageUrl && page <= 20) {
+      console.log(`[scraper] Fetching ${source.name} page ${page}...`);
+      const listingHtml = await fetchPage(nextPageUrl);
+      if (!listingHtml) break;
 
-    if (posts.length === 0) {
-      hasMore = false;
-      break;
-    }
+      const $ = cheerio.load(listingHtml);
+      const posts = extractBloggerListingPosts($, source.baseUrl);
 
-    for (const post of posts) {
-      // Date filtering
-      if (post.postedDate < cutoffDate) {
-        // If initial mode and we hit old posts, stop entirely
-        if (mode === "initial") {
-          hasMore = false;
-          break;
+      if (posts.length === 0) break;
+
+      for (const post of posts) {
+        // Date filtering
+        if (post.postedDate < cutoffDate) {
+          if (mode === "initial") {
+            nextPageUrl = null;
+            break;
+          }
+          continue;
         }
-        continue; // skip old posts in daily mode
+
+        if (mode === "daily" && post.postedDate < dailyWindowStart) {
+          continue;
+        }
+
+        // Fetch detail page
+        const detail = await fetchPage(post.url);
+        if (!detail) continue;
+
+        const parsed = parseDetailPage(detail, post, source, mode);
+        allPosts.push(parsed);
       }
 
-      // In daily mode, only take posts from the last 24h
-      if (mode === "daily" && post.postedDate < dailyWindowStart) {
-        continue;
-      }
+      if (!nextPageUrl) break;
 
-      // Fetch detail page
-      const detail = await fetchPage(post.url);
-      if (!detail) continue;
-
-      const parsed = parseDetailPage(detail, post, source.name, mode);
-      allPosts.push(parsed);
-    }
-
-    // If we broke out due to old posts, stop
-    if (!hasMore) break;
-
-    // Check pagination.
-    // JobAssam uses GenerateBlocks pagination structure:
-    //   <div class="pagination gb-query-loop-pagination">
-    //     <nav class="pagination-number">
-    //       <span class="page-numbers current">1</span>
-    //       <a class="page-numbers" href=".../page/2/">2</a>
-    //       ...
-    //       <span class="page-numbers dots">…</span>
-    //       <a class="page-numbers" href=".../page/8/">8</a>
-    //     </nav>
-    //     <a class="pagination-btn" href=".../page/2/">→</a>
-    //   </div>
-    const currentSpan = $("span.page-numbers.current").first();
-    const currentPageNum = currentSpan.length ? parseInt(currentSpan.text().trim()) : page;
-
-    // Find the highest page number among <a class="page-numbers">
-    let maxPage = 0;
-    $("a.page-numbers").each((_i, el) => {
-      const match = $(el).attr("href")?.match(/\/page\/(\d+)\//);
-      if (match) {
-        const p = parseInt(match[1]);
-        if (p > maxPage) maxPage = p;
-      }
-    });
-
-    // Also check the pagination-btn next link
-    const nextBtn = $("a.pagination-btn").attr("href");
-
-    if (nextBtn || maxPage > currentPageNum) {
-      // There are more pages
+      // Find "Older Posts" link for next page
+      nextPageUrl = getBloggerNextPageUrl($, source.baseUrl);
       page++;
-    } else {
-      hasMore = false;
     }
+  } else {
+    // WordPress-style numeric pagination
+    let page = 1;
+    let hasMore = true;
 
-    // Safety limit — don't scrape more than 20 pages
-    if (page > 20) break;
+    while (hasMore) {
+      console.log(`[scraper] Fetching ${source.name} page ${page}...`);
+      const listingHtml = await fetchPage(
+        source.listingUrl.replace("{page}", String(page))
+      );
+      if (!listingHtml) break;
+
+      const $ = cheerio.load(listingHtml);
+      const posts = extractWordPressListingPosts($, source.baseUrl);
+
+      if (posts.length === 0) {
+        hasMore = false;
+        break;
+      }
+
+      for (const post of posts) {
+        if (post.postedDate < cutoffDate) {
+          if (mode === "initial") {
+            hasMore = false;
+            break;
+          }
+          continue;
+        }
+
+        if (mode === "daily" && post.postedDate < dailyWindowStart) {
+          continue;
+        }
+
+        const detail = await fetchPage(post.url);
+        if (!detail) continue;
+
+        const parsed = parseDetailPage(detail, post, source, mode);
+        allPosts.push(parsed);
+      }
+
+      if (!hasMore) break;
+
+      // WordPress pagination detection
+      hasMore = detectWordPressNextPage($, page);
+      page++;
+
+      if (page > 20) break;
+    }
   }
 
-  console.log(`[scraper] JobAssam: found ${allPosts.length} eligible posts`);
+  console.log(`[scraper] ${source.name}: found ${allPosts.length} eligible posts`);
   return allPosts;
 }
 
-// ─── Listing page extraction ──────────────────────────────────
+// Keep the old name as an alias for backward compatibility
+export async function scrapeJobAssam(
+  mode: ScrapeMode = "daily"
+): Promise<ScrapedPost[]> {
+  return scrapeSource("jobassam", mode);
+}
 
-function extractListingPosts(
+// ─── Blogger listing extraction ────────────────────────────────
+
+function extractBloggerListingPosts(
+  $: cheerio.CheerioAPI,
+  baseUrl: string
+): { title: string; url: string; postedDate: Date }[] {
+  const posts: { title: string; url: string; postedDate: Date }[] = [];
+
+  // Blogger homepage/search pages have posts with <h1> headings containing links,
+  // and dates in <abbr> tags inside time elements or link elements.
+  $("h1, h2").each((_i, el) => {
+    const $heading = $(el);
+    const $link = $heading.find("a");
+    const href = $link.attr("href");
+    const title = $link.text().trim() || $heading.text().trim();
+
+    if (!href || !title || title.length < 5) return;
+
+    // Skip non-post links
+    if (href === baseUrl || href === "#" || href.includes("/search/label/") || href.includes("/p/")) return;
+
+    const fullUrl = href.startsWith("http") ? href : `${baseUrl}${href}`;
+
+    // Try to find date from the abbr tag in the surrounding context
+    let dateText = "";
+    const $section = $link.closest(".post, article, div, li, .blog-posts");
+    if ($section.length) {
+      const $abbr = $section.find("abbr");
+      if ($abbr.length) {
+        // Use the title attribute (ISO date) if available, else text
+        dateText = $abbr.attr("title") || $abbr.text().trim();
+      }
+    }
+
+    if (!dateText) {
+      // Fallback: look for <abbr> anywhere in the same parent container
+      const $abbr = $heading.parent().find("abbr");
+      if ($abbr.length) {
+        dateText = $abbr.attr("title") || $abbr.text().trim();
+      }
+    }
+
+    const postedDate = parseDate(dateText) || new Date();
+
+    if (!posts.some((p) => p.url === fullUrl)) {
+      posts.push({ title, url: fullUrl, postedDate });
+    }
+  });
+
+  // Fallback: look for all links that contain blogspot year/month patterns
+  if (posts.length === 0) {
+    $("a[href*='assamcareer.com/20']").each((_i, el) => {
+      const $el = $(el);
+      const href = $el.attr("href");
+      const title = $el.text().trim();
+      if (!href || !title || title.length < 5) return;
+      if (posts.some((p) => p.url === href)) return;
+      // Skip label, page, and search links
+      if (href.includes("/search/") || href.includes("/p/")) return;
+
+      const fullUrl = href.startsWith("http") ? href : `${baseUrl}${href}`;
+      const $abbr = $el.closest(".post, article, div, li").find("abbr").first();
+      const dateText = $abbr.attr("title") || $abbr.text().trim() || "";
+      const postedDate = parseDate(dateText) || new Date();
+      posts.push({ title, url: fullUrl, postedDate });
+    });
+  }
+
+  return posts;
+}
+
+function getBloggerNextPageUrl(
+  $: cheerio.CheerioAPI,
+  baseUrl: string
+): string | null {
+  // Blogger "Older Posts" link is usually an anchor with class blog-pager-older-link
+  const olderLink =
+    $("a.blog-pager-older-link").attr("href") ||
+    $("a#blog-pager-older-link").attr("href") ||
+    $('.blog-pager a:contains("Older Posts")').attr("href");
+
+  // Also check for the "Home" link or nav with rel=next
+  const nextLink =
+    olderLink ||
+    $('link[rel="next"]').attr("href") ||
+    $("a[rel='next']").attr("href");
+
+  if (nextLink) {
+    // Ensure full URL
+    return nextLink.startsWith("http") ? nextLink : `${baseUrl}${nextLink}`;
+  }
+
+  return null;
+}
+
+// ─── WordPress listing extraction (existing) ───────────────────
+
+function extractWordPressListingPosts(
   $: cheerio.CheerioAPI,
   baseUrl: string
 ): { title: string; url: string; postedDate: Date }[] {
   const posts: { title: string; url: string; postedDate: Date }[] = [];
 
   // JobAssam.in uses GenerateBlocks (Gutenberg blocks) with a custom post grid.
-  // Each listing post is an <a> with class "gb-loop-item post-grid-item".
-  // Inside: <img> + <div class="post-grid-detail"> containing:
-  //   <div class="gb-text post-grid-title"> — title text
-  //   <div class="post-grid-meta">
-  //     <div class="post-grid-meta-item"> — source (first)
-  //     <div class="post-grid-meta-item"> — date  (second)
   $("a.gb-loop-item.post-grid-item").each((_i, el) => {
     const $el = $(el);
     const href = $el.attr("href");
     if (!href || href === "#" || href === baseUrl) return;
 
-    // Resolve relative URLs
     const fullUrl = href.startsWith("http")
       ? href
       : `${baseUrl}${href.startsWith("/") ? "" : "/"}${href}`;
 
-    // Title from .post-grid-title
     const title = $el.find(".post-grid-title").text().trim();
     if (!title || title.length < 5) return;
 
-    // Date from the second .post-grid-meta-item .gb-text (the calendar icon one)
-    // Structure: two meta items — first has source name, second has date
     const metaItems = $el.find(".post-grid-meta-item .gb-text");
     let dateText = "";
     metaItems.each((_j, metaEl) => {
       const text = $(metaEl).text().trim();
-      // The date meta item contains a date-like string (e.g. "9 June 2026")
       if (/\d{1,2}\s+(?:January|February|March|April|May|June|July|August|September|October|November|December)\s+\d{4}/i.test(text)) {
         dateText = text;
       }
     });
 
-    // Fallback: just take the second meta item text
     if (!dateText && metaItems.length >= 2) {
       dateText = $(metaItems[1]).text().trim();
     }
 
     const postedDate = parseDate(dateText) || new Date();
 
-    // Avoid duplicates by URL
     if (!posts.some((p) => p.url === fullUrl)) {
       posts.push({ title, url: fullUrl, postedDate });
     }
@@ -222,12 +326,29 @@ function extractListingPosts(
   return posts;
 }
 
+function detectWordPressNextPage($: cheerio.CheerioAPI, currentPage: number): boolean {
+  // Find the highest page number among <a class="page-numbers">
+  let maxPage = 0;
+  $("a.page-numbers").each((_i, el) => {
+    const match = $(el).attr("href")?.match(/\/page\/(\d+)\//);
+    if (match) {
+      const p = parseInt(match[1]);
+      if (p > maxPage) maxPage = p;
+    }
+  });
+
+  // Also check the pagination-btn next link
+  const nextBtn = $("a.pagination-btn").attr("href");
+
+  return !!(nextBtn || maxPage > currentPage);
+}
+
 // ─── Detail page parsing ──────────────────────────────────────
 
 function parseDetailPage(
   html: string,
   listing: { title: string; url: string; postedDate: Date },
-  sourceName: string,
+  source: ScrapeSource,
   mode: ScrapeMode
 ): ScrapedPost {
   const $ = cheerio.load(html);
@@ -236,7 +357,7 @@ function parseDetailPage(
   const title =
     $("meta[property='og:title']").attr("content") ||
     $("h1.entry-title").text().trim() ||
-    $("h1.gb-text").first().text().trim() ||
+    $("h1.post-title").text().trim() ||
     $("h1").first().text().trim() ||
     listing.title;
 
@@ -255,8 +376,10 @@ function parseDetailPage(
     listing.postedDate = detailPostedDate;
   }
 
-  // Content area: JobAssam uses GenerateBlocks with dynamic-entry-content class
-  const articleBody = $(".dynamic-entry-content, article, .entry-content, .post-content, .single-content").first() || $("main").first();
+  // Content area: try multiple selectors depending on CMS
+  const articleBody = $(
+    ".dynamic-entry-content, .post-body, .entry-content, article, .post-content, .single-content, main"
+  ).first();
   const content = articleBody.length
     ? cleanContent(articleBody.text())
     : cleanContent($("body").text());
@@ -273,7 +396,7 @@ function parseDetailPage(
     parseQualification(faq, tables, content) || "As per notification";
   const applicationUrl =
     parseApplicationUrl($, content) || listing.url;
-  const department = guessDepartment(title, content) || sourceName;
+  const department = guessDepartment(title, content) || source.name;
   const category = guessCategory(title, content);
   const state = guessState(title, content);
   const selectionType = guessSelectionType(content);
@@ -288,6 +411,7 @@ function parseDetailPage(
     content,
     description,
     imageUrl,
+    scrapeSource: source.name,
     lastDate,
     totalVacancies,
     qualification,
@@ -302,12 +426,12 @@ function parseDetailPage(
   };
 }
 
-// ─── FAQ extraction from Rank Math JSON-LD ────────────────────
+// ─── FAQ extraction from JSON-LD ───────────────────────────────
 
 function extractFAQ($: cheerio.CheerioAPI): Record<string, string> {
   const faq: Record<string, string> = {};
 
-  // Parse JSON-LD for FAQ data (Rank Math plugin)
+  // Parse JSON-LD for FAQ data (Rank Math plugin or any schema)
   $('script[type="application/ld+json"]').each((_i, el) => {
     try {
       const json = JSON.parse($(el).html() || "{}");
@@ -399,7 +523,6 @@ function parseLastDate(
     ) {
       const d = parseDate(a);
       if (d) return d;
-      // Also look for dates in the answer text
       const dateMatch = a.match(
         /(\d{1,2}\s+(?:January|February|March|April|May|June|July|August|September|October|November|December)\s+\d{4})/i
       );
@@ -422,7 +545,6 @@ function parseLastDate(
           cell.includes("deadline") ||
           cell.includes("apply date")
         ) {
-          // Look at the next cell or same cell for date
           const dateStr = row[j + 1] || row[j];
           const d = parseDate(dateStr);
           if (d) return d;
@@ -448,7 +570,6 @@ function parseVacancies(
   tables: { headers: string[]; rows: string[][] }[],
   content: string
 ): number | null {
-  // Check FAQ
   for (const [q, a] of Object.entries(faq)) {
     if (q.includes("vacanc") || q.includes("post") || q.includes("how many")) {
       const nums = a.match(/\b(\d[\d,]*)\b/g);
@@ -459,7 +580,6 @@ function parseVacancies(
     }
   }
 
-  // Check tables
   for (const table of tables) {
     for (let i = 0; i < table.rows.length; i++) {
       const row = table.rows[i];
@@ -482,7 +602,6 @@ function parseVacancies(
     }
   }
 
-  // Content fallback
   const vacRegex =
     /(?:total|number of|no\.?\s*of)\s*vacanc(?:y|ies)\s*(?::|is|are)?\s*(\d[\d,]*)/i;
   const match = vacRegex.exec(content);
@@ -491,7 +610,6 @@ function parseVacancies(
     if (num > 0 && num < 100000) return num;
   }
 
-  // Title fallback (e.g., "12,256 Posts")
   const titleVacRegex = /(\d[\d,]*)\s*posts?\b/i;
   const titleMatch = titleVacRegex.exec(content.slice(0, 200));
   if (titleMatch) {
@@ -507,7 +625,6 @@ function parseQualification(
   tables: { headers: string[]; rows: string[][] }[],
   content: string
 ): string {
-  // Check FAQ
   for (const [q, a] of Object.entries(faq)) {
     if (
       q.includes("qualification") ||
@@ -518,7 +635,6 @@ function parseQualification(
     }
   }
 
-  // Check tables
   for (const table of tables) {
     for (let i = 0; i < table.rows.length; i++) {
       const row = table.rows[i];
@@ -535,7 +651,6 @@ function parseQualification(
     }
   }
 
-  // Content fallback — look for qualification mentions
   const qualRegex =
     /(?:educational\s*)?qualification\s*(?::|–|—|-)?\s*([^.\n]+)/i;
   const match = qualRegex.exec(content);
@@ -554,7 +669,7 @@ function parseApplicationUrl(
   );
   for (const el of applyLinks) {
     const href = $(el).attr("href");
-    if (href && href !== "#" && !href.includes("jobassam.in")) {
+    if (href && href !== "#" && !href.includes("assamcareer.com") && !href.includes("jobassam.in")) {
       return href;
     }
   }
@@ -569,7 +684,6 @@ function parseApplicationUrl(
 }
 
 function guessDepartment(title: string, content: string): string {
-  // Try to extract the organization/department from the title
   const orgPatterns = [
     /(?:by|of|at|–|—|-|–)\s*([A-Z][A-Za-z\s.]+(?:Commission|Board|Authority|Department|Institute|University|Corporation|Bank|Ministry|Office|Organisation|Organization|Cell|Directorate))/,
     /^([A-Z][A-Za-z\s.]+(?:Recruitment|Notification|Exam))/,
@@ -580,7 +694,6 @@ function guessDepartment(title: string, content: string): string {
     if (match) return match[1].trim().slice(0, 100);
   }
 
-  // Fallback to the part before "Recruitment" or "Notification"
   const recMatch = title.match(
     /^(.+?)\s+(?:Recruitment|Notification|Exam|Admission|Result)/i
   );
@@ -611,7 +724,7 @@ function guessCategory(title: string, content: string): JobCategoryGuess {
   if (/\b(ngo|society|trust|foundation|non\s*profit)\b/i.test(text))
     return "NGO";
 
-  return "StateGovt"; // Default for Assam-focused job sites
+  return "StateGovt";
 }
 
 function guessState(
@@ -656,7 +769,6 @@ function parseHowToApply(
   content: string,
   applicationUrl: string
 ): string {
-  // Look for "How to Apply" section
   const howToSection = $(
     'h2:contains("How to Apply"), h3:contains("How to Apply"), h2:contains("Application"), h3:contains("Application"), strong:contains("How to Apply")'
   );
@@ -671,7 +783,6 @@ function parseHowToApply(
     if (text.trim()) return text.trim().slice(0, 1000);
   }
 
-  // Content fallback
   const howToRegex =
     /how\s*to\s*apply\s*(?::|–|—|-)?\s*([^]+?)(?:\n\n|\n[A-Z]|$)/i;
   const match = howToRegex.exec(content);
@@ -687,7 +798,6 @@ function parsePayScale(
   tables: { headers: string[]; rows: string[][] }[],
   content: string
 ): string | null {
-  // FAQ
   for (const [, a] of Object.entries(faq)) {
     if (
       a.includes("₹") ||
@@ -701,7 +811,6 @@ function parsePayScale(
     }
   }
 
-  // Tables
   for (const table of tables) {
     for (const row of table.rows) {
       for (const cell of row) {
@@ -713,7 +822,6 @@ function parsePayScale(
     }
   }
 
-  // Content
   const payRegex =
     /(?:pay\s*(?:scale|band|package)|salary|remuneration)\s*(?::|–|—|-)?\s*((?:₹|Rs\.?\s*)[\d,]+(?:\s*(?:–|to|-)\s*(?:₹|Rs\.?\s*)?[\d,]+)?)/i;
   const match = payRegex.exec(content);
@@ -727,7 +835,6 @@ function parseAgeLimit(
   tables: { headers: string[]; rows: string[][] }[],
   content: string
 ): string | null {
-  // FAQ
   for (const [q, a] of Object.entries(faq)) {
     if (q.includes("age") || q.includes("age limit") || q.includes("age criteria")) {
       const ageMatch = a.match(/\b(\d+)\s*(?:to|–|-)\s*(\d+)\s*years?\b/i);
@@ -737,7 +844,6 @@ function parseAgeLimit(
     }
   }
 
-  // Tables
   for (const table of tables) {
     for (const row of table.rows) {
       for (let j = 0; j < row.length; j++) {
@@ -750,7 +856,6 @@ function parseAgeLimit(
     }
   }
 
-  // Content
   const ageRegex =
     /age\s*limit\s*(?::|–|—|-)?\s*(\d+\s*(?:to|–|-)\s*\d+\s*years?)/i;
   const match = ageRegex.exec(content);
@@ -761,7 +866,7 @@ function parseAgeLimit(
 
 // ─── Helpers ──────────────────────────────────────────────────
 
-function fetchPage(url: string): Promise<string | null> {
+async function fetchPage(url: string): Promise<string | null> {
   return fetch(url, {
     headers: {
       "User-Agent":
@@ -785,18 +890,19 @@ function fetchPage(url: string): Promise<string | null> {
 function parseDate(text: string): Date | null {
   if (!text || text.length < 5) return null;
 
-  // Clean the text
   const cleaned = text.trim().replace(/\s+/g, " ");
 
-  // Try common Indian date formats
+  // Try ISO date string first (common in Blogger <abbr title="...">)
+  const isoMatch = cleaned.match(/^(\d{4})-(\d{2})-(\d{2})T/);
+  if (isoMatch) {
+    const d = new Date(cleaned);
+    if (!isNaN(d.getTime())) return d;
+  }
+
   const formats = [
-    // "9 June 2026"
     /^(\d{1,2})\s+(January|February|March|April|May|June|July|August|September|October|November|December)\s+(\d{4})/i,
-    // "June 9, 2026" or "June 9 2026"
     /^(January|February|March|April|May|June|July|August|September|October|November|December)\s+(\d{1,2}),?\s*(\d{4})/i,
-    // "2026-06-09" (ISO)
     /^(\d{4})-(\d{2})-(\d{2})/,
-    // "09/06/2026" or "06/09/2026"
     /^(\d{2})\/(\d{2})\/(\d{4})/,
   ];
 
@@ -804,19 +910,15 @@ function parseDate(text: string): Date | null {
     const match = cleaned.match(fmt);
     if (match) {
       if (fmt === formats[0]) {
-        // DD Month YYYY
         const d = new Date(`${match[2]} ${match[1]}, ${match[3]}`);
         if (!isNaN(d.getTime())) return d;
       } else if (fmt === formats[1]) {
-        // Month DD, YYYY
         const d = new Date(`${match[1]} ${match[2]}, ${match[3]}`);
         if (!isNaN(d.getTime())) return d;
       } else if (fmt === formats[2]) {
-        // ISO
         const d = new Date(cleaned);
         if (!isNaN(d.getTime())) return d;
       } else if (fmt === formats[3]) {
-        // DD/MM/YYYY or MM/DD/YYYY — try both
         let d = new Date(`${match[3]}-${match[2]}-${match[1]}`);
         if (!isNaN(d.getTime())) return d;
         d = new Date(`${match[3]}-${match[1]}-${match[2]}`);
@@ -825,7 +927,6 @@ function parseDate(text: string): Date | null {
     }
   }
 
-  // Try native Date parsing as last resort
   const d = new Date(cleaned);
   if (!isNaN(d.getTime())) return d;
 
