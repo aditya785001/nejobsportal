@@ -663,22 +663,80 @@ function parseApplicationUrl(
   $: cheerio.CheerioAPI,
   content: string
 ): string {
-  // Look for "Apply Online" or "Apply Now" links
+  // Helper: skip competitor/self links
+  const isExternal = (href: string | undefined): href is string =>
+    !!href && href !== "#" && !href.startsWith("javascript:") &&
+    !href.includes("assamcareer.com") && !href.includes("jobassam.in") &&
+    !href.includes("blogger.com") && !href.includes("blogspot.com");
+
+  // Priority 1: Table rows with labeled links (very common pattern on these sites)
+  // e.g. | Application Form | Click Here (link) |
+  //      | Official Website | Click Here (link) |
+  //      | Advertisement    | Click Here (link) |
+  const tableLinks: { label: string; url: string }[] = [];
+  $("table").each((_i, table) => {
+    $(table).find("tr").each((_j, tr) => {
+      const $tr = $(tr);
+      const cells = $tr.find("td, th");
+      if (cells.length >= 2) {
+        const label = $(cells[0]).text().trim().toLowerCase();
+        const $link = $(cells[1]).find("a").first();
+        const href = $link.attr("href");
+        if (href && label) {
+          tableLinks.push({ label, url: href });
+        }
+      }
+    });
+  });
+
+  // Check table links by priority of label
+  for (const link of tableLinks) {
+    if (!isExternal(link.url)) continue;
+    // Highest priority: Apply / Registration / Application links
+    if (
+      link.label.includes("apply") ||
+      link.label.includes("application") ||
+      link.label.includes("registration") ||
+      link.label.includes("online form")
+    ) {
+      return link.url;
+    }
+  }
+  // Second priority: Official Website / Notification / Advertisement links
+  for (const link of tableLinks) {
+    if (!isExternal(link.url)) continue;
+    if (
+      link.label.includes("official website") ||
+      link.label.includes("notification") ||
+      link.label.includes("advertisement") ||
+      link.label.includes("download") ||
+      link.label.includes("details")
+    ) {
+      return link.url;
+    }
+  }
+
+  // Priority 2: <a> elements with "Apply" text or apply/online href
   const applyLinks = $(
     'a:contains("Apply"), a[href*="apply"], a[href*="online"]'
   );
   for (const el of applyLinks) {
     const href = $(el).attr("href");
-    if (href && href !== "#" && !href.includes("assamcareer.com") && !href.includes("jobassam.in")) {
-      return href;
-    }
+    if (isExternal(href)) return href;
   }
 
-  // Look for obvious application URLs in content
-  const urlRegex =
-    /(https?:\/\/(?:www\.)?(?:ssc\b|upsc\b|rrb\b|ibps\b|bank\b|assam\b|[a-z]+\.gov\.in|apply\.\w+)\S*)/gi;
-  const match = urlRegex.exec(content);
-  if (match) return match[1];
+  // Priority 3: Notification PDFs linked in the page
+  const pdfLinks = $('a[href$=".pdf"], a[href$=".PDF"]');
+  for (const el of pdfLinks) {
+    const href = $(el).attr("href");
+    if (isExternal(href)) return href;
+  }
+
+  // Priority 4: Known official domains found anywhere in content text
+  const officialDomainRegex =
+    /(https?:\/\/(?:www\.)?(?:ssc|upsc|rrb|ibps|[a-z]+bank|assam|[a-z]+\.gov\.in|apply\.\w+|joinindianarmy|agniveer|cdac|iitg|aiims|nit|neepco|oilindia|coalindia|nhidcl|nhai|fremaa)\S*)/gi;
+  const match = officialDomainRegex.exec(content);
+  if (match && isExternal(match[1])) return match[1];
 
   return "";
 }

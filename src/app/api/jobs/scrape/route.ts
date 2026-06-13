@@ -80,7 +80,7 @@ export async function POST(request: NextRequest) {
             qualification: post.qualification.slice(0, 500),
             ageLimit: post.ageLimit,
             lastDate,
-            applicationUrl: post.applicationUrl || post.sourceUrl,
+            applicationUrl: post.applicationUrl || "",
             fee: {},
             howToApplyEn: post.howToApply.slice(0, 5000),
             howToApplyAs: "",
