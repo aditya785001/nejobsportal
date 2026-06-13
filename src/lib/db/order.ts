@@ -13,7 +13,7 @@ type IncludeOf<T> = T extends { include: infer I } ? I : never;
 
 /**
  * Generic two-query helper that returns active posts first, then expired ones.
- * The type parameter lets callers pass `include` and get properly typed results.
+ * @param orderDir - "asc" shows closest upcoming deadlines first; "desc" shows newest first.
  */
 async function paginateOrderedExpiredLast<T extends { include?: Record<string, unknown> }>(
   model: {
@@ -26,6 +26,7 @@ async function paginateOrderedExpiredLast<T extends { include?: Record<string, u
   dateField: string,
   expiryThreshold: Date,
   args: T,
+  orderDir: "asc" | "desc" = "desc",
 ): Promise<unknown[]> {
   const activeWhere = { ...where, [dateField]: { gte: expiryThreshold } };
   const expiredWhere = { ...where, [dateField]: { lt: expiryThreshold } };
@@ -38,7 +39,7 @@ async function paginateOrderedExpiredLast<T extends { include?: Record<string, u
     const active = await model.findMany({
       ...args,
       where: activeWhere,
-      orderBy: { [dateField]: "desc" as const },
+      orderBy: { [dateField]: orderDir },
       skip,
       take: activeTake,
     });
@@ -47,7 +48,7 @@ async function paginateOrderedExpiredLast<T extends { include?: Record<string, u
       const expired = await model.findMany({
         ...args,
         where: expiredWhere,
-        orderBy: { [dateField]: "desc" as const },
+        orderBy: { [dateField]: orderDir },
         skip: 0,
         take: take - active.length,
       });
@@ -59,7 +60,7 @@ async function paginateOrderedExpiredLast<T extends { include?: Record<string, u
     results = await model.findMany({
       ...args,
       where: expiredWhere,
-      orderBy: { [dateField]: "desc" as const },
+      orderBy: { [dateField]: orderDir },
       skip: skip - activeCount,
       take,
     });
@@ -84,6 +85,7 @@ export async function findJobsOrderedExpiredLast<I extends Prisma.JobPostInclude
     "lastDate",
     new Date(),
     { include: include as Record<string, unknown> },
+    "asc", // closest deadline first
   ) as Promise<Prisma.JobPostGetPayload<{ include: I }>[]>;
 }
 
