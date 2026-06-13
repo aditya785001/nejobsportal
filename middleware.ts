@@ -8,6 +8,11 @@ const adminRoutes = ["/admin"];
 export async function middleware(req: NextRequest) {
   const { pathname } = req.nextUrl;
 
+  // Allow admin login page to be accessed without auth
+  if (pathname === "/admin/login") {
+    return NextResponse.next();
+  }
+
   const isProtected = protectedRoutes.some((route) =>
     pathname.startsWith(route)
   );
