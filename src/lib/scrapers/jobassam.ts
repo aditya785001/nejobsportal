@@ -11,6 +11,8 @@ export interface ScrapedPost {
   content: string;
   description: string;
   imageUrl: string | null;
+  /** Notification PDF URL (from table links, not the OG image) */
+  notificationPdfUrl: string | null;
   /** Source display name */
   scrapeSource: string;
   /** Parsed structured fields */
@@ -394,6 +396,8 @@ function parseDetailPage(
     parseVacancies(faq, tables, content) || null;
   const qualification =
     parseQualification(faq, tables, content) || "As per notification";
+  // Extract notification PDF URL (from table links before applicationUrl steals it)
+  const notificationPdfUrl = parseNotificationPdfUrl($, content);
   const applicationUrl =
     parseApplicationUrl($, content) || listing.url;
   const department = guessDepartment(title, content) || source.name;
@@ -411,6 +415,7 @@ function parseDetailPage(
     content,
     description,
     imageUrl,
+    notificationPdfUrl,
     scrapeSource: source.name,
     lastDate,
     totalVacancies,
@@ -702,16 +707,10 @@ function parseApplicationUrl(
       return link.url;
     }
   }
-  // Second priority: Official Website / Notification / Advertisement links
+  // Second priority: Official Website links (but not notification/advertisement — those go to notificationPdfUrl)
   for (const link of tableLinks) {
     if (!isExternal(link.url)) continue;
-    if (
-      link.label.includes("official website") ||
-      link.label.includes("notification") ||
-      link.label.includes("advertisement") ||
-      link.label.includes("download") ||
-      link.label.includes("details")
-    ) {
+    if (link.label.includes("official website")) {
       return link.url;
     }
   }
@@ -725,20 +724,66 @@ function parseApplicationUrl(
     if (isExternal(href)) return href;
   }
 
-  // Priority 3: Notification PDFs linked in the page
-  const pdfLinks = $('a[href$=".pdf"], a[href$=".PDF"]');
-  for (const el of pdfLinks) {
-    const href = $(el).attr("href");
-    if (isExternal(href)) return href;
-  }
-
-  // Priority 4: Known official domains found anywhere in content text
+  // Priority 3: Known official domains found anywhere in content text
   const officialDomainRegex =
     /(https?:\/\/(?:www\.)?(?:ssc|upsc|rrb|ibps|[a-z]+bank|assam|[a-z]+\.gov\.in|apply\.\w+|joinindianarmy|agniveer|cdac|iitg|aiims|nit|neepco|oilindia|coalindia|nhidcl|nhai|fremaa)\S*)/gi;
   const match = officialDomainRegex.exec(content);
   if (match && isExternal(match[1])) return match[1];
 
   return "";
+}
+
+/**
+ * Extract notification PDF URL from table links.
+ * Looks for table rows labeled "Notification", "Advertisement", "Download", etc.
+ * that link to a PDF file or official notification page.
+ */
+function parseNotificationPdfUrl(
+  $: cheerio.CheerioAPI,
+  content: string
+): string | null {
+  // Helper: skip competitor/self links
+  const isExternal = (href: string | undefined): href is string =>
+    !!href && href !== "#" && !href.startsWith("javascript:") &&
+    !href.includes("assamcareer.com") && !href.includes("jobassam.in") &&
+    !href.includes("blogger.com") && !href.includes("blogspot.com");
+
+  // Scan table rows for notification/advertisement links
+  const tableLinks: { label: string; url: string }[] = [];
+  $("table").each((_i, table) => {
+    $(table).find("tr").each((_j, tr) => {
+      const $tr = $(tr);
+      const cells = $tr.find("td, th");
+      if (cells.length >= 2) {
+        const label = $(cells[0]).text().trim().toLowerCase();
+        const $link = $(cells[1]).find("a").first();
+        const href = $link.attr("href");
+        if (href && label) tableLinks.push({ label, url: href });
+      }
+    });
+  });
+
+  // Priority: notification/advertisement/download links
+  for (const link of tableLinks) {
+    if (!isExternal(link.url)) continue;
+    if (
+      link.label.includes("notification") ||
+      link.label.includes("advertisement") ||
+      link.label.includes("download") ||
+      link.label.includes("details")
+    ) {
+      return link.url;
+    }
+  }
+
+  // Also check for PDF links directly in the page
+  const pdfLinks = $('a[href$=".pdf"], a[href$=".PDF"]');
+  for (const el of pdfLinks) {
+    const href = $(el).attr("href");
+    if (isExternal(href)) return href;
+  }
+
+  return null;
 }
 
 function guessDepartment(title: string, content: string): string {

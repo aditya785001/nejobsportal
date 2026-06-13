@@ -88,7 +88,7 @@ export async function POST(request: NextRequest) {
             disclaimer:
               "All details are sourced from official notifications. Verify on the official portal before applying.",
             resources: [],
-            notificationPdfUrl: post.imageUrl,
+            notificationPdfUrl: post.notificationPdfUrl,
             summaryEn: post.description.slice(0, 2000) || post.title,
             summaryAs: "",
             contentEn: post.content.slice(0, 50000),
