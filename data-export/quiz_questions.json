@@ -342,25 +342,6 @@
     "updatedAt": "2026-06-09T18:47:28.006Z"
   },
   {
-    "id": "cmq6zs5jf000qhwlq751omrex",
-    "question": "The Preamble of the Indian Constitution begins with which words?",
-    "options": [
-      "We, the People of India",
-      "I, the People of India",
-      "We, the Citizens of India",
-      "We, the Nation of India"
-    ],
-    "correctIndex": 0,
-    "explanation": "The Preamble begins with 'We, the People of India'.",
-    "pillar": "GK",
-    "difficulty": "Medium",
-    "section": "DAILY_QUIZ",
-    "status": "ACTIVE",
-    "timesUsed": 0,
-    "createdAt": "2026-06-09T18:47:28.011Z",
-    "updatedAt": "2026-06-09T18:47:28.011Z"
-  },
-  {
     "id": "cmq6zs5hn0002hwlq978tegqc",
     "question": "What is the currency of India?",
     "options": [
@@ -475,61 +456,23 @@
     "updatedAt": "2026-06-11T19:00:00.307Z"
   },
   {
-    "id": "cmq6zs5jn000thwlq3d390n7t",
-    "question": "Which of the following is a Rabi crop in India?",
+    "id": "cmq6zs5jf000qhwlq751omrex",
+    "question": "The Preamble of the Indian Constitution begins with which words?",
     "options": [
-      "Wheat",
-      "Rice",
-      "Jute",
-      "Cotton"
+      "We, the People of India",
+      "I, the People of India",
+      "We, the Citizens of India",
+      "We, the Nation of India"
     ],
     "correctIndex": 0,
-    "explanation": "Wheat is sown in winter (October-December) and harvested in spring.",
+    "explanation": "The Preamble begins with 'We, the People of India'.",
     "pillar": "GK",
     "difficulty": "Medium",
     "section": "DAILY_QUIZ",
     "status": "ACTIVE",
-    "timesUsed": 0,
-    "createdAt": "2026-06-09T18:47:28.019Z",
-    "updatedAt": "2026-06-09T18:47:28.019Z"
-  },
-  {
-    "id": "cmq6zs5jq000uhwlqbaeql5xa",
-    "question": "The term 'Green Revolution' is associated with which field?",
-    "options": [
-      "Agriculture",
-      "Industry",
-      "Space",
-      "Information Technology"
-    ],
-    "correctIndex": 0,
-    "explanation": "The Green Revolution involved the adoption of high-yielding seed varieties.",
-    "pillar": "GK",
-    "difficulty": "Medium",
-    "section": "DAILY_QUIZ",
-    "status": "ACTIVE",
-    "timesUsed": 0,
-    "createdAt": "2026-06-09T18:47:28.022Z",
-    "updatedAt": "2026-06-09T18:47:28.022Z"
-  },
-  {
-    "id": "cmq6zs5ju000whwlqawq0ullf",
-    "question": "Who is known as the 'Missile Man of India'?",
-    "options": [
-      "Dr. APJ Abdul Kalam",
-      "Dr. Vikram Sarabhai",
-      "Dr. Homi Bhabha",
-      "Dr. C.V. Raman"
-    ],
-    "correctIndex": 0,
-    "explanation": "Dr. APJ Abdul Kalam was instrumental in India's missile development.",
-    "pillar": "GK",
-    "difficulty": "Easy",
-    "section": "DAILY_QUIZ",
-    "status": "ACTIVE",
-    "timesUsed": 0,
-    "createdAt": "2026-06-09T18:47:28.026Z",
-    "updatedAt": "2026-06-09T18:47:28.026Z"
+    "timesUsed": 1,
+    "createdAt": "2026-06-09T18:47:28.011Z",
+    "updatedAt": "2026-06-13T19:27:08.173Z"
   },
   {
     "id": "cmq6zs5jy000yhwlqvj4qsdrp",
@@ -549,25 +492,6 @@
     "timesUsed": 0,
     "createdAt": "2026-06-09T18:47:28.031Z",
     "updatedAt": "2026-06-09T18:47:28.031Z"
-  },
-  {
-    "id": "cmq6zs5k1000zhwlqm1iaanyu",
-    "question": "The Indian Constitution came into effect on which date?",
-    "options": [
-      "26 January 1950",
-      "15 August 1947",
-      "26 November 1949",
-      "30 January 1950"
-    ],
-    "correctIndex": 0,
-    "explanation": "The Constitution was adopted on 26 Nov 1949 and came into effect on 26 Jan 1950.",
-    "pillar": "GK",
-    "difficulty": "Medium",
-    "section": "DAILY_QUIZ",
-    "status": "ACTIVE",
-    "timesUsed": 0,
-    "createdAt": "2026-06-09T18:47:28.033Z",
-    "updatedAt": "2026-06-09T18:47:28.033Z"
   },
   {
     "id": "cmq6zs5k40010hwlqnvg74zpa",
@@ -893,23 +817,80 @@
     "updatedAt": "2026-06-11T10:09:55.192Z"
   },
   {
-    "id": "cmq6zs5ke0015hwlq31l2pdcf",
-    "question": "The slogan 'Jai Jawan Jai Kisan' was given by which leader?",
+    "id": "cmq6zs5jn000thwlq3d390n7t",
+    "question": "Which of the following is a Rabi crop in India?",
     "options": [
-      "Lal Bahadur Shastri",
-      "Jawaharlal Nehru",
-      "Indira Gandhi",
-      "Atal Bihari Vajpayee"
+      "Wheat",
+      "Rice",
+      "Jute",
+      "Cotton"
     ],
     "correctIndex": 0,
-    "explanation": "Shastri gave this slogan during the 1965 India-Pakistan war.",
+    "explanation": "Wheat is sown in winter (October-December) and harvested in spring.",
     "pillar": "GK",
     "difficulty": "Medium",
     "section": "DAILY_QUIZ",
     "status": "ACTIVE",
-    "timesUsed": 2,
-    "createdAt": "2026-06-09T18:47:28.046Z",
-    "updatedAt": "2026-06-11T19:00:00.307Z"
+    "timesUsed": 1,
+    "createdAt": "2026-06-09T18:47:28.019Z",
+    "updatedAt": "2026-06-13T19:27:08.173Z"
+  },
+  {
+    "id": "cmq6zs5ju000whwlqawq0ullf",
+    "question": "Who is known as the 'Missile Man of India'?",
+    "options": [
+      "Dr. APJ Abdul Kalam",
+      "Dr. Vikram Sarabhai",
+      "Dr. Homi Bhabha",
+      "Dr. C.V. Raman"
+    ],
+    "correctIndex": 0,
+    "explanation": "Dr. APJ Abdul Kalam was instrumental in India's missile development.",
+    "pillar": "GK",
+    "difficulty": "Easy",
+    "section": "DAILY_QUIZ",
+    "status": "ACTIVE",
+    "timesUsed": 1,
+    "createdAt": "2026-06-09T18:47:28.026Z",
+    "updatedAt": "2026-06-13T19:27:08.173Z"
+  },
+  {
+    "id": "cmq6zs5jq000uhwlqbaeql5xa",
+    "question": "The term 'Green Revolution' is associated with which field?",
+    "options": [
+      "Agriculture",
+      "Industry",
+      "Space",
+      "Information Technology"
+    ],
+    "correctIndex": 0,
+    "explanation": "The Green Revolution involved the adoption of high-yielding seed varieties.",
+    "pillar": "GK",
+    "difficulty": "Medium",
+    "section": "DAILY_QUIZ",
+    "status": "ACTIVE",
+    "timesUsed": 1,
+    "createdAt": "2026-06-09T18:47:28.022Z",
+    "updatedAt": "2026-06-13T19:29:02.026Z"
+  },
+  {
+    "id": "cmq6zs5k1000zhwlqm1iaanyu",
+    "question": "The Indian Constitution came into effect on which date?",
+    "options": [
+      "26 January 1950",
+      "15 August 1947",
+      "26 November 1949",
+      "30 January 1950"
+    ],
+    "correctIndex": 0,
+    "explanation": "The Constitution was adopted on 26 Nov 1949 and came into effect on 26 Jan 1950.",
+    "pillar": "GK",
+    "difficulty": "Medium",
+    "section": "DAILY_QUIZ",
+    "status": "ACTIVE",
+    "timesUsed": 1,
+    "createdAt": "2026-06-09T18:47:28.033Z",
+    "updatedAt": "2026-06-13T19:29:02.026Z"
   },
   {
     "id": "cmq6zs5l8001jhwlqvf5oa95z",
@@ -1102,44 +1083,6 @@
     "updatedAt": "2026-06-09T18:47:28.098Z"
   },
   {
-    "id": "cmq6zs5lw001vhwlqr56vs766",
-    "question": "Which Assamese journalist and writer is known as 'Sahityarathi'?",
-    "options": [
-      "Lakshminath Bezbaroa",
-      "Hemchandra Barua",
-      "Hiteswar Barbarua",
-      "Birendra Kumar Bhattacharya"
-    ],
-    "correctIndex": 0,
-    "explanation": "Bezbaroa is known as 'Sahityarathi' (Charioteer of Literature).",
-    "pillar": "AssamGK",
-    "difficulty": "Hard",
-    "section": "DAILY_QUIZ",
-    "status": "ACTIVE",
-    "timesUsed": 0,
-    "createdAt": "2026-06-09T18:47:28.100Z",
-    "updatedAt": "2026-06-09T18:47:28.100Z"
-  },
-  {
-    "id": "cmq6zs5lz001whwlq4osxmdbe",
-    "question": "What is the state flower of Assam?",
-    "options": [
-      "Foxtail Orchid",
-      "Lotus",
-      "Rose",
-      "Sunflower"
-    ],
-    "correctIndex": 0,
-    "explanation": "The Foxtail Orchid (Kopou Phool) is the state flower of Assam.",
-    "pillar": "AssamGK",
-    "difficulty": "Medium",
-    "section": "DAILY_QUIZ",
-    "status": "ACTIVE",
-    "timesUsed": 0,
-    "createdAt": "2026-06-09T18:47:28.103Z",
-    "updatedAt": "2026-06-09T18:47:28.103Z"
-  },
-  {
     "id": "cmq6zs5m1001xhwlqtghnb50o",
     "question": "Which dance form is a classical dance of Assam?",
     "options": [
@@ -1157,25 +1100,6 @@
     "timesUsed": 0,
     "createdAt": "2026-06-09T18:47:28.105Z",
     "updatedAt": "2026-06-09T18:47:28.105Z"
-  },
-  {
-    "id": "cmq6zs5m7001zhwlqqcldovs1",
-    "question": "Which Assamese historian wrote 'Ahomar Din'?",
-    "options": [
-      "Suryya Kumar Bhuyan",
-      "Padmanath Gohain Baruah",
-      "Benudhar Sarma",
-      "Dambarudhar Nath"
-    ],
-    "correctIndex": 0,
-    "explanation": "Dr. S.K. Bhuyan was a noted Assamese historian.",
-    "pillar": "AssamGK",
-    "difficulty": "Hard",
-    "section": "DAILY_QUIZ",
-    "status": "ACTIVE",
-    "timesUsed": 0,
-    "createdAt": "2026-06-09T18:47:28.111Z",
-    "updatedAt": "2026-06-09T18:47:28.111Z"
   },
   {
     "id": "cmq6zs5mc0021hwlqqquky20l",
@@ -1311,25 +1235,6 @@
     "updatedAt": "2026-06-10T05:33:29.868Z"
   },
   {
-    "id": "cmq6zs5lk001phwlqjyn8vcv0",
-    "question": "Which is the largest lake in Assam?",
-    "options": [
-      "Deepor Beel",
-      "Son Beel",
-      "Chandubi Lake",
-      "Haflong Lake"
-    ],
-    "correctIndex": 0,
-    "explanation": "Deepor Beel is a freshwater lake near Guwahati, covering about 4,014 hectares.",
-    "pillar": "AssamGK",
-    "difficulty": "Medium",
-    "section": "DAILY_QUIZ",
-    "status": "ACTIVE",
-    "timesUsed": 1,
-    "createdAt": "2026-06-09T18:47:28.088Z",
-    "updatedAt": "2026-06-10T05:33:29.881Z"
-  },
-  {
     "id": "cmq6zs5m3001yhwlqmvuv6idj",
     "question": "The world's largest river island, Majuli, is threatened mainly by which issue?",
     "options": [
@@ -1366,6 +1271,63 @@
     "timesUsed": 1,
     "createdAt": "2026-06-09T18:47:28.074Z",
     "updatedAt": "2026-06-11T19:00:00.307Z"
+  },
+  {
+    "id": "cmq6zs5lz001whwlq4osxmdbe",
+    "question": "What is the state flower of Assam?",
+    "options": [
+      "Foxtail Orchid",
+      "Lotus",
+      "Rose",
+      "Sunflower"
+    ],
+    "correctIndex": 0,
+    "explanation": "The Foxtail Orchid (Kopou Phool) is the state flower of Assam.",
+    "pillar": "AssamGK",
+    "difficulty": "Medium",
+    "section": "DAILY_QUIZ",
+    "status": "ACTIVE",
+    "timesUsed": 1,
+    "createdAt": "2026-06-09T18:47:28.103Z",
+    "updatedAt": "2026-06-13T19:27:08.173Z"
+  },
+  {
+    "id": "cmq6zs5lk001phwlqjyn8vcv0",
+    "question": "Which is the largest lake in Assam?",
+    "options": [
+      "Deepor Beel",
+      "Son Beel",
+      "Chandubi Lake",
+      "Haflong Lake"
+    ],
+    "correctIndex": 0,
+    "explanation": "Deepor Beel is a freshwater lake near Guwahati, covering about 4,014 hectares.",
+    "pillar": "AssamGK",
+    "difficulty": "Medium",
+    "section": "DAILY_QUIZ",
+    "status": "ACTIVE",
+    "timesUsed": 2,
+    "createdAt": "2026-06-09T18:47:28.088Z",
+    "updatedAt": "2026-06-13T19:27:08.173Z"
+  },
+  {
+    "id": "cmq6zs5lw001vhwlqr56vs766",
+    "question": "Which Assamese journalist and writer is known as 'Sahityarathi'?",
+    "options": [
+      "Lakshminath Bezbaroa",
+      "Hemchandra Barua",
+      "Hiteswar Barbarua",
+      "Birendra Kumar Bhattacharya"
+    ],
+    "correctIndex": 0,
+    "explanation": "Bezbaroa is known as 'Sahityarathi' (Charioteer of Literature).",
+    "pillar": "AssamGK",
+    "difficulty": "Hard",
+    "section": "DAILY_QUIZ",
+    "status": "ACTIVE",
+    "timesUsed": 1,
+    "createdAt": "2026-06-09T18:47:28.100Z",
+    "updatedAt": "2026-06-13T19:29:02.026Z"
   },
   {
     "id": "cmq6zs5mt0028hwlq1n7zmejz",
@@ -1577,25 +1539,6 @@
     "updatedAt": "2026-06-09T18:47:28.170Z"
   },
   {
-    "id": "cmq6zs5nz002thwlq5pbcs4tb",
-    "question": "Who won the Men's Singles title at the 2025 Australian Open?",
-    "options": [
-      "Jannik Sinner",
-      "Novak Djokovic",
-      "Carlos Alcaraz",
-      "Daniil Medvedev"
-    ],
-    "correctIndex": 0,
-    "explanation": "Sinner won the 2025 Australian Open.",
-    "pillar": "CurrentAffairs",
-    "difficulty": "Hard",
-    "section": "DAILY_QUIZ",
-    "status": "ACTIVE",
-    "timesUsed": 0,
-    "createdAt": "2026-06-09T18:47:28.175Z",
-    "updatedAt": "2026-06-09T18:47:28.175Z"
-  },
-  {
     "id": "cmq6zs5o3002vhwlqpzhpo86z",
     "question": "What is the new GST rate for restaurant services introduced in 2025?",
     "options": [
@@ -1786,6 +1729,25 @@
     "updatedAt": "2026-06-11T19:00:00.307Z"
   },
   {
+    "id": "cmq6zs5nz002thwlq5pbcs4tb",
+    "question": "Who won the Men's Singles title at the 2025 Australian Open?",
+    "options": [
+      "Jannik Sinner",
+      "Novak Djokovic",
+      "Carlos Alcaraz",
+      "Daniil Medvedev"
+    ],
+    "correctIndex": 0,
+    "explanation": "Sinner won the 2025 Australian Open.",
+    "pillar": "CurrentAffairs",
+    "difficulty": "Hard",
+    "section": "DAILY_QUIZ",
+    "status": "ACTIVE",
+    "timesUsed": 1,
+    "createdAt": "2026-06-09T18:47:28.175Z",
+    "updatedAt": "2026-06-13T19:27:08.173Z"
+  },
+  {
     "id": "cmq6zs5oc0030hwlq7ccsh18k",
     "question": "Which North Eastern state implemented the 'Inner Line Permit' system in 2025?",
     "options": [
@@ -1841,25 +1803,6 @@
     "timesUsed": 0,
     "createdAt": "2026-06-09T18:47:28.193Z",
     "updatedAt": "2026-06-09T18:47:28.193Z"
-  },
-  {
-    "id": "cmq6zs5oj0034hwlq5hk0by4j",
-    "question": "What is the repo rate as of 2025 set by the RBI?",
-    "options": [
-      "5.50%",
-      "6.00%",
-      "6.50%",
-      "5.00%"
-    ],
-    "correctIndex": 0,
-    "explanation": "The RBI's repo rate as of mid-2025 stood at 5.50%.",
-    "pillar": "CurrentAffairs",
-    "difficulty": "Medium",
-    "section": "DAILY_QUIZ",
-    "status": "ACTIVE",
-    "timesUsed": 0,
-    "createdAt": "2026-06-09T18:47:28.195Z",
-    "updatedAt": "2026-06-09T18:47:28.195Z"
   },
   {
     "id": "cmq6zs5ol0035hwlq53ie2pvx",
@@ -1919,25 +1862,6 @@
     "updatedAt": "2026-06-09T18:47:28.201Z"
   },
   {
-    "id": "cmq6zs5oq0038hwlqr05t1o7c",
-    "question": "What is the new reservation for Economically Weaker Sections (EWS) in Assam government jobs (2025)?",
-    "options": [
-      "10%",
-      "5%",
-      "15%",
-      "20%"
-    ],
-    "correctIndex": 0,
-    "explanation": "Assam provides 10% reservation for EWS.",
-    "pillar": "CurrentAffairs",
-    "difficulty": "Medium",
-    "section": "DAILY_QUIZ",
-    "status": "ACTIVE",
-    "timesUsed": 0,
-    "createdAt": "2026-06-09T18:47:28.202Z",
-    "updatedAt": "2026-06-09T18:47:28.202Z"
-  },
-  {
     "id": "cmq6zs5os0039hwlq57oc9xge",
     "question": "Which country launched the 'Digital Rupee' pilot for cross-border payments?",
     "options": [
@@ -1993,25 +1917,6 @@
     "timesUsed": 0,
     "createdAt": "2026-06-09T18:47:28.212Z",
     "updatedAt": "2026-06-09T18:47:28.212Z"
-  },
-  {
-    "id": "cmq6zs5p2003dhwlq6w9jvb79",
-    "question": "Which vitamin is produced by the human body when exposed to sunlight?",
-    "options": [
-      "Vitamin D",
-      "Vitamin C",
-      "Vitamin A",
-      "Vitamin B12"
-    ],
-    "correctIndex": 0,
-    "explanation": "Sunlight triggers Vitamin D synthesis in the skin.",
-    "pillar": "Science",
-    "difficulty": "Easy",
-    "section": "DAILY_QUIZ",
-    "status": "ACTIVE",
-    "timesUsed": 0,
-    "createdAt": "2026-06-09T18:47:28.214Z",
-    "updatedAt": "2026-06-09T18:47:28.214Z"
   },
   {
     "id": "cmq6zs5p9003ghwlqfi9tgpwm",
@@ -2223,6 +2128,63 @@
     "updatedAt": "2026-06-11T19:00:00.307Z"
   },
   {
+    "id": "cmq6zs5oq0038hwlqr05t1o7c",
+    "question": "What is the new reservation for Economically Weaker Sections (EWS) in Assam government jobs (2025)?",
+    "options": [
+      "10%",
+      "5%",
+      "15%",
+      "20%"
+    ],
+    "correctIndex": 0,
+    "explanation": "Assam provides 10% reservation for EWS.",
+    "pillar": "CurrentAffairs",
+    "difficulty": "Medium",
+    "section": "DAILY_QUIZ",
+    "status": "ACTIVE",
+    "timesUsed": 1,
+    "createdAt": "2026-06-09T18:47:28.202Z",
+    "updatedAt": "2026-06-13T19:27:08.173Z"
+  },
+  {
+    "id": "cmq6zs5oj0034hwlq5hk0by4j",
+    "question": "What is the repo rate as of 2025 set by the RBI?",
+    "options": [
+      "5.50%",
+      "6.00%",
+      "6.50%",
+      "5.00%"
+    ],
+    "correctIndex": 0,
+    "explanation": "The RBI's repo rate as of mid-2025 stood at 5.50%.",
+    "pillar": "CurrentAffairs",
+    "difficulty": "Medium",
+    "section": "DAILY_QUIZ",
+    "status": "ACTIVE",
+    "timesUsed": 1,
+    "createdAt": "2026-06-09T18:47:28.195Z",
+    "updatedAt": "2026-06-13T19:29:02.026Z"
+  },
+  {
+    "id": "cmq6zs5p2003dhwlq6w9jvb79",
+    "question": "Which vitamin is produced by the human body when exposed to sunlight?",
+    "options": [
+      "Vitamin D",
+      "Vitamin C",
+      "Vitamin A",
+      "Vitamin B12"
+    ],
+    "correctIndex": 0,
+    "explanation": "Sunlight triggers Vitamin D synthesis in the skin.",
+    "pillar": "Science",
+    "difficulty": "Easy",
+    "section": "DAILY_QUIZ",
+    "status": "ACTIVE",
+    "timesUsed": 1,
+    "createdAt": "2026-06-09T18:47:28.214Z",
+    "updatedAt": "2026-06-13T19:29:02.026Z"
+  },
+  {
     "id": "cmq6zs5pp003phwlqvibplomx",
     "question": "Which part of the cell contains genetic material?",
     "options": [
@@ -2337,25 +2299,6 @@
     "updatedAt": "2026-06-09T18:47:28.244Z"
   },
   {
-    "id": "cmq6zs5q1003xhwlqemwei1gs",
-    "question": "Which vitamin is known as the 'Sunshine Vitamin'?",
-    "options": [
-      "Vitamin D",
-      "Vitamin A",
-      "Vitamin E",
-      "Vitamin K"
-    ],
-    "correctIndex": 0,
-    "explanation": "Vitamin D is synthesised in the skin upon exposure to sunlight.",
-    "pillar": "Science",
-    "difficulty": "Easy",
-    "section": "DAILY_QUIZ",
-    "status": "ACTIVE",
-    "timesUsed": 0,
-    "createdAt": "2026-06-09T18:47:28.249Z",
-    "updatedAt": "2026-06-09T18:47:28.249Z"
-  },
-  {
     "id": "cmq6zs5q3003yhwlqb2jp09pw",
     "question": "What type of lens is used in a magnifying glass?",
     "options": [
@@ -2430,25 +2373,6 @@
     "timesUsed": 0,
     "createdAt": "2026-06-09T18:47:28.255Z",
     "updatedAt": "2026-06-09T18:47:28.255Z"
-  },
-  {
-    "id": "cmq6zs5qa0043hwlqkb69ez60",
-    "question": "Who was the last Mughal emperor of India?",
-    "options": [
-      "Bahadur Shah Zafar",
-      "Aurangzeb",
-      "Shah Alam II",
-      "Akbar II"
-    ],
-    "correctIndex": 0,
-    "explanation": "Bahadur Shah Zafar was the last Mughal emperor, exiled after 1857.",
-    "pillar": "History",
-    "difficulty": "Easy",
-    "section": "DAILY_QUIZ",
-    "status": "ACTIVE",
-    "timesUsed": 0,
-    "createdAt": "2026-06-09T18:47:28.258Z",
-    "updatedAt": "2026-06-09T18:47:28.258Z"
   },
   {
     "id": "cmq6zs5qc0044hwlqr68mmu4u",
@@ -2603,23 +2527,23 @@
     "updatedAt": "2026-06-09T18:47:28.279Z"
   },
   {
-    "id": "cmq6zs5q80042hwlqft4z2bt6",
-    "question": "The Battle of Plassey was fought in which year?",
+    "id": "cmq6zs5qa0043hwlqkb69ez60",
+    "question": "Who was the last Mughal emperor of India?",
     "options": [
-      "1757",
-      "1764",
-      "1746",
-      "1772"
+      "Bahadur Shah Zafar",
+      "Aurangzeb",
+      "Shah Alam II",
+      "Akbar II"
     ],
     "correctIndex": 0,
-    "explanation": "The Battle of Plassey (1757) marked the beginning of British rule in India.",
+    "explanation": "Bahadur Shah Zafar was the last Mughal emperor, exiled after 1857.",
     "pillar": "History",
     "difficulty": "Easy",
     "section": "DAILY_QUIZ",
     "status": "ACTIVE",
     "timesUsed": 1,
-    "createdAt": "2026-06-09T18:47:28.256Z",
-    "updatedAt": "2026-06-09T18:48:00.485Z"
+    "createdAt": "2026-06-09T18:47:28.258Z",
+    "updatedAt": "2026-06-13T19:29:02.026Z"
   },
   {
     "id": "cmq7lv9b4000unklqe36m0824",
@@ -2696,6 +2620,44 @@
     "timesUsed": 1,
     "createdAt": "2026-06-09T18:47:28.246Z",
     "updatedAt": "2026-06-11T10:09:55.192Z"
+  },
+  {
+    "id": "cmq6zs5q1003xhwlqemwei1gs",
+    "question": "Which vitamin is known as the 'Sunshine Vitamin'?",
+    "options": [
+      "Vitamin D",
+      "Vitamin A",
+      "Vitamin E",
+      "Vitamin K"
+    ],
+    "correctIndex": 0,
+    "explanation": "Vitamin D is synthesised in the skin upon exposure to sunlight.",
+    "pillar": "Science",
+    "difficulty": "Easy",
+    "section": "DAILY_QUIZ",
+    "status": "ACTIVE",
+    "timesUsed": 1,
+    "createdAt": "2026-06-09T18:47:28.249Z",
+    "updatedAt": "2026-06-13T19:27:08.173Z"
+  },
+  {
+    "id": "cmq6zs5q80042hwlqft4z2bt6",
+    "question": "The Battle of Plassey was fought in which year?",
+    "options": [
+      "1757",
+      "1764",
+      "1746",
+      "1772"
+    ],
+    "correctIndex": 0,
+    "explanation": "The Battle of Plassey (1757) marked the beginning of British rule in India.",
+    "pillar": "History",
+    "difficulty": "Easy",
+    "section": "DAILY_QUIZ",
+    "status": "ACTIVE",
+    "timesUsed": 2,
+    "createdAt": "2026-06-09T18:47:28.256Z",
+    "updatedAt": "2026-06-13T19:27:08.173Z"
   },
   {
     "id": "cmq6zs5qx004fhwlqbik0faka",
@@ -3002,25 +2964,6 @@
     "updatedAt": "2026-06-10T05:33:29.839Z"
   },
   {
-    "id": "cmq6zs5s20051hwlq7g3dpvg4",
-    "question": "Who is the chairman of the Rajya Sabha?",
-    "options": [
-      "Vice President of India",
-      "President",
-      "Prime Minister",
-      "Speaker"
-    ],
-    "correctIndex": 0,
-    "explanation": "The Vice President is the ex-officio chairman of Rajya Sabha.",
-    "pillar": "Polity",
-    "difficulty": "Easy",
-    "section": "DAILY_QUIZ",
-    "status": "ACTIVE",
-    "timesUsed": 1,
-    "createdAt": "2026-06-09T18:47:28.322Z",
-    "updatedAt": "2026-06-10T05:33:29.855Z"
-  },
-  {
     "id": "cmq6zs5qy004ghwlqeswba6v1",
     "question": "The Simon Commission came to India in which year?",
     "options": [
@@ -3038,25 +2981,6 @@
     "timesUsed": 1,
     "createdAt": "2026-06-09T18:47:28.282Z",
     "updatedAt": "2026-06-10T05:33:29.868Z"
-  },
-  {
-    "id": "cmq6zs5s40052hwlqlstps13s",
-    "question": "Which of the following is not a writ issued by the Supreme Court?",
-    "options": [
-      "Mandamus",
-      "Certiorari",
-      "Habeas Corpus",
-      "Subpoena"
-    ],
-    "correctIndex": 3,
-    "explanation": "Subpoena is not a constitutional writ; 5 writs exist: Habeas Corpus, Mandamus, Certiorari, Prohibition, Quo Warranto.",
-    "pillar": "Polity",
-    "difficulty": "Medium",
-    "section": "DAILY_QUIZ",
-    "status": "ACTIVE",
-    "timesUsed": 1,
-    "createdAt": "2026-06-09T18:47:28.324Z",
-    "updatedAt": "2026-06-10T05:33:29.881Z"
   },
   {
     "id": "cmq6zs5r2004ihwlqqgtum6af",
@@ -3133,6 +3057,44 @@
     "timesUsed": 1,
     "createdAt": "2026-06-09T18:47:28.310Z",
     "updatedAt": "2026-06-11T19:00:00.307Z"
+  },
+  {
+    "id": "cmq6zs5s20051hwlq7g3dpvg4",
+    "question": "Who is the chairman of the Rajya Sabha?",
+    "options": [
+      "Vice President of India",
+      "President",
+      "Prime Minister",
+      "Speaker"
+    ],
+    "correctIndex": 0,
+    "explanation": "The Vice President is the ex-officio chairman of Rajya Sabha.",
+    "pillar": "Polity",
+    "difficulty": "Easy",
+    "section": "DAILY_QUIZ",
+    "status": "ACTIVE",
+    "timesUsed": 2,
+    "createdAt": "2026-06-09T18:47:28.322Z",
+    "updatedAt": "2026-06-13T19:27:08.173Z"
+  },
+  {
+    "id": "cmq6zs5s40052hwlqlstps13s",
+    "question": "Which of the following is not a writ issued by the Supreme Court?",
+    "options": [
+      "Mandamus",
+      "Certiorari",
+      "Habeas Corpus",
+      "Subpoena"
+    ],
+    "correctIndex": 3,
+    "explanation": "Subpoena is not a constitutional writ; 5 writs exist: Habeas Corpus, Mandamus, Certiorari, Prohibition, Quo Warranto.",
+    "pillar": "Polity",
+    "difficulty": "Medium",
+    "section": "DAILY_QUIZ",
+    "status": "ACTIVE",
+    "timesUsed": 2,
+    "createdAt": "2026-06-09T18:47:28.324Z",
+    "updatedAt": "2026-06-13T19:29:02.026Z"
   },
   {
     "id": "cmq6zs5sb0055hwlqnpdpyla1",
@@ -4617,25 +4579,6 @@
     "updatedAt": "2026-06-10T05:33:29.881Z"
   },
   {
-    "id": "cmq6zs5nx002shwlq0mhmkssc",
-    "question": "The 2026 FIFA World Cup will be hosted by which countries?",
-    "options": [
-      "USA, Canada, Mexico",
-      "Qatar",
-      "Russia",
-      "Germany"
-    ],
-    "correctIndex": 0,
-    "explanation": "The 2026 World Cup is jointly hosted by USA, Canada, and Mexico.",
-    "pillar": "CurrentAffairs",
-    "difficulty": "Medium",
-    "section": "DAILY_QUIZ",
-    "status": "ACTIVE",
-    "timesUsed": 2,
-    "createdAt": "2026-06-09T18:47:28.173Z",
-    "updatedAt": "2026-06-10T05:33:29.881Z"
-  },
-  {
     "id": "cmq6zs5l2001ghwlq5u2mk34o",
     "question": "Who was the first Assamese to receive the Jnanpith Award?",
     "options": [
@@ -4748,5 +4691,62 @@
     "timesUsed": 1,
     "createdAt": "2026-06-09T18:47:28.113Z",
     "updatedAt": "2026-06-11T19:00:00.307Z"
+  },
+  {
+    "id": "cmq6zs5ke0015hwlq31l2pdcf",
+    "question": "The slogan 'Jai Jawan Jai Kisan' was given by which leader?",
+    "options": [
+      "Lal Bahadur Shastri",
+      "Jawaharlal Nehru",
+      "Indira Gandhi",
+      "Atal Bihari Vajpayee"
+    ],
+    "correctIndex": 0,
+    "explanation": "Shastri gave this slogan during the 1965 India-Pakistan war.",
+    "pillar": "GK",
+    "difficulty": "Medium",
+    "section": "DAILY_QUIZ",
+    "status": "ACTIVE",
+    "timesUsed": 3,
+    "createdAt": "2026-06-09T18:47:28.046Z",
+    "updatedAt": "2026-06-13T19:29:02.026Z"
+  },
+  {
+    "id": "cmq6zs5m7001zhwlqqcldovs1",
+    "question": "Which Assamese historian wrote 'Ahomar Din'?",
+    "options": [
+      "Suryya Kumar Bhuyan",
+      "Padmanath Gohain Baruah",
+      "Benudhar Sarma",
+      "Dambarudhar Nath"
+    ],
+    "correctIndex": 0,
+    "explanation": "Dr. S.K. Bhuyan was a noted Assamese historian.",
+    "pillar": "AssamGK",
+    "difficulty": "Hard",
+    "section": "DAILY_QUIZ",
+    "status": "ACTIVE",
+    "timesUsed": 1,
+    "createdAt": "2026-06-09T18:47:28.111Z",
+    "updatedAt": "2026-06-13T19:29:02.026Z"
+  },
+  {
+    "id": "cmq6zs5nx002shwlq0mhmkssc",
+    "question": "The 2026 FIFA World Cup will be hosted by which countries?",
+    "options": [
+      "USA, Canada, Mexico",
+      "Qatar",
+      "Russia",
+      "Germany"
+    ],
+    "correctIndex": 0,
+    "explanation": "The 2026 World Cup is jointly hosted by USA, Canada, and Mexico.",
+    "pillar": "CurrentAffairs",
+    "difficulty": "Medium",
+    "section": "DAILY_QUIZ",
+    "status": "ACTIVE",
+    "timesUsed": 3,
+    "createdAt": "2026-06-09T18:47:28.173Z",
+    "updatedAt": "2026-06-13T19:29:02.026Z"
   }
 ]
